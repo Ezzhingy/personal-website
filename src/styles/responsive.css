@@ -4,18 +4,24 @@
       display: block;
       float: right;
     }
+
     nav.responsive {position: relative;}
     nav.responsive a.icon {
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
     }
+
     nav.responsive a {
-      float: none;
       display: block;
       text-align: left;
     }
+
     nav {
         padding: 0;
+    }
+
+    nav.responsive {
+      position: fixed;
     }
 }

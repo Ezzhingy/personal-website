@@ -42,7 +42,7 @@ nav {
     padding: 40px;
 }
 
-nav a:hover, nav a:active {
+nav a:hover, nav a.active {
     background-color: var(--nav-btn-blue);
     transition: 0.5s ease-out;
     letter-spacing: 2px;
