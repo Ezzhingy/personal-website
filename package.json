@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezzhingy/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezzhingy/personal-website/issues"
+  },
+  "homepage": "https://github.com/Ezzhingy/personal-website#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
