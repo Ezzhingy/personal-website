@@ -1,0 +1,51 @@
+:root {
+    --nav-btn-blue: #43B2CA;
+    --nav-box-blue: #1E6676;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.home-container, .about-container, .experience-container, .projects-container {
+    height: 100vh;
+}
+
+.home-container {
+    background: linear-gradient(rgba(33, 43, 52, 0.72), rgba(61, 80, 97, 0.6)) fixed, url('../images/Gfycat.gif') no-repeat fixed center/cover;
+}
+
+.home-bg-container {
+}
+
+nav .icon {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    background: var(--nav-box-blue);
+    padding: 40px;
+}
+
+nav a:hover, nav a:active {
+    background-color: var(--nav-btn-blue);
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+
+
