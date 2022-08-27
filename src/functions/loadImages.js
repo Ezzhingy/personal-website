@@ -1,4 +1,7 @@
 import eugenePic from '../images/eugene-pic.jpg';
+import linkedIn from '../images/linkedIn.svg';
+import github from '../images/github.svg';
+import email from '../images/email.svg';
 
 import kumon from '../images/Kumon.jpeg';
 import ignition from '../images/ignition.jpeg';
@@ -14,6 +17,24 @@ export function loadMe () {
     eugenePicElement.src = eugenePic;
     eugenePicElement.alt = "Picture of Eugene Zhang";
     meBox.appendChild(eugenePicElement);
+
+    const link = document.querySelector('#link');
+    const linkedInImg = document.createElement('img');
+    linkedInImg.src = linkedIn;
+    linkedInImg.alt = 'LinkedIn logo';
+    link.appendChild(linkedInImg);
+
+    const git = document.querySelector('#git');
+    const githubImg = document.createElement('img');
+    githubImg.src = github;
+    githubImg.alt = 'Github logo';
+    git.appendChild(githubImg);
+
+    const mail = document.querySelector('#mail');
+    const emailImg = document.createElement('img');
+    emailImg.src = email;
+    emailImg.alt = 'Email logo';
+    mail.appendChild(emailImg);
 }
 
 export function loadExp () {

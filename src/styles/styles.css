@@ -76,8 +76,10 @@ nav a:hover, nav a.active {
     width: 500px;
     background-color: var(--bg-blue-2);
     padding: 40px;
+    padding-bottom: 80px;
     border-radius: 8px;
     flex-shrink: 9;
+    position: relative;
 }
 
 .about-box button {
@@ -97,6 +99,24 @@ nav a:hover, nav a.active {
     color: white;
     font-size: 1.3rem;
     margin: 0;
+}
+
+#link img, #git img, #mail img {
+    height: 60px;
+    position: absolute;
+    bottom: 2%;
+}
+
+#link img {
+    left: 25%;
+}
+
+#git img {
+    left: 42%;
+}
+
+#mail img {
+    left: 60%;
 }
 
 .me img {

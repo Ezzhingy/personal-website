@@ -77,12 +77,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "loadPro": () => (/* binding */ loadPro)
 /* harmony export */ });
 /* harmony import */ var _images_eugene_pic_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
-/* harmony import */ var _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var _images_SHAD_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
-/* harmony import */ var _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
-/* harmony import */ var _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9);
-/* harmony import */ var _images_sketch_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(10);
+/* harmony import */ var _images_linkedIn_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
+/* harmony import */ var _images_github_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
+/* harmony import */ var _images_email_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5);
+/* harmony import */ var _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6);
+/* harmony import */ var _images_SHAD_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7);
+/* harmony import */ var _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8);
+/* harmony import */ var _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9);
+/* harmony import */ var _images_sketch_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(10);
+
+
+
 
 
 
@@ -99,6 +105,24 @@ function loadMe () {
     eugenePicElement.src = _images_eugene_pic_jpg__WEBPACK_IMPORTED_MODULE_0__;
     eugenePicElement.alt = "Picture of Eugene Zhang";
     meBox.appendChild(eugenePicElement);
+
+    const link = document.querySelector('#link');
+    const linkedInImg = document.createElement('img');
+    linkedInImg.src = _images_linkedIn_svg__WEBPACK_IMPORTED_MODULE_1__;
+    linkedInImg.alt = 'LinkedIn logo';
+    link.appendChild(linkedInImg);
+
+    const git = document.querySelector('#git');
+    const githubImg = document.createElement('img');
+    githubImg.src = _images_github_svg__WEBPACK_IMPORTED_MODULE_2__;
+    githubImg.alt = 'Github logo';
+    git.appendChild(githubImg);
+
+    const mail = document.querySelector('#mail');
+    const emailImg = document.createElement('img');
+    emailImg.src = _images_email_svg__WEBPACK_IMPORTED_MODULE_3__;
+    emailImg.alt = 'Email logo';
+    mail.appendChild(emailImg);
 }
 
 function loadExp () {
@@ -108,17 +132,17 @@ function loadExp () {
 
     const kumonImg = document.createElement('img');
     kumonImg.classList.add('kumon');
-    kumonImg.src = _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_1__;
+    kumonImg.src = _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_4__;
     kumonImg.alt = 'Kumon Logo';
 
     const ignitionImg = document.createElement('img');
     ignitionImg.classList.add('ignition');
-    ignitionImg.src = _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_2__;
+    ignitionImg.src = _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_5__;
     ignitionImg.alt = 'Ignition Hacks 2021 Logo';
 
     const shadImg = document.createElement('img');
     shadImg.classList.add('shad');
-    shadImg.src = _images_SHAD_png__WEBPACK_IMPORTED_MODULE_3__;
+    shadImg.src = _images_SHAD_png__WEBPACK_IMPORTED_MODULE_6__;
     shadImg.alt = 'SHAD 2021 Logo';
 
     kumonBox.appendChild(kumonImg);
@@ -133,17 +157,17 @@ function loadPro () {
 
     const ticImg = document.createElement('img');
     ticImg.classList.add('tic-tac-toe');
-    ticImg.src = _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_4__;
+    ticImg.src = _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_7__;
     ticImg.alt = 'Image of Tic-Tac-Toe';
 
     const calcImg = document.createElement('img');
     calcImg.classList.add('calc');
-    calcImg.src = _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_5__;
+    calcImg.src = _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_8__;
     calcImg.alt = 'Image of Calculator';
 
     const sketchImg = document.createElement('img');
     sketchImg.classList.add('sketch');
-    sketchImg.src = _images_sketch_png__WEBPACK_IMPORTED_MODULE_6__;
+    sketchImg.src = _images_sketch_png__WEBPACK_IMPORTED_MODULE_9__;
     sketchImg.alt = 'Image of Sketchpad';
 
     ticBox.appendChild(ticImg);
@@ -736,7 +760,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nav-btn-blue: #43B2CA;\n    --nav-box-blue: #1E6676;\n    --bg-blue-1: #005A76;\n    --bg-blue-2: #0084AE;\n    --dark-blue-link: #005A77;\n}\n\nbody {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\n.home-container, .about-container, .experience-container, .projects-container {\n    min-height: 100vh;\n}\n\n.home-container {\n    background: linear-gradient(rgba(33, 43, 52, 0.72), rgba(61, 80, 97, 0.6)) fixed, url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat fixed center/cover;\n}\n\n.flex-container {\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n    align-items: center;\n    justify-content: center;\n}\n\n.arrow {\n    color: white;\n    position: absolute;\n    bottom: 0;\n}\n\nnav .icon {\n    display: none;\n}\n\nnav a {\n    text-decoration: none;\n    color: white;\n    padding: 10px 20px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n}\n\nnav {\n    position: fixed;\n    text-align: center;\n    z-index: 2;\n    width: 100%;\n    background: var(--nav-box-blue);\n    padding: 40px;\n}\n\nnav a:hover, nav a.active {\n    background-color: var(--nav-btn-blue);\n    transition: 0.5s ease-out;\n    letter-spacing: 2px;\n}\n\n.about-container {\n    background: var(--bg-blue-1);\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 50px;\n}\n\n.about-box {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 500px;\n    background-color: var(--bg-blue-2);\n    padding: 40px;\n    border-radius: 8px;\n    flex-shrink: 9;\n}\n\n.about-box button {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin-bottom: 20px;\n}\n\n.about-box p {\n    text-align: center;\n    color: white;\n    font-size: 1.3rem;\n    margin: 0;\n}\n\n.me img {\n    width: 300px;\n    border-radius: 8px;\n}\n\n.experience-container {\n    background-color: var(--bg-blue-2);\n    display: grid;\n    grid-template-rows: 1fr 2fr;\n}\n\n.top-exp {\n    display: flex;\n    justify-content: space-between;\n}\n\n.top-exp button {\n    margin: 50px 20px;\n}\n\n.top-exp a {\n    text-decoration: none;\n    color: white;\n}\n\n#exp-btn {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 0 50px 40px;\n}\n\n#resume-btn {\n    border: none;\n    background: var(--dark-blue-link);\n    color: white;\n    padding: 5px 35px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 40px 50px 40px;\n}\n\n#resume-btn:hover {\n    background-color: #003e53;\n}\n\n.bot-exp {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 20px;\n    margin: 10px 40px 20px 40px;\n}\n\n.card {\n    height: 300px;\n    background-color: var(--nav-box-blue);\n    box-shadow: inset -10px -7px var(--nav-btn-blue);\n    padding: 0 20px 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 8px;\n}\n\n.card:hover {\n    background-size: 100% 100%;\n    transform:scale(1.1);\n    transform-origin:center;\n}\n\n.card h3:not(:first-child) {\n    font-weight: 400;\n}\n\n.card h3:first-child {\n    font-size: 5rem;\n}\n\n.card h3 {\n    color: white;\n}\n\n.kumon {\n    width: 300px;\n}\n\n.ignition {\n    width: 150px;\n}\n\n.shad {\n    width: 300px;\n}\n\n.projects-container {\n    background-color: var(--bg-blue-1);\n    display: grid;\n    grid-template-rows: 1fr 2fr;\n}\n\n.top-pro {\n    display: flex;\n    justify-content: space-between;\n}\n\n.top-pro button {\n    margin: 50px 20px;\n}\n\n.top-pro a {\n    text-decoration: none;\n    color: white;\n}\n\n#pro-btn {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 0 50px 40px;\n}\n\n#github-btn {\n    border: none;\n    background: var(--bg-blue-2);\n    color: white;\n    padding: 5px 35px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 40px 50px 40px;\n}\n\n#github-btn:hover {\n    background-color: #00a9de;\n}\n\n.bot-pro {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 20px;\n    margin: 10px 40px 20px 40px;\n}\n\n.tic-tac-toe {\n    width: 150px;\n}\n\n.calc {\n    width: 100px;\n}\n\n.sketch {\n    width: 150px;\n}\n\n.card img {\n    border-radius: 8px;\n}\n\n.footer {\n    font-size: 1rem;\n    display: flex;\n    margin-top: auto;\n    justify-content: center;\n    padding: 25px;\n    background-color: var(--bg-blue-2);\n}\n\n.footer p {\n    text-align: center;\n    color: white;\n}\n\n.footer a {\n    text-decoration: none;\n    color: white;\n}\n\n.footer a:hover {\n    font-weight: 700;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n    --nav-btn-blue: #43B2CA;\n    --nav-box-blue: #1E6676;\n    --bg-blue-1: #005A76;\n    --bg-blue-2: #0084AE;\n    --dark-blue-link: #005A77;\n}\n\nbody {\n    font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\n.home-container, .about-container, .experience-container, .projects-container {\n    min-height: 100vh;\n}\n\n.home-container {\n    background: linear-gradient(rgba(33, 43, 52, 0.72), rgba(61, 80, 97, 0.6)) fixed, url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat fixed center/cover;\n}\n\n.flex-container {\n    display: flex;\n    flex-direction: column;\n    height: 100vh;\n    align-items: center;\n    justify-content: center;\n}\n\n.arrow {\n    color: white;\n    position: absolute;\n    bottom: 0;\n}\n\nnav .icon {\n    display: none;\n}\n\nnav a {\n    text-decoration: none;\n    color: white;\n    padding: 10px 20px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n}\n\nnav {\n    position: fixed;\n    text-align: center;\n    z-index: 2;\n    width: 100%;\n    background: var(--nav-box-blue);\n    padding: 40px;\n}\n\nnav a:hover, nav a.active {\n    background-color: var(--nav-btn-blue);\n    transition: 0.5s ease-out;\n    letter-spacing: 2px;\n}\n\n.about-container {\n    background: var(--bg-blue-1);\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    gap: 50px;\n}\n\n.about-box {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 500px;\n    background-color: var(--bg-blue-2);\n    padding: 40px;\n    padding-bottom: 80px;\n    border-radius: 8px;\n    flex-shrink: 9;\n    position: relative;\n}\n\n.about-box button {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin-bottom: 20px;\n}\n\n.about-box p {\n    text-align: center;\n    color: white;\n    font-size: 1.3rem;\n    margin: 0;\n}\n\n#link img, #git img, #mail img {\n    height: 60px;\n    position: absolute;\n    bottom: 2%;\n}\n\n#link img {\n    left: 25%;\n}\n\n#git img {\n    left: 42%;\n}\n\n#mail img {\n    left: 60%;\n}\n\n.me img {\n    width: 300px;\n    border-radius: 8px;\n}\n\n.experience-container {\n    background-color: var(--bg-blue-2);\n    display: grid;\n    grid-template-rows: 1fr 2fr;\n}\n\n.top-exp {\n    display: flex;\n    justify-content: space-between;\n}\n\n.top-exp button {\n    margin: 50px 20px;\n}\n\n.top-exp a {\n    text-decoration: none;\n    color: white;\n}\n\n#exp-btn {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 0 50px 40px;\n}\n\n#resume-btn {\n    border: none;\n    background: var(--dark-blue-link);\n    color: white;\n    padding: 5px 35px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 40px 50px 40px;\n}\n\n#resume-btn:hover {\n    background-color: #003e53;\n}\n\n.bot-exp {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 20px;\n    margin: 10px 40px 20px 40px;\n}\n\n.card {\n    height: 300px;\n    background-color: var(--nav-box-blue);\n    box-shadow: inset -10px -7px var(--nav-btn-blue);\n    padding: 0 20px 0 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 8px;\n}\n\n.card:hover {\n    background-size: 100% 100%;\n    transform:scale(1.1);\n    transform-origin:center;\n}\n\n.card h3:not(:first-child) {\n    font-weight: 400;\n}\n\n.card h3:first-child {\n    font-size: 5rem;\n}\n\n.card h3 {\n    color: white;\n}\n\n.kumon {\n    width: 300px;\n}\n\n.ignition {\n    width: 150px;\n}\n\n.shad {\n    width: 300px;\n}\n\n.projects-container {\n    background-color: var(--bg-blue-1);\n    display: grid;\n    grid-template-rows: 1fr 2fr;\n}\n\n.top-pro {\n    display: flex;\n    justify-content: space-between;\n}\n\n.top-pro button {\n    margin: 50px 20px;\n}\n\n.top-pro a {\n    text-decoration: none;\n    color: white;\n}\n\n#pro-btn {\n    border: none;\n    background: var(--nav-btn-blue);\n    color: white;\n    padding: 5px 40px;\n    font-weight: 700;\n    font-size: 2rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 0 50px 40px;\n}\n\n#github-btn {\n    border: none;\n    background: var(--bg-blue-2);\n    color: white;\n    padding: 5px 35px;\n    font-weight: 700;\n    font-size: 1.5rem;\n    border-radius: 5px;\n    letter-spacing: 0.5px;\n    margin: 50px 40px 50px 40px;\n}\n\n#github-btn:hover {\n    background-color: #00a9de;\n}\n\n.bot-pro {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 20px;\n    margin: 10px 40px 20px 40px;\n}\n\n.tic-tac-toe {\n    width: 150px;\n}\n\n.calc {\n    width: 100px;\n}\n\n.sketch {\n    width: 150px;\n}\n\n.card img {\n    border-radius: 8px;\n}\n\n.footer {\n    font-size: 1rem;\n    display: flex;\n    margin-top: auto;\n    justify-content: center;\n    padding: 25px;\n    background-color: var(--bg-blue-2);\n}\n\n.footer p {\n    text-align: center;\n    color: white;\n}\n\n.footer a {\n    text-decoration: none;\n    color: white;\n}\n\n.footer a:hover {\n    font-weight: 700;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -924,6 +948,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@media screen and (max-width: 600px) {
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
+
+/***/ }),
+/* 29 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "84947648f8102c18a261.svg";
+
+/***/ }),
+/* 30 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "f9cbedc239c0e8547bc6.svg";
+
+/***/ }),
+/* 31 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "719f80d9cc0e0d360d59.svg";
 
 /***/ })
 /******/ 	]);
