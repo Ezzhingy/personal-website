@@ -1,6 +1,6 @@
 import changeNav from './functions/responsive';
 import { animateNav, fadeArrow, reveal } from './functions/animations';
-import { loadMe, loadExp } from './functions/loadImages';
+import { loadMe, loadExp, loadPro } from './functions/loadImages';
 
 import './styles/normalize.css';
 import './styles/styles.css';
@@ -13,6 +13,7 @@ icon.addEventListener('click', changeNav);
 
 loadMe();
 loadExp();
+loadPro();
 
 window.onscroll = function () {
     animateNav();

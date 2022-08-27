@@ -1,7 +1,12 @@
 import eugenePic from '../images/eugene-pic.jpg';
+
 import kumon from '../images/Kumon.jpeg';
 import ignition from '../images/ignition.jpeg';
 import shad from '../images/SHAD.png';
+
+import ticTacToe from '../images/tic-tac-toe.jpeg';
+import calc from '../images/calculator.jpeg';
+import sketch from '../images/sketch.png';
 
 export function loadMe () {
     const meBox = document.querySelector('.me');
@@ -34,4 +39,29 @@ export function loadExp () {
     kumonBox.appendChild(kumonImg);
     ignitionBox.appendChild(ignitionImg);
     shadBox.appendChild(shadImg);
+}
+
+export function loadPro () {
+    const ticBox = document.querySelector('#tic-tac-toe-img');
+    const calcBox = document.querySelector('#calc-img');
+    const sketchBox = document.querySelector('#sketch-img');
+
+    const ticImg = document.createElement('img');
+    ticImg.classList.add('tic-tac-toe');
+    ticImg.src = ticTacToe;
+    ticImg.alt = 'Image of Tic-Tac-Toe';
+
+    const calcImg = document.createElement('img');
+    calcImg.classList.add('calc');
+    calcImg.src = calc;
+    calcImg.alt = 'Image of Calculator';
+
+    const sketchImg = document.createElement('img');
+    sketchImg.classList.add('sketch');
+    sketchImg.src = sketch;
+    sketchImg.alt = 'Image of Sketchpad';
+
+    ticBox.appendChild(ticImg);
+    calcBox.appendChild(calcImg);
+    sketchBox.appendChild(sketchImg);
 }

@@ -31,7 +31,6 @@
 
     .about-box {
       width: 250px;
-      height: auto;
     }
 
     .about-box p {
@@ -40,10 +39,13 @@
 
     .me img {
       width: 150px;
-      height: auto;
     }
 
     .top-exp {
+      display: block;
+    }
+
+    .top-pro {
       display: block;
     }
 }
