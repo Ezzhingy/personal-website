@@ -212,7 +212,7 @@ nav a:hover, nav a.active {
 }
 
 .kumon {
-    width: 300px;
+    width: 200px;
 }
 
 .ignition {
@@ -240,7 +240,7 @@ nav a:hover, nav a.active {
     box-shadow: inset -10px -7px var(--nav-btn-blue);
     margin: 15% auto;
     padding: 20px;
-    width: max(20%, 200px);
+    width: max(20%, 300px);
     color: white;
 }
 
