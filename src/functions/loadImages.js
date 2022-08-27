@@ -11,6 +11,8 @@ import ticTacToe from '../images/tic-tac-toe.jpeg';
 import calc from '../images/calculator.jpeg';
 import sketch from '../images/sketch.png';
 
+import icon from '../images/favicon.ico';
+
 export function loadMe () {
     const meBox = document.querySelector('.me');
     const eugenePicElement = document.createElement('img');
@@ -85,4 +87,9 @@ export function loadPro () {
     ticBox.appendChild(ticImg);
     calcBox.appendChild(calcImg);
     sketchBox.appendChild(sketchImg);
+}
+
+export function loadFavicon () {
+    const link = document.querySelector("link[rel~='icon']");
+    link.href = icon;
 }

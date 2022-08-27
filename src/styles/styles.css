@@ -128,11 +128,13 @@ nav a:hover, nav a.active {
     background-color: var(--bg-blue-2);
     display: grid;
     grid-template-rows: 1fr 2fr;
+    position: relative;
 }
 
 .top-exp {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .top-exp button {
@@ -260,11 +262,13 @@ nav a:hover, nav a.active {
     background-color: var(--bg-blue-1);
     display: grid;
     grid-template-rows: 1fr 2fr;
+    position: relative;    
 }
 
 .top-pro {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .top-pro button {

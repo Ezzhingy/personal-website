@@ -1,0 +1,24 @@
+.waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(143% + 1.3px);
+    height: 69px;
+}
+
+.waves .shape-fill {
+    fill: #005A76;
+}
+
+.waves .shape-fill-light {
+    fill: #0084AE;
+}
