@@ -24,4 +24,22 @@
     nav.responsive {
       position: fixed;
     }
+
+    .about-container {
+      flex-direction: column;
+    }
+
+    .about-box {
+      width: 300px;
+      height: auto;
+    }
+
+    .about-box p {
+      font-size: 1rem;
+    }
+
+    .me img {
+      width: 150px;
+      height: auto;
+    }
 }

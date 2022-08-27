@@ -1,7 +1,8 @@
 :root {
     --nav-btn-blue: #43B2CA;
     --nav-box-blue: #1E6676;
-
+    --bg-blue-1: #005A76;
+    --bg-blue-2: #0084AE;
 }
 
 body {
@@ -16,7 +17,18 @@ body {
     background: linear-gradient(rgba(33, 43, 52, 0.72), rgba(61, 80, 97, 0.6)) fixed, url('../images/Gfycat.gif') no-repeat fixed center/cover;
 }
 
-.home-bg-container {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    color: white;
+    position: absolute;
+    bottom: 0;
 }
 
 nav .icon {
@@ -46,6 +58,50 @@ nav a:hover, nav a.active {
     background-color: var(--nav-btn-blue);
     transition: 0.5s ease-out;
     letter-spacing: 2px;
+}
+
+.about-container {
+    background: var(--bg-blue-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    background-color: var(--bg-blue-2);
+    padding: 40px;
+    border-radius: 8px;
+    flex-shrink: 9;
+}
+
+.about-box button {
+    border: none;
+    background: var(--nav-btn-blue);
+    color: white;
+    padding: 5px 40px;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.me img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
 }
 
 
