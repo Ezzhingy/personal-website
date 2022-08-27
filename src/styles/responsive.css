@@ -30,7 +30,7 @@
     }
 
     .about-box {
-      width: 300px;
+      width: 250px;
       height: auto;
     }
 
@@ -41,5 +41,9 @@
     .me img {
       width: 150px;
       height: auto;
+    }
+
+    .top-exp {
+      display: block;
     }
 }
