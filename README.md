@@ -8,3 +8,4 @@ Designed using Figma. Created using HTML, CSS, and JavaScript. Compiled using np
 - ./src/images/SHAD.png: SHAD Canada
 - ./src/images/Gfycat.gif: Gfycat
 - ./src/images/Kumon.jpeg: Kumon
+- ./src/images/GifImage.gif: GifImage
