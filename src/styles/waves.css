@@ -19,6 +19,27 @@
     fill: #005A76;
 }
 
-.waves .shape-fill-light {
-    fill: #0084AE;
+/* .waves .shape-fill-light {
+    fill: rgba(61, 80, 97, 0.6);
+} */
+
+.waves1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+}
+
+.waves1 .shape-fill {
+    fill: #005A76;
 }

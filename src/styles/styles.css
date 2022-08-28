@@ -8,6 +8,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: monospace;
 }
 
 .home-container, .about-container, .experience-container, .projects-container {
@@ -126,6 +127,7 @@ nav a:hover, nav a.active {
 
 .experience-container {
     background-color: var(--bg-blue-2);
+    background: linear-gradient(rgba(33, 43, 52, 0.72), rgba(61, 80, 97, 0.6)) fixed, url('../images/GifImage.gif') no-repeat fixed center/cover;
     display: grid;
     grid-template-rows: 1fr 2fr;
     position: relative;
@@ -176,7 +178,7 @@ nav a:hover, nav a.active {
 
 .bot-exp {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 10px 40px 20px 40px;
 }
@@ -195,20 +197,19 @@ nav a:hover, nav a.active {
 
 .card:hover {
     background-size: 100% 100%;
-    transform:scale(1.1);
+    transform:scale(1.05);
     transform-origin:center;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .card h3:not(:first-child) {
     font-weight: 400;
 }
 
-.card h3:first-child {
-    font-size: 5rem;
-}
-
 .card h3 {
     color: white;
+    text-align: center;
 }
 
 .kumon {
@@ -310,9 +311,13 @@ nav a:hover, nav a.active {
 
 .bot-pro {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 10px 40px 20px 40px;
+}
+
+.bot-pro a {
+    text-decoration: none;
 }
 
 .tic-tac-toe {

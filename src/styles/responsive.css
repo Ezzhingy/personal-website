@@ -38,7 +38,7 @@
     }
 
     .me img {
-      width: 150px;
+      width: 250px;
     }
 
     .top-exp {
@@ -48,4 +48,36 @@
     .top-pro {
       display: block;
     }
+}
+
+@media screen and (max-width: 280px) {
+  .about-box {
+    width: 200px;
+  }
+
+  .about-box p {
+    font-size: 0.7rem;
+  }
+
+  .top-exp, .top-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-exp button, .top-pro button {
+    margin: 40px 0 !important;
+  }
+
+  .bot-exp, .bot-pro {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .bot-exp img, .bot-pro img {
+    width: 100px;
+  }
+
+  .shad {
+    width: 200px !important;
+  }
 }
