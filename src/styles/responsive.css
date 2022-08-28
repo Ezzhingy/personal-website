@@ -25,6 +25,10 @@
       position: fixed;
     }
 
+    .home-container, .experience-container {
+      background-size: cover;
+    }
+
     .about-container {
       flex-direction: column;
     }

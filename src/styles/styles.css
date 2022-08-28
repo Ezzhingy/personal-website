@@ -99,25 +99,17 @@ nav a:hover, nav a.active {
     text-align: center;
     color: white;
     font-size: 1.3rem;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 #link img, #git img, #mail img {
     height: 60px;
-    position: absolute;
-    bottom: 2%;
 }
 
-#link img {
-    left: 25%;
-}
-
-#git img {
-    left: 42%;
-}
-
-#mail img {
-    left: 60%;
+.logo-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .me img {
@@ -318,6 +310,11 @@ nav a:hover, nav a.active {
 
 .bot-pro a {
     text-decoration: none;
+}
+
+#tic-tac-toe-img, #calc-img, #sketch-img {
+    display: flex;
+    justify-content: center;
 }
 
 .tic-tac-toe {
