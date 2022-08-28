@@ -25,10 +25,6 @@
       position: fixed;
     }
 
-    .home-container, .experience-container {
-      background-attachment: initial;
-    }
-
     .about-container {
       flex-direction: column;
     }
