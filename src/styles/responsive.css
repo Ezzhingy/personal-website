@@ -29,7 +29,7 @@
       background-attachment: initial;
     }
 
-    .about-container {
+    .main-about {
       flex-direction: column;
     }
 
@@ -41,7 +41,7 @@
       font-size: 1rem;
     }
 
-    .me img {
+    .me img, .single-skating img, .pairs-skating img {
       width: 250px;
     }
 

@@ -13,6 +13,9 @@ import sketch from '../images/sketch.png';
 
 import icon from '../images/favicon.ico';
 
+import single from '../images/single-skating.jpeg';
+import pairs from '../images/pair-skating.jpeg';
+
 export function loadMe () {
     const meBox = document.querySelector('.me');
     const eugenePicElement = document.createElement('img');
@@ -37,6 +40,20 @@ export function loadMe () {
     emailImg.src = email;
     emailImg.alt = 'Email logo';
     mail.appendChild(emailImg);
+}
+
+export function loadSkating () {
+    const singleBox = document.querySelector('.single-skating');
+    const singleElement = document.createElement('img');
+    singleElement.src = single;
+    singleElement.alt = "Picture of Eugene Zhang Ice Dancing";
+    singleBox.appendChild(singleElement);
+
+    const pairsBox = document.querySelector('.pairs-skating');
+    const pairsElement = document.createElement('img');
+    pairsElement.src = pairs;
+    pairsElement.alt = "Picture of Eugene Zhang Ice Dancing";
+    pairsBox.appendChild(pairsElement);
 }
 
 export function loadExp () {
