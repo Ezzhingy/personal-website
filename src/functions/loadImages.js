@@ -10,6 +10,7 @@ import shad from '../images/SHAD.png';
 import ticTacToe from '../images/tic-tac-toe.jpeg';
 import calc from '../images/calculator.jpeg';
 import sketch from '../images/sketch.png';
+import journal from '../images/j4me.png';
 
 import icon from '../images/favicon.ico';
 
@@ -85,6 +86,7 @@ export function loadPro () {
     const ticBox = document.querySelector('#tic-tac-toe-img');
     const calcBox = document.querySelector('#calc-img');
     const sketchBox = document.querySelector('#sketch-img');
+    const journalBox = document.querySelector('#journal-img');
 
     const ticImg = document.createElement('img');
     ticImg.classList.add('tic-tac-toe');
@@ -101,9 +103,16 @@ export function loadPro () {
     sketchImg.src = sketch;
     sketchImg.alt = 'Image of Sketchpad';
 
+    const journalImg = document.createElement('img');
+    journalImg.classList.add('journal');
+    journalImg.src = journal;
+    journalImg.alt = 'Image of Journal4Me';
+
     ticBox.appendChild(ticImg);
     calcBox.appendChild(calcImg);
     sketchBox.appendChild(sketchImg);
+    journalBox.appendChild(journalImg);
+    
 }
 
 export function loadFavicon () {

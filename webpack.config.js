@@ -1,6 +1,7 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
-module.exports = {
+module.exports = { 
   mode: 'none',
   entry: './src/index.js',
   output: {
@@ -11,7 +12,17 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+                use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1,
+            },
+          },
+          "postcss-loader",
+        ],
+
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,

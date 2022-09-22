@@ -9,6 +9,7 @@ import './styles/animations.css';
 import './styles/responsive.css';
 import './styles/waves.css'
 
+
 const icon = document.querySelector('.icon');
 icon.addEventListener('click', changeNav);
 
