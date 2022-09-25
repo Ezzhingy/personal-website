@@ -1,4 +1,4 @@
-import eugenePic from '../images/eugene-pic.jpg';
+import eugenePic from '../images/eugene-pic.jpeg';
 import linkedIn from '../images/linkedIn.svg';
 import github from '../images/github.svg';
 import email from '../images/email.svg';
