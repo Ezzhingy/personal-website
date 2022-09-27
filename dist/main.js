@@ -284,7 +284,7 @@ module.exports = __webpack_require__.p + "c8fe7d49e8647540f491.png";
 /* 15 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "c3ccb86c027dd86713ca.ico";
+module.exports = __webpack_require__.p + "106f00baa22745713fde.ico";
 
 /***/ }),
 /* 16 */
