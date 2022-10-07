@@ -271,7 +271,7 @@ nav a:hover, nav a.active {
 .projects-container {
     background-color: var(--bg-blue-1);
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
     position: relative;    
 }
 
@@ -329,7 +329,7 @@ nav a:hover, nav a.active {
     text-decoration: none;
 }
 
-#tic-tac-toe-img, #calc-img, #sketch-img, #journal-img {
+#tic-tac-toe-img, #calc-img, #sketch-img, #journal-img, #todo-img {
     display: flex;
     justify-content: center;
 }
@@ -348,6 +348,10 @@ nav a:hover, nav a.active {
 
 .journal {
     width: 100px;
+}
+
+.todo {
+    width: 200px;
 }
 
 .card img {

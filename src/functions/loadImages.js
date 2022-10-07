@@ -11,11 +11,13 @@ import ticTacToe from '../images/tic-tac-toe.jpeg';
 import calc from '../images/calculator.jpeg';
 import sketch from '../images/sketch.png';
 import journal from '../images/j4me.png';
+import todo from '../images/todo-list.png'
 
 import icon from '../images/favicon.ico';
 
 import single from '../images/single-skating.jpeg';
 import pairs from '../images/pair-skating.jpeg';
+
 
 export function loadMe () {
     const meBox = document.querySelector('.me');
@@ -87,6 +89,8 @@ export function loadPro () {
     const calcBox = document.querySelector('#calc-img');
     const sketchBox = document.querySelector('#sketch-img');
     const journalBox = document.querySelector('#journal-img');
+    const todoBox = document.querySelector('#todo-img');
+
 
     const ticImg = document.createElement('img');
     ticImg.classList.add('tic-tac-toe');
@@ -108,10 +112,16 @@ export function loadPro () {
     journalImg.src = journal;
     journalImg.alt = 'Image of Journal4Me';
 
+    const todoImg = document.createElement('img');
+    todoImg.classList.add('todo');
+    todoImg.src = todo;
+    todoImg.alt = 'Image of TODO List App';
+
     ticBox.appendChild(ticImg);
     calcBox.appendChild(calcImg);
     sketchBox.appendChild(sketchImg);
     journalBox.appendChild(journalImg);
+    todoBox.appendChild(todoImg);
     
 }
 
