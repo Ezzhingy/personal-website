@@ -1,5 +1,5 @@
 const path = require("path");
-const autoprefixer = require("autoprefixer");
+const postcssPresetEnv = require("postcss-preset-env");
 
 module.exports = {
   mode: "none",
@@ -11,16 +11,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
           "style-loader",
+          { loader: "css-loader", options: { importLoaders: 1 } },
           {
-            loader: "css-loader",
+            loader: "postcss-loader",
             options: {
-              importLoaders: 1,
+              postcssOptions: {
+                plugins: [postcssPresetEnv(/* pluginOptions */)],
+              },
             },
           },
-          "postcss-loader",
         ],
       },
       {
