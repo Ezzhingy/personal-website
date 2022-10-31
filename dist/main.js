@@ -9,13 +9,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ changeNav)
 /* harmony export */ });
-function changeNav () {
-    const x = document.querySelector('nav');
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+function changeNav() {
+  const x = document.querySelector('nav');
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 /***/ }),
@@ -28,42 +28,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "fadeArrow": () => (/* binding */ fadeArrow),
 /* harmony export */   "reveal": () => (/* binding */ reveal)
 /* harmony export */ });
-function animateNav () {
-    const section = document.querySelectorAll('.section');
-    const nav = document.querySelectorAll('nav a');
-    section.forEach(i => { // get data for each page
-        const top = window.scrollY; // num pixels scrolled vertically
-        const offset = i.offsetTop - 150; // height of page from top of viewport, -150 to animate a bit before each page begins
-        const height = i.offsetHeight; // height of each page
-        const id = i.getAttribute('id');
-
-        if (top >= offset && top < offset + height) {
-        nav.forEach(link => {
-            link.classList.remove('active');
-            document.querySelector('nav a[href*=' + id + ']').classList.add('active');
-        });
-        }
-    });
-}
-
-function fadeArrow () {
-    const arrow = document.querySelector('.arrow');
+function animateNav() {
+  const section = document.querySelectorAll('.section');
+  const nav = document.querySelectorAll('nav a');
+  section.forEach(i => {
+    // get data for each page
     const top = window.scrollY; // num pixels scrolled vertically
-    arrow.style.setProperty('opacity', "calc(1 - " + top + " / 400)"); // fades as screen scrolls down       
+    const offset = i.offsetTop - 150; // height of page from top of viewport, -150 to animate a bit before each page begins
+    const height = i.offsetHeight; // height of each page
+    const id = i.getAttribute('id');
+    if (top >= offset && top < offset + height) {
+      nav.forEach(link => {
+        link.classList.remove('active');
+        document.querySelector('nav a[href*=' + id + ']').classList.add('active');
+      });
+    }
+  });
+}
+function fadeArrow() {
+  const arrow = document.querySelector('.arrow');
+  const top = window.scrollY; // num pixels scrolled vertically
+  arrow.style.setProperty('opacity', "calc(1 - " + top + " / 400)"); // fades as screen scrolls down       
 }
 
 function reveal() {
-    const reveal = document.querySelectorAll(".reveal");
-    reveal.forEach(i => {
-        const windowHeight = window.innerHeight; // viewport height
-        const top = i.getBoundingClientRect().top; // height of page from top of viewport
-        const offset = windowHeight - 150; // height of viewport, -150 to animate a bit before each page begins
-        if (top < offset) {
-            i.classList.add('active');
-        } else {
-            i.classList.remove('active');
-        }
-    });
+  const reveal = document.querySelectorAll(".reveal");
+  reveal.forEach(i => {
+    const windowHeight = window.innerHeight; // viewport height
+    const top = i.getBoundingClientRect().top; // height of page from top of viewport
+    const offset = windowHeight - 150; // height of viewport, -150 to animate a bit before each page begins
+    if (top < offset) {
+      i.classList.add('active');
+    } else {
+      i.classList.remove('active');
+    }
+  });
 }
 
 /***/ }),
@@ -108,121 +107,95 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-function loadMe () {
-    const meBox = document.querySelector('.me');
-    const eugenePicElement = document.createElement('img');
-    eugenePicElement.src = _images_eugene_pic_jpeg__WEBPACK_IMPORTED_MODULE_0__;
-    eugenePicElement.alt = "Picture of Eugene Zhang";
-    meBox.appendChild(eugenePicElement);
-
-    const link = document.querySelector('#link');
-    const linkedInImg = document.createElement('img');
-    linkedInImg.src = _images_linkedIn_svg__WEBPACK_IMPORTED_MODULE_1__;
-    linkedInImg.alt = 'LinkedIn logo';
-    link.appendChild(linkedInImg);
-
-    const git = document.querySelector('#git');
-    const githubImg = document.createElement('img');
-    githubImg.src = _images_github_svg__WEBPACK_IMPORTED_MODULE_2__;
-    githubImg.alt = 'Github logo';
-    git.appendChild(githubImg);
-
-    const mail = document.querySelector('#mail');
-    const emailImg = document.createElement('img');
-    emailImg.src = _images_email_svg__WEBPACK_IMPORTED_MODULE_3__;
-    emailImg.alt = 'Email logo';
-    mail.appendChild(emailImg);
+function loadMe() {
+  const meBox = document.querySelector('.me');
+  const eugenePicElement = document.createElement('img');
+  eugenePicElement.src = _images_eugene_pic_jpeg__WEBPACK_IMPORTED_MODULE_0__;
+  eugenePicElement.alt = "Picture of Eugene Zhang";
+  meBox.appendChild(eugenePicElement);
+  const link = document.querySelector('#link');
+  const linkedInImg = document.createElement('img');
+  linkedInImg.src = _images_linkedIn_svg__WEBPACK_IMPORTED_MODULE_1__;
+  linkedInImg.alt = 'LinkedIn logo';
+  link.appendChild(linkedInImg);
+  const git = document.querySelector('#git');
+  const githubImg = document.createElement('img');
+  githubImg.src = _images_github_svg__WEBPACK_IMPORTED_MODULE_2__;
+  githubImg.alt = 'Github logo';
+  git.appendChild(githubImg);
+  const mail = document.querySelector('#mail');
+  const emailImg = document.createElement('img');
+  emailImg.src = _images_email_svg__WEBPACK_IMPORTED_MODULE_3__;
+  emailImg.alt = 'Email logo';
+  mail.appendChild(emailImg);
 }
-
-function loadSkating () {
-    const singleBox = document.querySelector('.single-skating');
-    const singleElement = document.createElement('img');
-    singleElement.src = _images_single_skating_jpeg__WEBPACK_IMPORTED_MODULE_13__;
-    singleElement.alt = "Picture of Eugene Zhang Ice Dancing";
-    singleBox.appendChild(singleElement);
-
-    const pairsBox = document.querySelector('.pairs-skating');
-    const pairsElement = document.createElement('img');
-    pairsElement.src = _images_pair_skating_jpeg__WEBPACK_IMPORTED_MODULE_14__;
-    pairsElement.alt = "Picture of Eugene Zhang Ice Dancing";
-    pairsBox.appendChild(pairsElement);
+function loadSkating() {
+  const singleBox = document.querySelector('.single-skating');
+  const singleElement = document.createElement('img');
+  singleElement.src = _images_single_skating_jpeg__WEBPACK_IMPORTED_MODULE_13__;
+  singleElement.alt = "Picture of Eugene Zhang Ice Dancing";
+  singleBox.appendChild(singleElement);
+  const pairsBox = document.querySelector('.pairs-skating');
+  const pairsElement = document.createElement('img');
+  pairsElement.src = _images_pair_skating_jpeg__WEBPACK_IMPORTED_MODULE_14__;
+  pairsElement.alt = "Picture of Eugene Zhang Ice Dancing";
+  pairsBox.appendChild(pairsElement);
 }
-
-function loadExp () {
-    const kumonBox = document.querySelector('#kumon-img');
-    const ignitionBox = document.querySelector('#ignition-img');
-    const shadBox = document.querySelector('#shad-img');
-
-    const kumonImg = document.createElement('img');
-    kumonImg.classList.add('kumon');
-    kumonImg.src = _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_4__;
-    kumonImg.alt = 'Kumon Logo';
-
-    const ignitionImg = document.createElement('img');
-    ignitionImg.classList.add('ignition');
-    ignitionImg.src = _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_5__;
-    ignitionImg.alt = 'Ignition Hacks 2021 Logo';
-
-    const shadImg = document.createElement('img');
-    shadImg.classList.add('shad');
-    shadImg.src = _images_SHAD_png__WEBPACK_IMPORTED_MODULE_6__;
-    shadImg.alt = 'SHAD 2021 Logo';
-
-    kumonBox.appendChild(kumonImg);
-    ignitionBox.appendChild(ignitionImg);
-    shadBox.appendChild(shadImg);
+function loadExp() {
+  const kumonBox = document.querySelector('#kumon-img');
+  const ignitionBox = document.querySelector('#ignition-img');
+  const shadBox = document.querySelector('#shad-img');
+  const kumonImg = document.createElement('img');
+  kumonImg.classList.add('kumon');
+  kumonImg.src = _images_Kumon_jpeg__WEBPACK_IMPORTED_MODULE_4__;
+  kumonImg.alt = 'Kumon Logo';
+  const ignitionImg = document.createElement('img');
+  ignitionImg.classList.add('ignition');
+  ignitionImg.src = _images_ignition_jpeg__WEBPACK_IMPORTED_MODULE_5__;
+  ignitionImg.alt = 'Ignition Hacks 2021 Logo';
+  const shadImg = document.createElement('img');
+  shadImg.classList.add('shad');
+  shadImg.src = _images_SHAD_png__WEBPACK_IMPORTED_MODULE_6__;
+  shadImg.alt = 'SHAD 2021 Logo';
+  kumonBox.appendChild(kumonImg);
+  ignitionBox.appendChild(ignitionImg);
+  shadBox.appendChild(shadImg);
 }
-
-function loadPro () {
-    const ticBox = document.querySelector('#tic-tac-toe-img');
-    const calcBox = document.querySelector('#calc-img');
-    const sketchBox = document.querySelector('#sketch-img');
-    const journalBox = document.querySelector('#journal-img');
-    const todoBox = document.querySelector('#todo-img');
-
-
-    const ticImg = document.createElement('img');
-    ticImg.classList.add('tic-tac-toe');
-    ticImg.src = _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_7__;
-    ticImg.alt = 'Image of Tic-Tac-Toe';
-
-    const calcImg = document.createElement('img');
-    calcImg.classList.add('calc');
-    calcImg.src = _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_8__;
-    calcImg.alt = 'Image of Calculator';
-
-    const sketchImg = document.createElement('img');
-    sketchImg.classList.add('sketch');
-    sketchImg.src = _images_sketch_png__WEBPACK_IMPORTED_MODULE_9__;
-    sketchImg.alt = 'Image of Sketchpad';
-
-    const journalImg = document.createElement('img');
-    journalImg.classList.add('journal');
-    journalImg.src = _images_j4me_png__WEBPACK_IMPORTED_MODULE_10__;
-    journalImg.alt = 'Image of Journal4Me';
-
-    const todoImg = document.createElement('img');
-    todoImg.classList.add('todo');
-    todoImg.src = _images_todo_list_png__WEBPACK_IMPORTED_MODULE_11__;
-    todoImg.alt = 'Image of TODO List App';
-
-    ticBox.appendChild(ticImg);
-    calcBox.appendChild(calcImg);
-    sketchBox.appendChild(sketchImg);
-    journalBox.appendChild(journalImg);
-    todoBox.appendChild(todoImg);
-    
+function loadPro() {
+  const ticBox = document.querySelector('#tic-tac-toe-img');
+  const calcBox = document.querySelector('#calc-img');
+  const sketchBox = document.querySelector('#sketch-img');
+  const journalBox = document.querySelector('#journal-img');
+  const todoBox = document.querySelector('#todo-img');
+  const ticImg = document.createElement('img');
+  ticImg.classList.add('tic-tac-toe');
+  ticImg.src = _images_tic_tac_toe_jpeg__WEBPACK_IMPORTED_MODULE_7__;
+  ticImg.alt = 'Image of Tic-Tac-Toe';
+  const calcImg = document.createElement('img');
+  calcImg.classList.add('calc');
+  calcImg.src = _images_calculator_jpeg__WEBPACK_IMPORTED_MODULE_8__;
+  calcImg.alt = 'Image of Calculator';
+  const sketchImg = document.createElement('img');
+  sketchImg.classList.add('sketch');
+  sketchImg.src = _images_sketch_png__WEBPACK_IMPORTED_MODULE_9__;
+  sketchImg.alt = 'Image of Sketchpad';
+  const journalImg = document.createElement('img');
+  journalImg.classList.add('journal');
+  journalImg.src = _images_j4me_png__WEBPACK_IMPORTED_MODULE_10__;
+  journalImg.alt = 'Image of Journal4Me';
+  const todoImg = document.createElement('img');
+  todoImg.classList.add('todo');
+  todoImg.src = _images_todo_list_png__WEBPACK_IMPORTED_MODULE_11__;
+  todoImg.alt = 'Image of TODO List App';
+  ticBox.appendChild(ticImg);
+  calcBox.appendChild(calcImg);
+  sketchBox.appendChild(sketchImg);
+  journalBox.appendChild(journalImg);
+  todoBox.appendChild(todoImg);
 }
-
-function loadFavicon () {
-    const link = document.querySelector("link[rel~='icon']");
-    link.href = _images_favicon_ico__WEBPACK_IMPORTED_MODULE_12__;
+function loadFavicon() {
+  const link = document.querySelector("link[rel~='icon']");
+  link.href = _images_favicon_ico__WEBPACK_IMPORTED_MODULE_12__;
 }
 
 /***/ }),
@@ -323,69 +296,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "showModal": () => (/* binding */ showModal)
 /* harmony export */ });
-function showModal () {
-    const span = document.getElementsByClassName("close")[0];
-
-    const kumonInfo = document.querySelector('#kumon');
-    const ignitionInfo = document.querySelector('#ignition')
-    const shadInfo = document.querySelector('#shad');
-
-    kumonInfo.addEventListener('click', addKumon);
-    ignitionInfo.addEventListener('click', addIgnition);
-    shadInfo.addEventListener('click', addShad);
-
-    span.addEventListener('click', closeModal);
-    window.addEventListener('click', closeModalW);
-    
+function showModal() {
+  const span = document.getElementsByClassName("close")[0];
+  const kumonInfo = document.querySelector('#kumon');
+  const ignitionInfo = document.querySelector('#ignition');
+  const shadInfo = document.querySelector('#shad');
+  kumonInfo.addEventListener('click', addKumon);
+  ignitionInfo.addEventListener('click', addIgnition);
+  shadInfo.addEventListener('click', addShad);
+  span.addEventListener('click', closeModal);
+  window.addEventListener('click', closeModalW);
 }
-
-function closeModalW (e) {
-    const modal = document.querySelector('.modal');
-    if (e.target === modal) {
-        const body = document.querySelector('body');
-        modal.style.display = 'none';
-        body.style.overflow = 'auto';
-    }
-}
-
-function closeModal () {
+function closeModalW(e) {
+  const modal = document.querySelector('.modal');
+  if (e.target === modal) {
     const body = document.querySelector('body');
-    const modal = document.querySelector('.modal');
     modal.style.display = 'none';
     body.style.overflow = 'auto';
+  }
 }
-
-function addKumon () {
-    const body = document.querySelector('body');
-    const modal = document.querySelector('.modal');
-    const pTitle = document.querySelector('.info-title');
-    const pInfo = document.querySelector('.info');
-    pTitle.innerText = 'Kumon Institute Education Co. Ltd.';
-    pInfo.innerText = 'I worked at Kumon as a Teaching Assistant from 2019 to 2022. This opportunity opened my eyes to the beauty of learning and improved how I convey my thinking to others. Furthermore, my teaching experience highlighted the importance of collaboration and I learned how to communicate effectively with students and assistants.';
-    modal.style.display = 'block';
-    body.style.overflow = 'hidden';
+function closeModal() {
+  const body = document.querySelector('body');
+  const modal = document.querySelector('.modal');
+  modal.style.display = 'none';
+  body.style.overflow = 'auto';
 }
-
-function addIgnition () {
-    const body = document.querySelector('body');
-    const modal = document.querySelector('.modal');
-    const pTitle = document.querySelector('.info-title');
-    const pInfo = document.querySelector('.info');
-    pTitle.innerText = 'Ignition Hacks 2021';
-    pInfo.innerText = 'During the pandemic, I noticed a decrease in learning for students in my region and the impact the pandemic had on student motivation. These factors fueled my ambition to organize Ignition Hacks as the Co-President in the summer of 2021. It was a very memorable and impactful experience and I was exposed to a ton of different students with varying programming backgrounds. Although the pandemic has caused numerous problems worldwide,  it helped me develop a stronger work ethic and facilitated my exposure to the wonders of technology.';
-    modal.style.display = 'block';
-    body.style.overflow = 'hidden';
+function addKumon() {
+  const body = document.querySelector('body');
+  const modal = document.querySelector('.modal');
+  const pTitle = document.querySelector('.info-title');
+  const pInfo = document.querySelector('.info');
+  pTitle.innerText = 'Kumon Institute Education Co. Ltd.';
+  pInfo.innerText = 'I worked at Kumon as a Teaching Assistant from 2019 to 2022. This opportunity opened my eyes to the beauty of learning and improved how I convey my thinking to others. Furthermore, my teaching experience highlighted the importance of collaboration and I learned how to communicate effectively with students and assistants.';
+  modal.style.display = 'block';
+  body.style.overflow = 'hidden';
 }
-
-function addShad () {
-    const body = document.querySelector('body');
-    const modal = document.querySelector('.modal');
-    const pTitle = document.querySelector('.info-title');
-    const pInfo = document.querySelector('.info');
-    pTitle.innerText = 'SHAD 2021';
-    pInfo.innerText = 'In the summer of 2021, I learned how to become a leader that values inclusivity, diversity, and differing perspectives. By the end of the program, my team and I created a product that increases sustainability and efficiency for Canadian homeowners in all communities. To aid homeowners in cutting down on their freshwater usage and to encourage the recycling of greywater, we prototyped a holistic smart irrigation system, Hydrain, that allows for a more efficient way to reuse greywater. By our estimates, Hydrain would grant the average Canadian homeowner an extra $100 every year while also increasing the user’s water efficiency and ultimately helping Canadians treat freshwaters with more respect.';
-    modal.style.display = 'block';
-    body.style.overflow = 'hidden';
+function addIgnition() {
+  const body = document.querySelector('body');
+  const modal = document.querySelector('.modal');
+  const pTitle = document.querySelector('.info-title');
+  const pInfo = document.querySelector('.info');
+  pTitle.innerText = 'Ignition Hacks 2021';
+  pInfo.innerText = 'During the pandemic, I noticed a decrease in learning for students in my region and the impact the pandemic had on student motivation. These factors fueled my ambition to organize Ignition Hacks as the Co-President in the summer of 2021. It was a very memorable and impactful experience and I was exposed to a ton of different students with varying programming backgrounds. Although the pandemic has caused numerous problems worldwide,  it helped me develop a stronger work ethic and facilitated my exposure to the wonders of technology.';
+  modal.style.display = 'block';
+  body.style.overflow = 'hidden';
+}
+function addShad() {
+  const body = document.querySelector('body');
+  const modal = document.querySelector('.modal');
+  const pTitle = document.querySelector('.info-title');
+  const pInfo = document.querySelector('.info');
+  pTitle.innerText = 'SHAD 2021';
+  pInfo.innerText = 'In the summer of 2021, I learned how to become a leader that values inclusivity, diversity, and differing perspectives. By the end of the program, my team and I created a product that increases sustainability and efficiency for Canadian homeowners in all communities. To aid homeowners in cutting down on their freshwater usage and to encourage the recycling of greywater, we prototyped a holistic smart irrigation system, Hydrain, that allows for a more efficient way to reuse greywater. By our estimates, Hydrain would grant the average Canadian homeowner an extra $100 every year while also increasing the user’s water efficiency and ultimately helping Canadians treat freshwaters with more respect.';
+  modal.style.display = 'block';
+  body.style.overflow = 'hidden';
 }
 
 /***/ }),
@@ -1357,28 +1321,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
 const icon = document.querySelector('.icon');
 icon.addEventListener('click', _functions_responsive__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
 (0,_functions_loadImages__WEBPACK_IMPORTED_MODULE_2__.loadMe)();
 (0,_functions_loadImages__WEBPACK_IMPORTED_MODULE_2__.loadSkating)();
 (0,_functions_loadImages__WEBPACK_IMPORTED_MODULE_2__.loadExp)();
 (0,_functions_loadImages__WEBPACK_IMPORTED_MODULE_2__.loadPro)();
 (0,_functions_loadImages__WEBPACK_IMPORTED_MODULE_2__.loadFavicon)();
-
 (0,_functions_getInfo__WEBPACK_IMPORTED_MODULE_3__.showModal)();
-
 window.onscroll = function () {
-    (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.animateNav)();
-    (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.fadeArrow)();
-    (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.reveal)();
-}
-
-
-
+  (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.animateNav)();
+  (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.fadeArrow)();
+  (0,_functions_animations__WEBPACK_IMPORTED_MODULE_1__.reveal)();
+};
 })();
 
 /******/ })()

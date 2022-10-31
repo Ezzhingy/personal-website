@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Ezzhingy/personal-website#readme",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "babel-loader": "^9.0.1",
     "css-loader": "^6.7.1",
     "postcss": "^8.4.16",
     "postcss-loader": "^7.0.1",
