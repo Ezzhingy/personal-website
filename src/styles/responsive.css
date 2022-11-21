@@ -1,57 +1,68 @@
 @media screen and (max-width: 600px) {
-    nav a {display: none;}
-    nav a.icon {
-      display: block;
-      float: right;
-    }
+  nav a {
+    display: none;
+  }
+  nav a.icon {
+    display: block;
+    float: right;
+  }
 
-    nav.responsive {position: relative;}
-    nav.responsive a.icon {
-      position: fixed;
-      right: 0;
-      top: 0;
-    }
+  nav.responsive {
+    position: relative;
+  }
+  nav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
 
-    nav.responsive a {
-      display: block;
-      text-align: left;
-    }
+  nav.responsive a {
+    display: block;
+    text-align: left;
+  }
 
-    nav {
-        padding: 0;
-    }
+  nav {
+    padding: 0;
+  }
 
-    nav.responsive {
-      position: fixed;
-    }
+  nav.responsive {
+    position: fixed;
+  }
 
-    .home-container, .experience-container {
-      background-attachment: initial;
-    }
+  .top-resume-btn {
+    right: auto;
+  }
 
-    .main-about {
-      flex-direction: column;
-    }
+  .home-container,
+  .experience-container {
+    background-attachment: initial;
+  }
 
-    .about-box {
-      width: 250px;
-    }
+  .main-about {
+    flex-direction: column;
+  }
 
-    .about-box p {
-      font-size: 1rem;
-    }
+  .about-box {
+    width: 250px;
+  }
 
-    .me img, .single-skating img, .pairs-skating img {
-      width: 250px;
-    }
+  .about-box p {
+    font-size: 1rem;
+  }
 
-    .top-exp {
-      display: block;
-    }
+  .me img,
+  .single-skating img,
+  .pairs-skating img {
+    width: 250px;
+  }
 
-    .top-pro {
-      display: block;
-    }
+  .top-exp {
+    display: block;
+  }
+
+  .top-pro {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -63,21 +74,25 @@
     font-size: 0.7rem;
   }
 
-  .top-exp, .top-pro {
+  .top-exp,
+  .top-pro {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .top-exp button, .top-pro button {
+  .top-exp button,
+  .top-pro button {
     margin: 40px 0 !important;
   }
 
-  .bot-exp, .bot-pro {
+  .bot-exp,
+  .bot-pro {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .bot-exp img, .bot-pro img {
+  .bot-exp img,
+  .bot-pro img {
     width: 100px;
   }
 
@@ -86,59 +101,65 @@
   }
 
   #shrink-journal {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 
-@media screen 
-  and (max-width: 900px) {
-    nav a {display: none;}
-    nav a.icon {
-      display: block;
-      float: right;
-    }
+@media screen and (max-width: 900px) {
+  nav a {
+    display: none;
+  }
+  nav a.icon {
+    display: block;
+    float: right;
+  }
 
-    nav.responsive {position: relative;}
-    nav.responsive a.icon {
-      position: fixed;
-      right: 0;
-      top: 0;
-    }
+  nav.responsive {
+    position: relative;
+  }
+  nav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
 
-    nav.responsive a {
-      display: block;
-      text-align: left;
-    }
+  nav.responsive a {
+    display: block;
+    text-align: left;
+  }
 
-    nav {
-        padding: 0;
-    }
+  nav {
+    padding: 0;
+  }
 
-    nav.responsive {
-      position: fixed;
-    }
+  nav.responsive {
+    position: fixed;
+  }
 
-    .home-container, .experience-container {
-      background-attachment: initial;
-    }
+  .home-container,
+  .experience-container {
+    background-attachment: initial;
+  }
 
-    .main-about {
-      flex-direction: column;
-    }
+  .main-about {
+    flex-direction: column;
+  }
 
-    .about-box p {
-      font-size: 1rem;
-    }
+  .about-box p {
+    font-size: 1rem;
+  }
 
-    .me img, .single-skating img, .pairs-skating img {
-      width: 250px;
-    }
+  .me img,
+  .single-skating img,
+  .pairs-skating img {
+    width: 250px;
+  }
 
-    .top-exp {
-      display: block;
-    }
+  .top-exp {
+    display: block;
+  }
 
-    .top-pro {
-      display: block;
-    }
+  .top-pro {
+    display: block;
+  }
 }
