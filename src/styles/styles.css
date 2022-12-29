@@ -25,6 +25,10 @@ body {
     url("../images/Gfycat.gif") no-repeat fixed center/cover;
 }
 
+.hide {
+  display: none;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;

@@ -1,17 +1,22 @@
-import changeNav from './functions/responsive';
-import { animateNav, fadeArrow, reveal } from './functions/animations';
-import { loadMe, loadExp, loadPro, loadFavicon, loadSkating } from './functions/loadImages';
-import { showModal } from './functions/getInfo';
+import changeNav from "./functions/responsive";
+import { animateNav, fadeArrow, reveal, showNav } from "./functions/animations";
+import {
+  loadMe,
+  loadExp,
+  loadPro,
+  loadFavicon,
+  loadSkating,
+} from "./functions/loadImages";
+import { showModal } from "./functions/getInfo";
 
-import './styles/normalize.css';
-import './styles/styles.css';
-import './styles/animations.css';
-import './styles/responsive.css';
-import './styles/waves.css'
+import "./styles/normalize.css";
+import "./styles/styles.css";
+import "./styles/animations.css";
+import "./styles/responsive.css";
+import "./styles/waves.css";
 
-
-const icon = document.querySelector('.icon');
-icon.addEventListener('click', changeNav);
+const icon = document.querySelector(".icon");
+icon.addEventListener("click", changeNav);
 
 loadMe();
 loadSkating();
@@ -22,9 +27,8 @@ loadFavicon();
 showModal();
 
 window.onscroll = function () {
-    animateNav();
-    fadeArrow();
-    reveal();
-}
-
-
+  animateNav();
+  fadeArrow();
+  reveal();
+  showNav();
+};
