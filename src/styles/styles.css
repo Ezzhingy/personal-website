@@ -69,8 +69,11 @@ nav {
 nav a:hover,
 nav a.active {
   background-color: var(--nav-btn-blue);
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -ms-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
-  /* letter-spacing: 2px; */
 }
 
 .about-container {
@@ -141,6 +144,10 @@ nav a.active {
 .offset {
   box-shadow: 0.3em 0.3em 0 0 var(--nav-box-blue),
     inset 0.3em 0.3em 0 0 var(--nav-box-blue);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
   transition: 0.25s;
 }
 .offset:hover,
