@@ -33,8 +33,6 @@ export function reveal() {
     const offset = windowHeight - 150; // height of viewport, -150 to animate a bit before each page begins
     if (top < offset) {
       i.classList.add("active");
-    } else {
-      i.classList.remove("active");
     }
   });
 }

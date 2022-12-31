@@ -133,6 +133,21 @@ nav a.active {
   width: 100%;
 }
 
+.logo-links a {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--nav-box-blue),
+    inset 0.3em 0.3em 0 0 var(--nav-box-blue);
+  transition: 0.25s;
+}
+.offset:hover,
+.offset:focus {
+  box-shadow: 0 0 0 0 lightblue, inset 6em 3.5em 0 0 lightblue;
+}
+
 .skating-p {
   margin-top: 20px !important;
 }
@@ -212,7 +227,6 @@ nav a.active {
 .card {
   height: 300px;
   background-color: var(--nav-box-blue);
-  box-shadow: inset -10px -7px var(--nav-btn-blue);
   padding: 0 20px 0 20px;
   display: flex;
   flex-direction: column;
@@ -223,9 +237,8 @@ nav a.active {
 
 .card:hover {
   background-size: 100% 100%;
-  transform: scale(1.05);
-  transform-origin: center;
-  transition-duration: 0.5s;
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 2px var(--nav-btn-blue);
   cursor: pointer;
 }
 

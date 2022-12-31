@@ -29,6 +29,15 @@
     position: fixed;
   }
 
+  #hide-small {
+    display: none;
+  }
+
+  .typewriter h1 {
+    font-size: 1.3rem;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
   .top-resume-btn {
     right: auto;
   }
