@@ -10,8 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/Ezzhingy/personal-website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "personal website",
+    "web developer",
+    "computer science"
+  ],
+  "author": {
+    "name": "Eugene Zhang",
+    "email": "zhang.eug@gmail.com",
+    "url": "https://eugenezhang.me/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ezzhingy/personal-website/issues"
