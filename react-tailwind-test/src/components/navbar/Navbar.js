@@ -8,8 +8,8 @@ export function Navbar() {
 
   return (
     <div>
-      <nav className="fixed w-full bg-navBoxBlue sm:p-[30px]">
-        <ul className="list-none sm:flex justify-center hidden text-center z-10">
+      <nav className="fixed z-10 w-full bg-navBoxBlue sm:p-[30px]">
+        <ul className="list-none sm:flex justify-center hidden text-center">
           {navLinks.map((nav, index) => (
             <li
               className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out"

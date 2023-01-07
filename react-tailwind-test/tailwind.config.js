@@ -34,6 +34,10 @@ module.exports = {
           "50%": { "border-color": "white" },
         },
       },
+      boxShadow: {
+        fancyBtn: "0.3em 0.3em 0 0 #1e6676, inset 0.3em 0.3em 0 0 #1e6676",
+        fancyBtnHover: "0 0 0 0 lightblue, inset 6em 3.5em 0 0 lightblue",
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@ import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="App font-mono box-border">
+    <div className="App font-mono">
       <div className="min-h-screen bg-intro bg-cover bg-no-repeat bg-center bg-fixed bg-sky-500/50">
         <Navbar />
         <Intro />
