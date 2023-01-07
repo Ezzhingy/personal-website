@@ -65,7 +65,6 @@ function App() {
 
 export default App;
 
-// need to add swipey feature
-// bouncing animation for each seciton?
+// bouncing animation for each section?
 // remember to add section to projects
 // fix on mobile

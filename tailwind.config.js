@@ -43,7 +43,13 @@ module.exports = {
       boxShadow: {
         fancyBtn: "0.3em 0.3em 0 0 #1e6676, inset 0.3em 0.3em 0 0 #1e6676",
         fancyBtnHover: "0 0 0 0 lightblue, inset 6em 3.5em 0 0 lightblue",
-        projHover: "6px 6px 0 2px #43b2ca",
+        cardHover: "6px 6px 0 2px #43b2ca",
+      },
+      gridTemplateRows: {
+        projContainer: "0.5fr 2fr",
+      },
+      gridTemplateColumns: {
+        card: "repeat(auto-fit, minmax(250px, 1fr))",
       },
     },
   },

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projInfo } from "../constants/constants";
+import { expInfo } from "../constants/constants";
 
 export function Exp() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -39,25 +39,25 @@ export function Exp() {
         </div>
       </div>
       <div className="relative w-[300px]">
-        {projInfo.map((proj, index) => {
+        {expInfo.map((exp, index) => {
           if (index === 0) {
             return (
               <div
                 className="card-group absolute"
-                key={proj.position}
+                key={exp.position}
                 data-index={index}
                 data-status="active"
               >
-                <div className=" bg-navBoxBlue flex flex-col items-center w-[300px] rounded p-[25px] hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-projHover">
+                <div className=" bg-navBoxBlue flex flex-col items-center w-[300px] rounded p-[25px] hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-cardHover">
                   <img
                     className="h-[150px] w-auto rounded ml-auto mr-auto"
-                    src={proj.img}
-                    alt={proj.position}
+                    src={exp.img}
+                    alt={exp.position}
                   ></img>
                   <ul className="text-white text-1 w-60 flex flex-col">
-                    <li className="font-bold text-center">{proj.position}</li>
+                    <li className="font-bold text-center">{exp.position}</li>
                     <li className="text-sm text-center leading-snug">
-                      {proj.desc}
+                      {exp.desc}
                     </li>
                   </ul>
                 </div>
@@ -67,20 +67,20 @@ export function Exp() {
             return (
               <div
                 className="card-group absolute"
-                key={proj.position}
+                key={exp.position}
                 data-index={index}
                 data-status="unknown"
               >
-                <div className="bg-navBoxBlue flex flex-col items-center w-[300px] rounded p-[25px] hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-projHover">
+                <div className="bg-navBoxBlue flex flex-col items-center w-[300px] rounded p-[25px] hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-cardHover">
                   <img
                     className="h-[150px] w-auto rounded ml-auto mr-auto"
-                    src={proj.img}
-                    alt={proj.position}
+                    src={exp.img}
+                    alt={exp.position}
                   ></img>
                   <ul className="text-white text-1 w-60 flex flex-col">
-                    <li className="font-bold text-center">{proj.position}</li>
+                    <li className="font-bold text-center">{exp.position}</li>
                     <li className="text-sm text-center leading-snug">
-                      {proj.desc}
+                      {exp.desc}
                     </li>
                   </ul>
                 </div>
