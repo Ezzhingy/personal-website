@@ -10,8 +10,8 @@ export function About() {
       id="about"
     >
       <div className="md:flex-row flex-col flex justify-center items-center gap-[50px] mx-0 my-[50px]">
-        <div className="box-content flex flex-col items-center sm:w-[500px] w-[250px] bg-bgBlue2 p-[40px] pb-[60px] rounded flex-shrink relative">
-          <div className="border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide mb-[20px]">
+        <div className="box-content flex flex-col items-center sm:w-[500px] w-[230px] bg-bgBlue2 p-[40px] pb-[60px] rounded flex-shrink relative">
+          <div className="text-center border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide mb-[20px]">
             About Me
           </div>
           <p className="text-center text-white sm:text-[1.3rem] text-[1rem] mb-[20px]">
@@ -20,8 +20,8 @@ export function About() {
             Waterloo.
           </p>
           <p className="text-center text-white sm:text-[1.3rem] text-[1rem] mb-[20px]">
-            My main interest lies in fullstack development; I'm currently honing
-            my frontend skills!
+            My main interest lies in web development, but I also have a budding
+            interest in AI as well!
           </p>
           <p className="text-center text-white sm:text-[1.3rem] text-[1rem] mb-[20px]">
             Aside from programming, I’m a big anime enjoyer, gym rookie, and

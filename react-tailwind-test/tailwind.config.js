@@ -17,6 +17,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ["monospace", "ui-monospace", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       animation: {
         typewriterBig:
@@ -42,6 +43,7 @@ module.exports = {
       boxShadow: {
         fancyBtn: "0.3em 0.3em 0 0 #1e6676, inset 0.3em 0.3em 0 0 #1e6676",
         fancyBtnHover: "0 0 0 0 lightblue, inset 6em 3.5em 0 0 lightblue",
+        projHover: "6px 6px 0 2px #43b2ca",
       },
     },
   },

@@ -11,7 +11,7 @@ export function Navbar() {
       <nav className="hidden fixed z-10 w-full bg-navBoxBlue sm:p-[30px]">
         <ul className="list-none sm:flex justify-center hidden text-center">
           {navLinks.map((nav, index) => (
-            <li key={nav.id}>
+            <li key={index}>
               <a
                 className="text-white font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out py-2.5 px-5"
                 href={`#${nav.id}`}
@@ -38,7 +38,7 @@ export function Navbar() {
               {navLinks.map((nav, index) => (
                 <li
                   className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out"
-                  key={nav.id}
+                  key={index}
                 >
                   <a className="flex flex-1" href={`#${nav.id}`}>
                     {nav.title}
