@@ -23,3 +23,8 @@
 .card-group {
   transition: transform 400ms ease;
 }
+
+.bg-intro,
+.bg-exp {
+  background-attachment: initial;
+}
