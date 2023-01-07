@@ -1,6 +1,9 @@
 export function Intro() {
   return (
-    <div className="flex flex-col h-screen items-center justify-center">
+    <div
+      className="section flex flex-col h-screen items-center justify-center"
+      id="home"
+    >
       <div>
         <h1 className="flex font-bold text-white sm:text-[2.5vw] text-[1.3rem] overflow-hidden border-r-[0.15em] border-solid whitespace-nowrap my-0 mx-auto tracking-wide sm:animate-typewriterBig animate-typewriterSmall">
           Heyo, Eugene here.
@@ -10,7 +13,7 @@ export function Intro() {
         </h1>
       </div>
       <svg
-        className="animate-bounce w-10 h-10 absolute bottom-0"
+        className="arrow animate-bounce w-10 h-10 absolute bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="white"

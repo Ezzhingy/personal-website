@@ -8,18 +8,21 @@ export function Navbar() {
 
   return (
     <div>
-      <nav className="fixed z-10 w-full bg-navBoxBlue sm:p-[30px]">
+      <nav className="hidden fixed z-10 w-full bg-navBoxBlue sm:p-[30px]">
         <ul className="list-none sm:flex justify-center hidden text-center">
           {navLinks.map((nav, index) => (
-            <li
-              className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out"
-              key={nav.id}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+            <li key={nav.id}>
+              <a
+                className="text-white font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out py-2.5 px-5"
+                href={`#${nav.id}`}
+              >
+                {nav.title}
+              </a>
             </li>
           ))}
-          <li className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out">
+          <li>
             <a
+              className="text-white font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out py-2.5 px-5"
               href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
               target="_blank"
               id="top-resume-btn"

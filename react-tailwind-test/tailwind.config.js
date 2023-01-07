@@ -23,6 +23,7 @@ module.exports = {
           "typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite",
         typewriterSmall:
           "typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite",
+        show: "fadeIn 1.5s",
       },
       keyframes: {
         typing: {
@@ -32,6 +33,10 @@ module.exports = {
         "blink-caret": {
           "0%, 100%": { "border-color": "transparent" },
           "50%": { "border-color": "white" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "100%" },
         },
       },
       boxShadow: {

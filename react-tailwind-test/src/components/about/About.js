@@ -5,7 +5,10 @@ import email from "./email.svg";
 
 export function About() {
   return (
-    <div className="bg-bgBlue1 flex flex-col justify-center items-center z-10">
+    <div
+      className="section bg-bgBlue1 flex flex-col justify-center items-center z-10"
+      id="about"
+    >
       <div className="md:flex-row flex-col flex justify-center items-center gap-[50px] mx-0 my-[50px]">
         <div className="box-content flex flex-col items-center sm:w-[500px] w-[250px] bg-bgBlue2 p-[40px] pb-[60px] rounded flex-shrink relative">
           <div className="border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide mb-[20px]">
