@@ -41,11 +41,24 @@ function App() {
     nav.classList.remove("hidden");
   };
 
+  const animateBox = () => {
+    const animate = document.querySelectorAll(".animate__animated");
+    animate.forEach((i) => {
+      const windowHeight = window.innerHeight; // viewport height
+      const top = i.getBoundingClientRect().top; // height of page from top of viewport
+      const offset = windowHeight - 150; // height of viewport, -150 to animate a bit before each page begins
+      if (top < offset) {
+        i.classList.add("animate__flipInY");
+      }
+    });
+  };
+
   useEffect(() => {
     window.onscroll = function () {
       animateNav();
       fadeArrow();
       showNav();
+      animateBox();
     };
   });
 

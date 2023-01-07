@@ -34,7 +34,7 @@ export function Exp() {
       id="experience"
     >
       <div className="grid grid-cols-2 grid-rows-2 items-center justify-items-center">
-        <div className="col-span-2 row-start-2 border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide	w-fit mx-[20px]">
+        <div className="animate__animated col-span-2 row-start-2 border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide	w-fit mx-[20px]">
           Experience
         </div>
       </div>
