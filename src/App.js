@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div className="App font-poppins">
-      <div className="min-h-screen bg-intro bg-cover bg-no-repeat bg-center bg-fixed">
+      <div className="min-h-screen bg-intro bg-cover bg-no-repeat bg-center">
         <Navbar />
         <Intro />
       </div>

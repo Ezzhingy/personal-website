@@ -30,7 +30,7 @@ export function Exp() {
 
   return (
     <div
-      className="section relative bg-exp bg-cover bg-no-repeat bg-center bg-fixed flex flex-col items-center gap-[50px]"
+      className="section relative bg-exp bg-cover bg-no-repeat bg-center flex flex-col items-center gap-[50px]"
       id="experience"
     >
       <div className="grid grid-cols-2 grid-rows-2 items-center justify-items-center">
