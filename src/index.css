@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-group[data-status="unknown"] {
+  transform: scale(0);
+  transition: none;
+}
+
+.card-group[data-status="after"] {
+  transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="almost-active"] {
+  transform: translateX(-50%) scale(0);
+  transition: none;
+}
+
+.card-group[data-status="active"] {
+  transition-delay: 200ms;
+}
+
+.card-group {
+  transition: transform 400ms ease;
+}

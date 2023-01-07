@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { Navbar } from "./components/navbar/Navbar";
 import { Intro } from "./components/intro/Intro";
 import { About } from "./components/about/About";
@@ -66,3 +64,8 @@ function App() {
 }
 
 export default App;
+
+// need to add swipey feature
+// bouncing animation for each seciton?
+// remember to add section to projects
+// fix on mobile
