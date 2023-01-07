@@ -90,7 +90,7 @@ export function Exp() {
         })}
       </div>
       <button
-        className="mt-[330px] mb-[50px] w-[50px] h-[50px] cursor-pointer border-2 border-solid border-navBtnBlue rounded-full transition-transform active:transform active:scale-95"
+        className="mt-[340px] mb-[50px] w-[50px] h-[50px] cursor-pointer border-2 border-solid border-navBtnBlue rounded-full transition-transform active:transform active:scale-95"
         onClick={nextClick}
       >
         <svg

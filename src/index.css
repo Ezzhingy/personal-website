@@ -28,3 +28,8 @@
 .bg-exp {
   background-attachment: initial;
 }
+
+body {
+  height: 100%;
+  overflow: scroll;
+}
