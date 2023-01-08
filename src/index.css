@@ -29,7 +29,9 @@
   background-attachment: initial;
 }
 
-body {
-  height: 100%;
-  overflow: scroll;
+@media screen and (max-width: 800px) {
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
 }
