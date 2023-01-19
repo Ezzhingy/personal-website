@@ -34,7 +34,10 @@ export function Exp() {
       id="experience"
     >
       <div className="grid grid-cols-2 grid-rows-2 items-center justify-items-center">
-        <div className="animate__animated col-span-2 row-start-2 border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide	w-fit mx-[20px]">
+        <div
+          id="exp-trans"
+          className="col-span-2 row-start-2 border-none bg-navBtnBlue text-white py-[5px] px-[40px] font-bold text-[2rem] rounded tracking-wide	w-fit mx-[20px]"
+        >
           Experience
         </div>
       </div>
@@ -90,16 +93,10 @@ export function Exp() {
         })}
       </div>
       <button
-        className="mt-[340px] mb-[50px] w-[50px] h-[50px] cursor-pointer border-2 border-solid border-navBtnBlue rounded-full transition-transform active:transform active:scale-95"
+        className="mt-[340px] mb-[50px] p-2 h-[50px] cursor-pointer border-2 border-solid border-navBtnBlue rounded transition-transform hover:scale-110 text-white font-bold text-center text-2xl"
         onClick={nextClick}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="#43b2ca"
-        >
-          <path d="M6,18L14.5,12L6,6M8,9.86L11.03,12L8,14.14M16,6H18V18H16" />
-        </svg>
+        CLICK ME
       </button>
     </div>
   );

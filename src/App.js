@@ -59,12 +59,21 @@ function App() {
       fadeArrow();
       showNav();
       animateBox();
+
+      if (window.innerWidth >= 800) {
+        const aboutTrans = document.getElementById("about-trans");
+        const projTrans = document.getElementById("proj-trans");
+        const expTrans = document.getElementById("exp-trans");
+        aboutTrans.classList.add("animate__animated");
+        projTrans.classList.add("animate__animated");
+        expTrans.classList.add("animate__animated");
+      }
     };
   });
 
   return (
     <div className="App font-poppins">
-      <div className="min-h-screen bg-intro bg-cover bg-no-repeat bg-center">
+      <div className="min-h-screen bg-intro bg-cover bg-no-repeat bg-center bg-fixed">
         <Navbar />
         <Intro />
       </div>
