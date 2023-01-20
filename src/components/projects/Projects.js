@@ -14,7 +14,7 @@ export function Projects() {
           Projects
         </div>
       </div>
-      <div className="grid grid-cols-card gap-6 mt-[10px] ml-[40px] mb-[20px] mr-[40px]">
+      <div className="grid grid-cols-card gap-[50px] mt-[10px] ml-[40px] mb-[20px] mr-[40px]">
         {projInfo.map((proj, index) => (
           <div
             className="bg-navBoxBlue justify-self-center flex flex-col items-center justify-items-center w-[300px] rounded p-[25px] hover:transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-cardHover"

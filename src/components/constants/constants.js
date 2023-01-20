@@ -1,12 +1,13 @@
-import ignition from "../exp/ignition.jpeg";
-import kumon from "../exp/kumon.png";
-import shad from "../exp/shad.png";
+import ignition from "./ignition.jpeg";
+import kumon from "./kumon.png";
+import shad from "./shad.png";
 
-import j4me from "../projects/j4me.png";
-import ttt from "../projects/tic-tac-toe.jpeg";
-import todo from "../projects/todo-list.png";
-import calc from "../projects/calculator.jpeg";
-import etch from "../projects/sketch.png";
+import j4me from "./j4me.png";
+import ttt from "./tic-tac-toe.jpeg";
+import todo from "./todo-list.png";
+import calc from "./calculator.jpeg";
+import etch from "./sketch.png";
+import senti from "./sentiview.png";
 
 export const navLinks = [
   {
@@ -52,6 +53,12 @@ export const projInfo = [
     desc: "A Mental Health Voice-to-Mood Analysis Journalling App",
     tools:
       "React, JavaScript, HTML, CSS, FastAPI, Co:here, AssemblyAI, MongoDB",
+  },
+  {
+    link: "https://github.com/Ezzhingy/SentiView",
+    img: senti,
+    desc: "A Customer Insight Filtering System for Businesses",
+    tools: "React, Tailwind, Flask, HTML, CSS, JavaScript, Python",
   },
   {
     link: "https://todo-list-app-9ad7c.web.app/",
