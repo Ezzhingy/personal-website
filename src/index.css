@@ -29,9 +29,21 @@
   background-attachment: initial;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
+  html {
+    overflow: hidden;
+    width: 100%;
+  }
+
   body {
     height: 100%;
-    overflow: scroll;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #show-nav-mobile {
+    display: block !important;
   }
 }

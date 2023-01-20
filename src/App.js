@@ -60,7 +60,7 @@ function App() {
       showNav();
       animateBox();
 
-      if (window.innerWidth >= 800) {
+      if (window.innerWidth >= 850) {
         const aboutTrans = document.getElementById("about-trans");
         const projTrans = document.getElementById("proj-trans");
         const expTrans = document.getElementById("exp-trans");
