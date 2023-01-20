@@ -46,7 +46,7 @@ module.exports = {
         cardHover: "6px 6px 0 2px #43b2ca",
       },
       gridTemplateRows: {
-        projContainer: "0.5fr 2fr",
+        projContainer: "0.5fr 5fr",
       },
       gridTemplateColumns: {
         card: "repeat(auto-fit, minmax(250px, 1fr))",
