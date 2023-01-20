@@ -46,6 +46,7 @@ export const expInfo = [
   },
 ];
 
+// order by relevance
 export const projInfo = [
   {
     link: "https://github.com/Ezzhingy/journal4me-htn22",
