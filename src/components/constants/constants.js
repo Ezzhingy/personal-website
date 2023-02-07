@@ -8,6 +8,7 @@ import todo from "./todo-list.png";
 import calc from "./calculator.jpeg";
 import etch from "./sketch.png";
 import senti from "./sentiview.png";
+import clubify from "./clubify.png";
 
 export const navLinks = [
   {
@@ -60,6 +61,12 @@ export const projInfo = [
     img: senti,
     desc: "A Customer Insight Filtering System for Businesses",
     tools: "React, Tailwind, Flask, HTML, CSS, JavaScript, Python",
+  },
+  {
+    link: "https://github.com/Ezzhingy/clubify-htv22",
+    img: clubify,
+    desc: "A one-for-all platform for clubs and extracurriculars",
+    tools: "Flask, SQLite, React, HTML, CSS, JavaScript, Python",
   },
   {
     link: "https://todo-list-app-9ad7c.web.app/",
