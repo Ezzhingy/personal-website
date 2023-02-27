@@ -8,7 +8,7 @@ export function Intro() {
         <h1 className="flex font-bold text-white sm:text-[2.5vw] text-[1.3rem] overflow-hidden border-r-[0.15em] border-solid whitespace-nowrap my-0 mx-auto tracking-wide sm:animate-typewriterBig animate-typewriterSmall">
           Heyo, Eugene here.
           <span className="sm:flex hidden">
-            &nbsp;I'm a rising web developer.
+            &nbsp;I'm a fullstack developer.
           </span>
         </h1>
       </div>
