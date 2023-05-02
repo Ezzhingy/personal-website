@@ -15,3 +15,7 @@ html {
   min-width: 320px;
   scroll-behavior: smooth;
 }
+
+#show-nav-mobile {
+  display: block !important;
+}
