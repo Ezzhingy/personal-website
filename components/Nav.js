@@ -1,23 +1,42 @@
-import close from "../public/close.svg";
-import menu from "../public/menu.svg";
-import Image from "next/image";
+import lightclose from "../public/lightclose.svg";
+import lightmenu from "../public/lightmenu.svg";
+import darkclose from "../public/darkclose.svg";
+import darkmenu from "../public/darkmenu.svg";
+import moon from "../public/moon.svg";
+import sun from "../public/sun.svg";
 import { navLinks } from "../constants/constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
+  const { systemTheme, theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div>
-      <nav
-        id="show-nav-mobile"
-        className="hidden fixed z-10 w-full sm:p-[30px]"
-      >
-        <ul className="list-none sm:flex justify-center hidden text-center">
+    <nav
+      id="show-nav-mobile"
+      className="hidden sticky top-0 z-10 sm:p-[30px] text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60"
+    >
+      <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
+        <Image
+          src={currentTheme === "dark" ? sun : moon}
+          width={40}
+          height={40}
+          alt="Theme toggle"
+          className="cursor-pointer sm:block hidden"
+          onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+        />
+        <ul className="list-none sm:flex justify-end hidden text-center">
           {navLinks.map((nav, index) => (
             <li key={index}>
               <a
-                className="text-white font-bold text-2xl rounded tracking-wide ease-in-out py-2.5 px-5"
+                className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
                 href={`#${nav.id}`}
               >
                 {nav.title}
@@ -26,30 +45,62 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              className="text-white font-bold text-2xl rounded tracking-wide ease-in-out py-2.5 px-5"
+              className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
               href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
               target="_blank"
               id="top-resume-btn"
               rel="noreferrer"
             >
-              RESUME
+              Resume
             </a>
           </li>
         </ul>
-        <div className="sm:hidden block min-h-[60px]">
-          <div className={`${toggle ? "block" : "hidden"}`}>
-            <ul className="list-none z-10">
+      </div>
+      <div className="sm:hidden max-w-4xl">
+        <div className="flex flex-col items-center">
+          <div className="flex gap-10 w-[95%] justify-between">
+            <Image
+              src={currentTheme === "dark" ? sun : moon}
+              width={40}
+              height={40}
+              alt="Theme toggle"
+              className="cursor-pointer"
+              onClick={() =>
+                setTheme(currentTheme === "dark" ? "light" : "dark")
+              }
+            />
+            <Image
+              src={
+                toggle
+                  ? currentTheme === "dark"
+                    ? lightclose
+                    : darkclose
+                  : currentTheme === "dark"
+                  ? lightmenu
+                  : darkmenu
+              }
+              width={35}
+              height={35}
+              alt="Waffle toggle for mobile"
+              className="py-2.5 px-5 box-content object-contain cursor-pointer"
+              onClick={() => setToggle((prev) => !prev)}
+            />
+          </div>
+          <div
+            className={`${toggle ? "fixed" : "hidden"} w-[90%] top-[7.5rem]`}
+          >
+            <ul className="list-none z-10 bg-lightFill dark:bg-darkFill rounded divide-y dark:divide-black">
               {navLinks.map((nav, index) => (
                 <li
-                  className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide ease-in-out"
+                  className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide"
                   key={index}
                 >
-                  <a className="flex flex-1" href={`#${nav.id}`}>
+                  <a href={`#${nav.id}`} className="flex flex-1">
                     {nav.title}
                   </a>
                 </li>
               ))}
-              <li className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide ease-in-out">
+              <li className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide">
                 <a
                   href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
                   target="_blank"
@@ -57,25 +108,13 @@ export default function Navbar() {
                   rel="noreferrer"
                   className="flex flex-1"
                 >
-                  RESUME
+                  Resume
                 </a>
               </li>
             </ul>
           </div>
-          <img
-            src={
-              toggle ? (
-                <Image src={close} alt="Close Button" />
-              ) : (
-                <Image src={menu} alt="Menu Button" />
-              )
-            }
-            alt="menu"
-            className="w-[35px] h-[35px] py-2.5 px-5 box-content object-contain hover:cursor-pointer rounded-md fixed top-0 right-0 ease-in-out duration-150"
-            onClick={() => setToggle((prev) => !prev)}
-          />
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
