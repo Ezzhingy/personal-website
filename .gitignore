@@ -25,4 +25,4 @@ yarn-error.log*
 .vercel
 
 # might need to be removed
-.next
+# .next
