@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Intro from "@/components/Intro";
 import About from "@/components/About";
+import Exp from "@/components/Exp";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Nav />
       <Intro />
       <About />
+      <Exp />
     </div>
   );
 }

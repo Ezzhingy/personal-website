@@ -53,17 +53,15 @@ export default function Navbar() {
       <div className="sm:hidden max-w-4xl">
         <div className="flex flex-col items-center">
           <div className="flex gap-10 w-[95%] justify-between">
-            <Image
+            <img
               src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
-              width={40}
-              height={40}
               alt="Theme toggle"
-              className="py-2.5 px-5 box-content object-contain cursor-pointer"
+              className="w-[40px] h-auto py-2.5 px-5 box-content object-contain cursor-pointer"
               onClick={() =>
                 setTheme(currentTheme === "dark" ? "light" : "dark")
               }
             />
-            <Image
+            <img
               src={
                 toggle
                   ? currentTheme === "dark"
@@ -73,10 +71,8 @@ export default function Navbar() {
                   ? "/lightmenu.svg"
                   : "/darkmenu.svg"
               }
-              width={35}
-              height={35}
               alt="Waffle toggle for mobile"
-              className="py-2.5 px-5 box-content object-contain cursor-pointer"
+              className="w-[35px] h-auto py-2.5 px-5 box-content object-contain cursor-pointer"
               onClick={() => setToggle((prev) => !prev)}
             />
           </div>

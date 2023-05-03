@@ -1,29 +1,15 @@
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export default function About() {
-  const { systemTheme, theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
-  const currentTheme = theme === "system" ? systemTheme : theme;
-
   return (
-    <div
-      id="about"
-      className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg"
-    >
+    <div id="about" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
       <div className="flex gap-8 p-10 items-center justify-between">
         <div className="flex flex-col">
-          <div className="max-w-[672px] h-6 bg-darkBg dark:bg-lightBg flex items-center justify-center rounded-tl-lg rounded-tr-lg relative">
-            <Image
+          <div className="h-6 bg-darkBg dark:bg-lightBg flex items-center justify-center rounded-tl-lg rounded-tr-lg relative">
+            <img
               src="/mactabs.svg"
-              width={70}
-              height={70}
               alt="Mac tabs"
-              className="ml-3 absolute left-0"
+              className="w-[70px] h-auto ml-3 absolute left-0"
             />
             <p className="hidden sm:block text-lightBg dark:text-darkBg">
               eugene — -zsh —
