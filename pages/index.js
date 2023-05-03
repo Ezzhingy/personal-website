@@ -3,7 +3,7 @@ import Intro from "@/components/Intro";
 
 export default function Home() {
   return (
-    <div className="bg-lightBg dark:bg-darkBg h-screen">
+    <div className="bg-lightBg dark:bg-darkBg">
       <Nav />
       <Intro />
     </div>

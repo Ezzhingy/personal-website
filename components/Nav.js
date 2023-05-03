@@ -1,13 +1,13 @@
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
+import { navLinks } from "../constants/constants";
 import lightclose from "../public/lightclose.svg";
 import lightmenu from "../public/lightmenu.svg";
 import darkclose from "../public/darkclose.svg";
 import darkmenu from "../public/darkmenu.svg";
 import moon from "../public/moon.svg";
 import sun from "../public/sun.svg";
-import { navLinks } from "../constants/constants";
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav
       id="show-nav-mobile"
-      className="hidden sticky top-0 z-10 sm:p-[30px] text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60"
+      className="hidden sticky top-0 z-10 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60"
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
         <Image
@@ -64,7 +64,7 @@ export default function Navbar() {
               width={40}
               height={40}
               alt="Theme toggle"
-              className="cursor-pointer"
+              className="py-2.5 px-5 box-content object-contain cursor-pointer"
               onClick={() =>
                 setTheme(currentTheme === "dark" ? "light" : "dark")
               }
