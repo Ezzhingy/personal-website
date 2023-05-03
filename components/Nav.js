@@ -2,12 +2,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { navLinks } from "../constants/constants";
-import lightclose from "../public/lightclose.svg";
-import lightmenu from "../public/lightmenu.svg";
-import darkclose from "../public/darkclose.svg";
-import darkmenu from "../public/darkmenu.svg";
-import moon from "../public/moon.svg";
-import sun from "../public/sun.svg";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -25,7 +19,7 @@ export default function Navbar() {
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
         <Image
-          src={currentTheme === "dark" ? sun : moon}
+          src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
           width={40}
           height={40}
           alt="Theme toggle"
@@ -60,7 +54,7 @@ export default function Navbar() {
         <div className="flex flex-col items-center">
           <div className="flex gap-10 w-[95%] justify-between">
             <Image
-              src={currentTheme === "dark" ? sun : moon}
+              src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
               width={40}
               height={40}
               alt="Theme toggle"
@@ -73,11 +67,11 @@ export default function Navbar() {
               src={
                 toggle
                   ? currentTheme === "dark"
-                    ? lightclose
-                    : darkclose
+                    ? "/lightclose.svg"
+                    : "/darkclose.svg"
                   : currentTheme === "dark"
-                  ? lightmenu
-                  : darkmenu
+                  ? "/lightmenu.svg"
+                  : "/darkmenu.svg"
               }
               width={35}
               height={35}

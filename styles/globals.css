@@ -10,6 +10,8 @@
   font-weight: 400 900;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
 html {
   font-family: "Hubot Sans";
   min-width: 320px;
