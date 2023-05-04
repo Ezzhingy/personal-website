@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Intro from "@/components/Intro";
 import About from "@/components/About";
 import Exp from "@/components/Exp";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Intro />
       <About />
       <Exp />
+      <Projects />
     </div>
   );
 }

@@ -37,3 +37,20 @@ export const expInfo = [
     duration: "Jan. 2023 - Present",
   },
 ];
+
+export const projectInfo = [
+  {
+    image: "/sentiview.png",
+    name: "SentiView",
+    description: "A customer insight filtering system for businesses",
+    skills: ["React", "Bootstrap", "Tailwind", "Flask", "Cohere"],
+    hue: "rgb(228 102 102 / 10%)",
+  },
+  {
+    image: "/journal4me.png",
+    name: "journal4me",
+    description: "A mental health voice-to-mood analysis journalling app",
+    skills: ["React", "FastAPI", "MongoDB", "Cohere", "AssemblyAI"],
+    hue: "rgb(42 200 149 / 10%)",
+  },
+];

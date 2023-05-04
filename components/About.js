@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <div id="about" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
