@@ -11,7 +11,10 @@ export default function Intro() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div className="box-border max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
+    <div
+      id="home"
+      className="box-border max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg"
+    >
       <div className="flex flex-col-reverse gap-8 m-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-8">
           <div className="leading-[5rem]">

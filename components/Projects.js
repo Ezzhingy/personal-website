@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { projectInfo } from "@/constants/constants";
-import Image from "next/image";
 
 export default function Projects() {
   const { systemTheme, theme } = useTheme();
@@ -52,7 +51,7 @@ export default function Projects() {
             <div
               key={i}
               id={`card${i}`}
-              className="card border-[#9CA3AF] dark:border-[#374151] border-[0.8px] rounded p-5 flex flex-col gap-3 relative hover:shadow-lg transition-shadow duration-300"
+              className="card border-[#9CA3AF] dark:border-[#374151] border-[0.8px] rounded p-5 flex flex-col gap-3 relative hover:shadow-lg transition-shadow duration-300 cursor-pointer"
             >
               <img
                 src={project.image}
@@ -72,14 +71,18 @@ export default function Projects() {
                       key={j}
                       className="rounded-lg border-[#9CA3AF] dark:border-[#374151] border-[0.8px] col-span-2 "
                     >
-                      <h4 className="text-sm text-center py-1">{skill}</h4>
+                      <h4 className="text-xs sm:text-sm text-center py-1">
+                        {skill}
+                      </h4>
                     </div>
                   ) : (
                     <div
                       key={j}
                       className="rounded-lg border-[#9CA3AF] dark:border-[#374151] border-[0.8px]"
                     >
-                      <h4 className="text-sm text-center py-1">{skill}</h4>
+                      <h4 className="text-xs sm:text-sm text-center py-1">
+                        {skill}
+                      </h4>
                     </div>
                   )
                 )}
@@ -91,7 +94,7 @@ export default function Projects() {
                     : "/whitearrow.svg"
                 }
                 alt="Arrow"
-                className="w-[50px] h-auto inline-block absolute right-5 cursor-pointer z-20"
+                className="w-[50px] h-auto inline-block absolute right-5 z-20"
               />
             </div>
           ))}

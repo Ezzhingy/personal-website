@@ -54,3 +54,7 @@ export const projectInfo = [
     hue: "rgb(42 200 149 / 10%)",
   },
 ];
+
+export const userData = {
+  githubUser: "Ezzhingy",
+};
