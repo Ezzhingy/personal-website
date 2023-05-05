@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { projectInfo } from "@/constants/constants";
 
@@ -41,17 +41,18 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg"
+      className="max-w-2xl mx-auto pt-[100px] text-darkBg dark:text-lightBg"
       onMouseOver={changeGlow}
     >
       <div className="flex flex-col gap-3 mx-10 items-start">
         <h1 className="font-bold text-2xl">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
           {projectInfo.map((project, i) => (
-            <div
+            <a
               key={i}
               id={`card${i}`}
               className="card border-[#9CA3AF] dark:border-[#374151] border-[0.8px] rounded p-5 flex flex-col gap-3 relative hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+              href={`/${project.name.toLowerCase()}`}
             >
               <img
                 src={project.image}
@@ -96,7 +97,7 @@ export default function Projects() {
                 alt="Arrow"
                 className="w-[50px] h-auto inline-block absolute right-5 z-20"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>

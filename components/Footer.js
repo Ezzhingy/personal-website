@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const { systemTheme, theme } = useTheme();
@@ -14,7 +15,7 @@ export default function Footer() {
     <div className="max-w-2xl mx-auto pt-[120px] pb-[120px] text-darkBg dark:text-lightBg">
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="flex gap-5">
-          <a
+          <Link
             href="https://www.linkedin.com/in/eugene-zhang-1199b820a/"
             target="_blank"
             rel="noreferrer"
@@ -30,8 +31,8 @@ export default function Footer() {
               alt="LinkedIn link"
               className="cursor-pointer"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/Ezzhingy"
             target="_blank"
             rel="noreferrer"
@@ -45,8 +46,8 @@ export default function Footer() {
               alt="GitHub link"
               className="cursor-pointer"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="mailto:zhang.eug@gmail.com "
             target="_blank"
             rel="noreferrer"
@@ -60,7 +61,7 @@ export default function Footer() {
               alt="Email link"
               className="cursor-pointer"
             />
-          </a>
+          </Link>
         </div>
         <div>
           <p>Copyright © Ezzhingy 2023</p>

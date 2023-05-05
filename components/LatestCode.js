@@ -1,6 +1,11 @@
+import Link from "next/link";
+
 export default function LatestCode({ repos }) {
   return (
-    <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
+    <div
+      id="latest"
+      className="max-w-2xl mx-auto pt-[100px] text-darkBg dark:text-lightBg"
+    >
       <div className="flex flex-col gap-3 mx-10 items-start">
         <h1 className="font-bold text-2xl">Latest Code</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
@@ -17,7 +22,7 @@ const GithubRepoCard = ({ repo }) => {
     <div>
       <h1 className="font-semibold text-xl">{repo.name}</h1>
       <p className="my-3">{repo.description}</p>
-      <a
+      <Link
         href={repo.clone_url}
         target="_blank"
         rel="noreferrer"
@@ -27,7 +32,7 @@ const GithubRepoCard = ({ repo }) => {
         <div className="transform group-hover:translate-x-2 transition duration-300">
           &rarr;
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export default function Exp() {
       id="experience"
       className="max-w-2xl mx-auto text-darkBg dark:text-lightBg"
     >
-      <div className="flex flex-col gap-3 mx-10 items-start">
+      <div className="flex flex-col gap-3 pt-[100px] mx-10 items-start">
         <h1 className="font-bold text-2xl">Experience</h1>
         {expInfo.map((exp, i) => (
           <div

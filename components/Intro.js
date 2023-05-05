@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function Intro() {
   const { systemTheme, theme } = useTheme();
@@ -26,7 +27,7 @@ export default function Intro() {
             </p>
           </div>
           <div className="flex gap-5">
-            <a
+            <Link
               href="https://www.linkedin.com/in/eugene-zhang-1199b820a/"
               target="_blank"
               rel="noreferrer"
@@ -42,8 +43,8 @@ export default function Intro() {
                 alt="LinkedIn link"
                 className="cursor-pointer"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Ezzhingy"
               target="_blank"
               rel="noreferrer"
@@ -59,8 +60,8 @@ export default function Intro() {
                 alt="GitHub link"
                 className="cursor-pointer"
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:zhang.eug@gmail.com "
               target="_blank"
               rel="noreferrer"
@@ -74,7 +75,7 @@ export default function Intro() {
                 alt="Email link"
                 className="cursor-pointer"
               />
-            </a>
+            </Link>
           </div>
         </div>
         <img

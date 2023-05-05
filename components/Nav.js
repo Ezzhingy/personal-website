@@ -25,13 +25,14 @@ export default function Navbar() {
           alt="Theme toggle"
           className="cursor-pointer sm:block hidden"
           onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+          priority
         />
         <ul className="list-none sm:flex justify-end hidden text-center">
           {navLinks.map((nav, index) => (
             <li key={index}>
               <a
                 className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
-                href={`#${nav.id}`}
+                href={`/#${nav.id}`}
               >
                 {nav.title}
               </a>
@@ -85,7 +86,7 @@ export default function Navbar() {
                   className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide"
                   key={index}
                 >
-                  <a href={`#${nav.id}`} className="flex flex-1">
+                  <a href={`/#${nav.id}`} className="flex flex-1">
                     {nav.title}
                   </a>
                 </li>
