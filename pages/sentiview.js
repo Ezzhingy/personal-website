@@ -3,9 +3,18 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import Seo from "@/components/Seo";
+import { fetchSentiviewData } from "@/functions/fetchPageData";
 
-export default function sentiview() {
-  const { systemTheme, theme, setTheme } = useTheme();
+export async function getStaticProps() {
+  // get all the data needed for rendering the page
+  const data = fetchSentiviewData();
+  return {
+    props: { data },
+  };
+}
+
+export default function sentiview({ data }) {
+  const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -46,44 +55,9 @@ export default function sentiview() {
             <h2>A customer insight filtering system for businesses</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
-            <p>
-              Small businesses and local entrepreneurs are an essential facet of
-              our communities, with the COVID-19 Pandemic demonstrating how much
-              we depend on them and vice versa. However, it can often be
-              difficult for these businesses to know the best trajectory for
-              their growth, with no streamlined method currently existing for
-              gathering and analyzing their customers' feedback. SentiView aims
-              to change that.
-            </p>
-            <p>
-              Small businesses rely greatly on reviews; they tell them what
-              they're doing right and what to improve. SentiView takes in a set
-              of customer reviews and sorts positive reviews from
-              neutral/negative reviews. Then, it finds the top five keywords
-              that occur the most frequently in the review sets, helping
-              business owners swiftly find the root of their problems.
-            </p>
-            <p>
-              SentiView takes in a set of customer reviews and uses the power of
-              sentiment analysis in order to determine whether or not they are
-              positive or negative. Then, each review is tokenized and cleaned
-              based on a stoplist. The 5 most common positive and negative words
-              are then displayed to the user; they can then select and scroll
-              through the reviews containing the word, gathering a first-hand
-              view of their business's needs and strengths.
-            </p>
-            <p>
-              We developed the application's front end using React, Bootstrap,
-              and Tailwind. The backend used a Flask server that hosted the data
-              generated from the Cohere API, which we used for sentiment
-              analysis and tokenization purposes.
-            </p>
-            <p>
-              Over time, SentiView would like to be able to produce graphs that
-              display trends in customer satisfaction to give small businesses a
-              way to assess their improvement. Essentially, to provide bespoke
-              recommendations to businesses.
-            </p>
+            {data.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
           </div>
         </div>
       </div>
