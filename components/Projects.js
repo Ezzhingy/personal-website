@@ -8,32 +8,32 @@ export default function Projects() {
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // useEffect(() => {
-  //   const handleOnMouseMove = (e) => {
-  //     const { currentTarget: target } = e;
+  useEffect(() => {
+    const handleOnMouseMove = (e) => {
+      const { currentTarget: target } = e;
 
-  //     const rect = target.getBoundingClientRect(),
-  //       x = e.clientX - rect.left,
-  //       y = e.clientY - rect.top;
+      const rect = target.getBoundingClientRect(),
+        x = e.clientX - rect.left,
+        y = e.clientY - rect.top;
 
-  //     target.style.setProperty("--mouse-x", `${x}px`);
-  //     target.style.setProperty("--mouse-y", `${y}px`);
-  //   };
+      target.style.setProperty("--mouse-x", `${x}px`);
+      target.style.setProperty("--mouse-y", `${y}px`);
+    };
 
-  //   for (const card of document.querySelectorAll(".card")) {
-  //     card.onmousemove = (e) => handleOnMouseMove(e);
-  //   }
-  // });
+    for (const card of document.querySelectorAll(".card")) {
+      card.onmousemove = (e) => handleOnMouseMove(e);
+    }
+  });
 
-  // const changeGlow = () => {
-  //   projectInfo.map((project, i) => {
-  //     let style = document.getElementById(`card${i}`).style;
-  //     style.setProperty(
-  //       "--background",
-  //       `radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), ${project.hue}, transparent 40%)`
-  //     );
-  //   });
-  // };
+  const changeGlow = () => {
+    projectInfo.map((project, i) => {
+      let style = document.getElementById(`card${i}`).style;
+      style.setProperty(
+        "--background",
+        `radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), ${project.hue}, transparent 40%)`
+      );
+    });
+  };
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
@@ -44,7 +44,7 @@ export default function Projects() {
     <div
       id="projects"
       className="max-w-2xl mx-auto pt-[100px] text-darkBg dark:text-lightBg"
-      // onMouseOver={changeGlow}
+      onMouseOver={changeGlow}
     >
       <div className="flex flex-col gap-3 mx-10 items-start">
         <h1 className="font-bold text-2xl">Projects</h1>
