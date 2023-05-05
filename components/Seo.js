@@ -19,6 +19,17 @@ export default function Seo({ title, desc, keywords, path }) {
         property="og:url"
         content={`https://www.eugenezhang.me${path}`}
       ></meta>
+      <meta
+        property="twitter:image"
+        content="https://www.eugenezhang.me/headshoteugene.jpeg"
+      ></meta>
+      <meta property="twitter:card" content="summary_large_image"></meta>
+      <meta property="twitter:title" content={title}></meta>
+      <meta property="twitter:description" content={desc}></meta>
+      <meta
+        property="og:image"
+        content="https://www.eugenezhang.me/headshoteugene.jpeg"
+      ></meta>
     </Head>
   );
 }

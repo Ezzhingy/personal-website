@@ -95,7 +95,7 @@ export default function Projects() {
                     : "/whitearrow.svg"
                 }
                 alt="Arrow"
-                className="w-[50px] h-auto inline-block absolute right-5 z-20"
+                className="w-[50px] h-auto inline-block absolute right-5 z-20 transform hover:scale-110 transition duration-150"
               />
             </a>
           ))}

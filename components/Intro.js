@@ -79,7 +79,7 @@ export default function Intro() {
           </div>
         </div>
         <img
-          src="/headshoteugene.jpg"
+          src="/headshoteugene.jpeg"
           alt="Picture of the author"
           className="rounded-2xl w-[200px] h-auto"
           priority="true"

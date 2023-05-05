@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav
       id="show-nav-mobile"
-      className="hidden sticky top-0 z-10 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60 backdrop-blur"
+      className="hidden sticky top-0 z-30 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60 backdrop-blur"
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
         <Image
