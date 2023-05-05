@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { navLinks } from "../constants/constants";
+import Link from "next/link";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -30,12 +31,12 @@ export default function Navbar() {
         <ul className="list-none sm:flex justify-end hidden text-center">
           {navLinks.map((nav, index) => (
             <li key={index}>
-              <a
+              <Link
                 className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
                 href={`/#${nav.id}`}
               >
                 {nav.title}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
@@ -54,15 +55,17 @@ export default function Navbar() {
       <div className="sm:hidden max-w-4xl">
         <div className="flex flex-col items-center">
           <div className="flex gap-10 w-[95%] justify-between">
-            <img
+            <Image
               src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
               alt="Theme toggle"
-              className="w-[40px] h-auto py-2.5 px-5 box-content object-contain cursor-pointer"
+              width={40}
+              height={40}
+              className="py-2.5 px-5 box-content object-contain cursor-pointer"
               onClick={() =>
                 setTheme(currentTheme === "dark" ? "light" : "dark")
               }
             />
-            <img
+            <Image
               src={
                 toggle
                   ? currentTheme === "dark"
@@ -73,7 +76,9 @@ export default function Navbar() {
                   : "/darkmenu.svg"
               }
               alt="Waffle toggle for mobile"
-              className="w-[35px] h-auto py-2.5 px-5 box-content object-contain cursor-pointer"
+              width={40}
+              height={40}
+              className="py-2.5 px-5 box-content object-contain cursor-pointer"
               onClick={() => setToggle((prev) => !prev)}
             />
           </div>
@@ -86,9 +91,9 @@ export default function Navbar() {
                   className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide"
                   key={index}
                 >
-                  <a href={`/#${nav.id}`} className="flex flex-1">
+                  <Link href={`/#${nav.id}`} className="flex flex-1">
                     {nav.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <li className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide">

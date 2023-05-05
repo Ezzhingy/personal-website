@@ -15,7 +15,7 @@
 html {
   font-family: "Hubot Sans";
   min-width: 320px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 #show-nav-mobile {

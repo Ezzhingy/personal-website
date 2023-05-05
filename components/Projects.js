@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { projectInfo } from "@/constants/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   const { systemTheme, theme } = useTheme();
@@ -48,16 +50,17 @@ export default function Projects() {
         <h1 className="font-bold text-2xl">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3">
           {projectInfo.map((project, i) => (
-            <a
+            <Link
               key={i}
               id={`card${i}`}
               className="card border-[#9CA3AF] dark:border-[#374151] border-[0.8px] rounded p-5 flex flex-col gap-3 relative hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               href={`/${project.name.toLowerCase()}`}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={`${project.name} logo`}
-                className="w-[80px] h-auto"
+                width={80}
+                height={80}
               />
               <div>
                 <h2 className="font-bold text-xl">{project.name}</h2>
@@ -88,16 +91,18 @@ export default function Projects() {
                   )
                 )}
               </div>
-              <img
+              <Image
                 src={
                   currentTheme === "dark"
                     ? "/blackarrow.svg"
                     : "/whitearrow.svg"
                 }
                 alt="Arrow"
-                className="w-[50px] h-auto inline-block absolute right-5 z-20 transform hover:scale-110 transition duration-150"
+                width={50}
+                height={50}
+                className="inline-block absolute right-5 z-20 transform hover:scale-110 transition duration-150"
               />
-            </a>
+            </Link>
           ))}
         </div>
       </div>

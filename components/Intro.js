@@ -78,10 +78,12 @@ export default function Intro() {
             </Link>
           </div>
         </div>
-        <img
+        <Image
           src="/headshoteugene.jpeg"
           alt="Picture of the author"
-          className="rounded-2xl w-[200px] h-auto"
+          width={200}
+          height={200 * (160 / 153)}
+          className="rounded-2xl"
           priority="true"
         />
       </div>
