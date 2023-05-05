@@ -2,18 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Hubot Sans";
-  src: url("../public/assets/Hubot-Sans.woff2")
-      format("woff2 supports variations"),
-    url("../public/assets/Hubot-Sans.woff2") format("woff2-variations");
-  font-weight: 400 900;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 html {
-  font-family: "Hubot Sans";
   min-width: 320px;
   scroll-behavior: smooth !important;
 }

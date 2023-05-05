@@ -14,9 +14,6 @@ module.exports = {
         lightBg: "#D1D5DB",
         lightFill: "#BAC3D2",
       },
-      fontFamily: {
-        terminal: ["Ubuntu Mono", "monospace"],
-      },
       animation: {
         blink: "blink-caret 1s step-end infinite",
       },

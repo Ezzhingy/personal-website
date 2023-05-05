@@ -17,7 +17,7 @@ export default function About() {
               eugene — -zsh —
             </p>
           </div>
-          <div className="bg-lightFill dark:bg-darkFill p-10 rounded-bl-lg rounded-br-lg font-terminal flex flex-col gap-5">
+          <div className="bg-lightFill dark:bg-darkFill p-10 rounded-bl-lg rounded-br-lg font-mono flex flex-col gap-5">
             <div>
               <p className="text-sm sm:text-lg">
                 <span className="font-bold hidden sm:inline-block">
