@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Seo from "@/components/Seo";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
         <Nav />
         <Component {...pageProps} />
         <Footer />
+        <Analytics />
       </main>
     </ThemeProvider>
   );
