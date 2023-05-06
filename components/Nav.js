@@ -10,10 +10,11 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [mounted, setMounted] = useState(false);
 
+  // temp solution to next/link hash bug (doesn't work in production)
   Router.onRouteChangeComplete = () => {
     setTimeout(() => {
       if (location.hash) location = location;
-    }, 100);
+    }, 10);
   };
 
   useEffect(() => setMounted(true), []);
