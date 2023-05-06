@@ -3,11 +3,18 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { navLinks } from "../constants/constants";
 import Link from "next/link";
+import Router from "next/router";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  Router.onRouteChangeComplete = () => {
+    setTimeout(() => {
+      if (location.hash) location = location;
+    }, 100);
+  };
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
@@ -34,7 +41,6 @@ export default function Navbar() {
               <Link
                 className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
                 href={`/#${nav.id}`}
-                scroll={false}
               >
                 {nav.title}
               </Link>
