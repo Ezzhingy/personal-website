@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 const hubotSans = localFont({ src: "./Hubot-Sans.woff2" });
 
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
         <Nav />
         <Component {...pageProps} />
         <Footer />
+        <Analytics />
       </main>
     </ThemeProvider>
   );
