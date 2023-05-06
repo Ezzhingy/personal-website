@@ -34,6 +34,7 @@ export default function Navbar() {
               <Link
                 className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
                 href={`/#${nav.id}`}
+                scroll={false}
               >
                 {nav.title}
               </Link>
