@@ -1,11 +1,13 @@
-import Intro from "@/components/Intro";
-import About from "@/components/About";
-import Exp from "@/components/Exp";
-import Projects from "@/components/Projects";
-import LatestCode from "@/components/LatestCode";
 import fetchRepos from "@/functions/fetchRepos";
 import { userData } from "@/constants/constants";
-import Seo from "@/components/Seo";
+import dynamic from "next/dynamic";
+
+const Intro = dynamic(() => import("@/components/Intro"));
+const About = dynamic(() => import("@/components/About"));
+const Exp = dynamic(() => import("@/components/Exp"));
+const Projects = dynamic(() => import("@/components/Projects"));
+const LatestCode = dynamic(() => import("@/components/LatestCode"));
+const Seo = dynamic(() => import("@/components/Seo"));
 
 export default function Home({ repos }) {
   return (
