@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
+import headshoteugene from "../public/headshoteugene.jpeg";
+
 export default function Intro() {
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -79,11 +81,9 @@ export default function Intro() {
           </div>
         </div>
         <Image
-          src="/headshoteugene.jpeg"
+          src={headshoteugene}
           alt="Picture of the author"
-          width={200}
-          height={200 * (160 / 153)}
-          className="rounded-2xl"
+          className="w-[200px] h-auto rounded-2xl"
           priority="true"
         />
       </div>
