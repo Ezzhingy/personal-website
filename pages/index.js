@@ -2,6 +2,7 @@ import fetchRepos from "@/functions/fetchRepos";
 import { userData } from "@/constants/constants";
 import dynamic from "next/dynamic";
 
+// may or may not increase performance
 const Intro = dynamic(() => import("@/components/Intro"));
 const About = dynamic(() => import("@/components/About"));
 const Exp = dynamic(() => import("@/components/Exp"));
@@ -27,7 +28,12 @@ export default function Home({ repos }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ res }) {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+
   let token = process.env.GITHUB_AUTH_TOKEN;
 
   const repos = await fetchRepos(userData, token);
