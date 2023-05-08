@@ -24,7 +24,7 @@ export const navLinks = [
 export const expInfo = [
   {
     logo: "/civilia.png",
-    position: "DevOps Developer",
+    position: "Software Developer",
     company: "Civilia",
     duration: "May 2023 - Present",
   },
