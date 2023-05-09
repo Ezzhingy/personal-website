@@ -30,6 +30,10 @@ export default function Seo({ title, desc, keywords, path }) {
         property="og:image"
         content="https://www.eugenezhang.me/headshoteugene.jpeg"
       ></meta>
+      <meta
+        name="google-site-verification"
+        content="HBSMZoTt-uWgp8sqvEk-uxzQ7MuKscE_E69q-3ZDdUU"
+      />
     </Head>
   );
 }
