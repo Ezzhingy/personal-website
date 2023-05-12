@@ -43,7 +43,7 @@ export default function Intro() {
                 width={40}
                 height={40}
                 alt="LinkedIn link"
-                className="cursor-pointer"
+                className="cursor-pointer transition-transform hover:scale-110"
               />
             </Link>
             <Link
@@ -60,7 +60,7 @@ export default function Intro() {
                 width={40}
                 height={40}
                 alt="GitHub link"
-                className="cursor-pointer"
+                className="cursor-pointer transition-transform hover:scale-110"
               />
             </Link>
             <Link
@@ -75,7 +75,7 @@ export default function Intro() {
                 width={40}
                 height={40}
                 alt="Email link"
-                className="cursor-pointer"
+                className="cursor-pointer transition-transform hover:scale-110"
               />
             </Link>
           </div>

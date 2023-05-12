@@ -4,7 +4,7 @@ export default function Seo({ title, desc, keywords, path }) {
   return (
     <Head>
       <title>{title}</title>
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       <meta name="description" content={desc}></meta>
       <meta name="author" content="Eugene Zhang"></meta>
       <meta name="keywords" content={keywords}></meta>

@@ -27,12 +27,10 @@ export default function Navbar() {
       className="hidden sticky top-0 z-30 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60 backdrop-blur"
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
-        <Image
+        <img
           src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
-          width={40}
-          height={40}
           alt="Theme toggle"
-          className="cursor-pointer sm:block hidden"
+          className="cursor-pointer sm:block hidden transition-transform hover:scale-110"
           onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           priority
         />
