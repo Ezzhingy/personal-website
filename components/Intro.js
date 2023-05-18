@@ -82,6 +82,7 @@ export default function Intro() {
         </div>
         <Image
           src={headshoteugene}
+          quality={40}
           alt="Picture of the author"
           className="w-[200px] h-auto rounded-2xl"
           priority="true"
