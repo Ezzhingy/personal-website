@@ -45,7 +45,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               className="hover:text-[#43B2CA] transition-colors duration-150 font-bold text-sm tracking-wide py-2.5 px-5"
               href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
@@ -55,7 +55,7 @@ export default function Navbar() {
             >
               Resume
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="sm:hidden max-w-4xl">
@@ -102,7 +102,7 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide">
+              {/* <li className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide">
                 <a
                   href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
                   target="_blank"
@@ -112,7 +112,7 @@ export default function Navbar() {
                 >
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

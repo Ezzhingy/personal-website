@@ -29,7 +29,7 @@ export const expInfo = [
     duration: "May 2023 - Present",
   },
   {
-    logo: "/htn.png",
+    logo: "/hackthenorth.png",
     position: "Frontend Developer",
     company: "Hack the North",
     duration: "Mar. 2023 - Present",
