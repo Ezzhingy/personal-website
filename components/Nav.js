@@ -32,7 +32,7 @@ export default function Navbar() {
           alt="Theme toggle"
           className="cursor-pointer sm:block hidden transition-transform hover:scale-110"
           onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-          priority
+          priority="true"
         />
         <ul className="list-none sm:flex justify-end hidden text-center">
           {navLinks.map((nav, index) => (

@@ -21,14 +21,14 @@ export default function Seo({ title, desc, keywords, path }) {
       ></meta>
       <meta
         property="twitter:image"
-        content="https://www.eugenezhang.me/headshoteugene.jpeg"
+        content="https://www.eugenezhang.me/personal-web-cover.jpeg"
       ></meta>
       <meta property="twitter:card" content="summary_large_image"></meta>
       <meta property="twitter:title" content={title}></meta>
       <meta property="twitter:description" content={desc}></meta>
       <meta
         property="og:image"
-        content="https://www.eugenezhang.me/headshoteugene.jpeg"
+        content="https://www.eugenezhang.me/personal-web-cover.jpeg"
       ></meta>
       <meta
         name="google-site-verification"
