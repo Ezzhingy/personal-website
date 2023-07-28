@@ -23,7 +23,7 @@ export function Navbar() {
               </a>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               className="text-white font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out py-2.5 px-5"
               href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
@@ -33,7 +33,7 @@ export function Navbar() {
             >
               RESUME
             </a>
-          </li>
+          </li> */}
         </ul>
         <div className="sm:hidden block min-h-[60px]">
           <div className={`${toggle ? "block" : "hidden"}`}>
@@ -48,7 +48,7 @@ export function Navbar() {
                   </a>
                 </li>
               ))}
-              <li className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out">
+              {/* <li className="text-white py-2.5 px-5 font-bold text-2xl rounded tracking-wide hover:bg-navBtnBlue hover:transition-colors ease-in-out">
                 <a
                   href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
                   target="_blank"
@@ -58,7 +58,7 @@ export function Navbar() {
                 >
                   RESUME
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <img
