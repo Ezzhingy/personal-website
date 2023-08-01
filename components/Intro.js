@@ -85,7 +85,8 @@ export default function Intro() {
           quality={40}
           alt="Picture of the author"
           className="w-[200px] h-auto rounded-2xl"
-          priority="true"
+          fetchPriority="high"
+          priority={true}
         />
       </div>
     </div>

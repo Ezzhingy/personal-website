@@ -89,6 +89,7 @@ export default function Footer() {
         </div>
         <div className="flex mx-10 items-start">
           <Select
+            aria-label="Version selector"
             options={versionOptions}
             onChange={onVersionChange}
             defaultValue={versionOptions[0]}
