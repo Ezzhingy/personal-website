@@ -23,7 +23,7 @@ export default function Footer() {
   const onVersionChange = (option) => {
     switch (option.value) {
       case "new":
-        window.location.href = "https://www.eugenezhang.me/";
+        window.location.href = "https://eugenezhang.me/";
         break;
       case "old":
         window.location.href = "https://old-personal-website-phi.vercel.app/";

@@ -12,23 +12,20 @@ export default function Seo({ title, desc, keywords, path }) {
         name="viewport"
         content="width=device-width, initial-scale=1.0"
       ></meta>
-      <link rel="canonical" href={`https://www.eugenezhang.me${path}`}></link>
+      <link rel="canonical" href={`https://eugenezhang.me/${path}`}></link>
       <meta property="og:title" content="Eugene Zhang"></meta>
       <meta property="og:description" content={desc}></meta>
-      <meta
-        property="og:url"
-        content={`https://www.eugenezhang.me${path}`}
-      ></meta>
+      <meta property="og:url" content={`https://eugenezhang.me/${path}`}></meta>
       <meta
         property="twitter:image"
-        content="https://www.eugenezhang.me/personal-web-cover.jpeg"
+        content="https://eugenezhang.me/personal-web-cover.jpeg"
       ></meta>
       <meta property="twitter:card" content="summary_large_image"></meta>
       <meta property="twitter:title" content={title}></meta>
       <meta property="twitter:description" content={desc}></meta>
       <meta
         property="og:image"
-        content="https://www.eugenezhang.me/personal-web-cover.jpeg"
+        content="https://eugenezhang.me/personal-web-cover.jpeg"
       ></meta>
       <meta
         name="google-site-verification"
