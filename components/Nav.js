@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { navLinks } from "../constants/constants";
@@ -9,6 +9,8 @@ export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  const circleClipRef = useRef(null);
 
   // temp solution to next/link hash bug (doesn't work in production)
   Router.onRouteChangeComplete = () => {
@@ -24,7 +26,9 @@ export default function Navbar() {
   return (
     <nav
       id="show-nav-mobile"
-      className="hidden sticky top-0 z-30 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg bg-opacity-60 backdrop-blur"
+      className={`hidden sticky top-0 z-30 text-darkBg dark:text-lightBg bg-lightBg dark:bg-darkBg backdrop-blur ${
+        !toggle ? "bg-opacity-60" : "bg-opacity-100"
+      }`}
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
         <img
@@ -84,20 +88,37 @@ export default function Navbar() {
               alt="Waffle toggle for mobile"
               width={40}
               height={40}
-              className="py-2.5 px-5 box-content object-contain cursor-pointer"
-              onClick={() => setToggle((prev) => !prev)}
+              className="py-2.5 px-5 box-content object-contain cursor-pointer z-10"
+              onClick={() => {
+                setToggle((prev) => !prev);
+                circleClipRef.current.classList.toggle("mobile-links-open");
+              }}
             />
           </div>
           <div
-            className={`${toggle ? "fixed" : "hidden"} w-[90%] top-[7.5rem]`}
+            className={`${toggle && "bg-lightBg dark:bg-darkBg"} ${
+              !toggle && "pointer-events-none"
+            } transition-colors duration-700 fixed h-screen w-screen flex flex-col justify-center`}
           >
-            <ul className="list-none z-10 bg-lightFill dark:bg-darkFill rounded divide-y dark:divide-black">
+            <ul
+              ref={circleClipRef}
+              className="list-none dark:divide-black flex flex-col items-center gap-10 mb-20 mobile-links"
+            >
               {navLinks.map((nav, index) => (
                 <li
-                  className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide"
+                  className="hover:text-[#43B2CA] py-2.5 pl-2.5 font-bold text-4xl tracking-wide"
                   key={index}
                 >
-                  <Link href={`/#${nav.id}`} className="flex flex-1">
+                  <Link
+                    href={`/#${nav.id}`}
+                    className="flex flex-1"
+                    onClick={() => {
+                      setToggle((prev) => !prev);
+                      circleClipRef.current.classList.toggle(
+                        "mobile-links-open"
+                      );
+                    }}
+                  >
                     {nav.title}
                   </Link>
                 </li>

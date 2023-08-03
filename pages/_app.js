@@ -10,11 +10,13 @@ const hubotSans = localFont({ src: "./Hubot-Sans.woff2" });
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <main className={`bg-lightBg dark:bg-darkBg ${hubotSans.className}`}>
+      <main
+        className={`bg-lightBg dark:bg-darkBg ${hubotSans.className} relative z-10`}
+      >
         <Nav />
         <Component {...pageProps} />
         <Footer />
-        <Analytics />
+        {/* <Analytics /> */}
       </main>
     </ThemeProvider>
   );
