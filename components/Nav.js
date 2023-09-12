@@ -92,13 +92,14 @@ export default function Navbar() {
               onClick={() => {
                 setToggle((prev) => !prev);
                 circleClipRef.current.classList.toggle("mobile-links-open");
+                document.body.classList.toggle("overflow-hidden");
               }}
             />
           </div>
           <div
             className={`${toggle && "bg-lightBg dark:bg-darkBg"} ${
               !toggle && "pointer-events-none"
-            } transition-colors duration-700 fixed h-screen w-screen flex flex-col justify-center`}
+            } transition-colors duration-700 h-screen w-screen absolute flex flex-col justify-center`}
           >
             <ul
               ref={circleClipRef}
@@ -117,6 +118,7 @@ export default function Navbar() {
                       circleClipRef.current.classList.toggle(
                         "mobile-links-open"
                       );
+                      document.body.classList.toggle("overflow-hidden");
                     }}
                   >
                     {nav.title}
