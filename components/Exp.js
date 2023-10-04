@@ -23,8 +23,12 @@ export default function Exp() {
                   alt={`${exp.company} logo`}
                 />
                 <div>
-                  <h2 className="font-bold text-xl">{exp.position}</h2>
-                  <h3 className="text-center sm:text-start">{exp.company}</h3>
+                  <h2 className="font-bold text-xl text-center sm:text-start">
+                    {exp.company}
+                  </h2>
+                  <h3 className="text-center sm:text-start hidden sm:block">
+                    {exp.position}
+                  </h3>
                 </div>
               </div>
               <div>
