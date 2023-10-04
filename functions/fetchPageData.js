@@ -10,6 +10,7 @@ export function fetchSentiviewData() {
 
 export function fetchJournal4meData() {
   return [
+    "/bigjournal4me.png",
     "Mental health issues are becoming a more prevalent problem each year. Nearly one in five U.S. adults live with a mental illness, but less than 20% of people actually seek mental health treatment. Furthermore, 47% of Americans believe that seeking therapy is a sign of weakness. Our goal with journal4me is to provide an outlet for people to speak their thoughts; to let it all out.",
     "Journal4me is a journaling app that removes the tediousness of typing out your thoughts. It is well known that journaling can improve one's mental health, but many stray away from the act, intimidated by the monotonous writing involved with jotting down one's feelings. With journal4me, all you need to do is speak! The app automatically processes your words and jots them down for you, so that you can rant about your day effortlessly without having to pause and think about how to spell a word or structure a sentence. At the end of your recording, the app even ranks your mood based on what was depicted from your rant using sentiment analysis!",
     "We developed the application's front end using React. The backend used a FastAPI server that hosted the data generated from the Cohere and AssemblyAI API, which we used for sentiment analysis and speech-to-text. MongoDB was our database of choice, which we used to store our transcriptions.",
