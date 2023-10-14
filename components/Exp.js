@@ -7,14 +7,9 @@ import { useEffect, useState } from "react";
 export default function Exp() {
   const [toggle, setToggle] = useState(Array(expInfo.length).fill(false));
   const [within, setWithin] = useState(false);
-  const [isClient, setIsClient] = useState(false);
 
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
@@ -35,15 +30,15 @@ export default function Exp() {
           <Link
             key={i}
             href={`/${exp.company.replace(/ /g, "").toLowerCase()}`}
-            className={`w-full ${
-              within && !toggle[i]
-                ? "bg-lightBg dark:bg-darkBg"
-                : "bg-lightFill dark:bg-darkFill"
-            } p-5 rounded-lg hover:cursor-pointer transition-colors duration-300`}
+            className={`w-full p-5 rounded-lg hover:cursor-pointer transition-colors duration-300`}
             style={{
               backgroundColor:
-                isClient && within && toggle[i]
+                within && toggle[i]
                   ? exp.bg
+                  : currentTheme === "dark" && within && !toggle[i]
+                  ? "rgb(17 24 39)"
+                  : currentTheme !== "dark" && within && !toggle[i]
+                  ? "rgb(209 213 219)"
                   : currentTheme === "dark"
                   ? "rgb(31 41 55)"
                   : "rgb(186 195 210)",
