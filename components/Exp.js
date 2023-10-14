@@ -14,8 +14,8 @@ export default function Exp() {
             key={i}
             className="w-full bg-lightFill dark:bg-darkFill p-5 rounded-lg"
           >
-            <div className="flex flex-col sm:flex-row gap-2 items-center justify-between">
-              <div className="flex items-center gap-3 flex-col sm:flex-row">
+            <div className="flex flex-row gap-2 items-center justify-between">
+              <div className="flex items-center gap-3 flex-row">
                 <Image
                   src={exp.logo}
                   width={40}
@@ -23,15 +23,15 @@ export default function Exp() {
                   alt={`${exp.company} logo`}
                 />
                 <div>
-                  <h2 className="font-bold text-xl text-center sm:text-start">
+                  <h2 className="font-bold text-xl text-start">
                     {exp.company}
                   </h2>
-                  <h3 className="text-center sm:text-start hidden sm:block">
+                  {/* <h3 className="text-center sm:text-start hidden sm:block">
                     {exp.position}
-                  </h3>
+                  </h3> */}
                 </div>
               </div>
-              <div>
+              <div className="hidden sm:block">
                 <h4>{exp.duration}</h4>
               </div>
             </div>
