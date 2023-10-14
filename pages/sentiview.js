@@ -55,9 +55,21 @@ export default function sentiview({ data }) {
             <h2>A customer insight filtering system for businesses</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
-            {data.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {data.map((paragraph, i) => {
+              if (paragraph[0] === "/") {
+                return (
+                  <Image
+                    key={i}
+                    width={500}
+                    height={500}
+                    src={paragraph}
+                    alt={paragraph}
+                    className="py-10"
+                  />
+                );
+              }
+              return <p key={i}>{paragraph}</p>;
+            })}
           </div>
         </div>
       </div>
