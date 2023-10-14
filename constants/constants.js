@@ -27,18 +27,21 @@ export const expInfo = [
     position: "Frontend Developer",
     company: "Hack the North",
     duration: "Mar. 2023 - Present",
+    bg: "#7a7ea1",
   },
   {
     logo: "/bp.png",
     position: "Software Developer",
     company: "UW Blueprint",
     duration: "Jan. 2023 - Present",
+    bg: "#5a83bf",
   },
   {
     logo: "/civilia.png",
     position: "Software Developer",
     company: "Civilia",
     duration: "May 2023 - Aug 2023",
+    bg: "#8ba16a",
   },
 ];
 
