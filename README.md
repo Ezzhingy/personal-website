@@ -4,7 +4,7 @@
 <a href=""><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
 <a href=""><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /></a>
 
-Personal website to showcase my experiences and projects.
+My blood, sweat, and tears condensed into a single portfolio; check it out!
 
 Designed using [Figma](https://www.figma.com/file/vgWtANuvRRLudJZkJqPItW/Eugene's-Personal-Website?type=design&node-id=312%3A51&t=JRUfmj1jPL0RnqUi-1).
 
