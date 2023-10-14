@@ -1,10 +1,24 @@
 import { expInfo } from "@/constants/constants";
+import { useTheme } from "next-themes";
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Exp() {
   const [toggle, setToggle] = useState(Array(expInfo.length).fill(false));
   const [within, setWithin] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  const { systemTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <div
@@ -18,14 +32,22 @@ export default function Exp() {
       >
         <h1 className="font-bold text-2xl">Experience</h1>
         {expInfo.map((exp, i) => (
-          <div
+          <Link
             key={i}
+            href={`/${exp.company.replace(/ /g, "").toLowerCase()}`}
             className={`w-full ${
               within && !toggle[i]
                 ? "bg-lightBg dark:bg-darkBg"
                 : "bg-lightFill dark:bg-darkFill"
             } p-5 rounded-lg hover:cursor-pointer transition-colors duration-300`}
-            style={{ backgroundColor: within && toggle[i] && exp.bg }}
+            style={{
+              backgroundColor:
+                isClient && within && toggle[i]
+                  ? exp.bg
+                  : currentTheme === "dark"
+                  ? "rgb(31 41 55)"
+                  : "rgb(186 195 210)",
+            }}
             onMouseOver={() => {
               setToggle((prev) => {
                 for (let j = 0; j < prev.length; j++) {
@@ -39,28 +61,30 @@ export default function Exp() {
               });
             }}
           >
-            <div className="flex flex-row gap-2 items-center justify-between">
-              <div className="flex items-center gap-3 flex-row">
-                <Image
-                  src={exp.logo}
-                  width={40}
-                  height={40}
-                  alt={`${exp.company} logo`}
-                />
-                <div>
-                  <h2 className="font-bold text-xl text-start">
-                    {exp.company}
-                  </h2>
-                  {/* <h3 className="text-center sm:text-start hidden sm:block">
-                    {exp.position}
-                  </h3> */}
+            <div>
+              <div className="flex flex-row gap-2 items-center justify-between">
+                <div className="flex items-center gap-3 flex-row">
+                  <Image
+                    src={exp.logo}
+                    width={40}
+                    height={40}
+                    alt={`${exp.company} logo`}
+                  />
+                  <div>
+                    <h2 className="font-bold text-xl text-start">
+                      {exp.company}
+                    </h2>
+                    {/* <h3 className="text-center sm:text-start hidden sm:block">
+                      {exp.position}
+                    </h3> */}
+                  </div>
+                </div>
+                <div className="hidden sm:block">
+                  <h4>{exp.duration}</h4>
                 </div>
               </div>
-              <div className="hidden sm:block">
-                <h4>{exp.duration}</h4>
-              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

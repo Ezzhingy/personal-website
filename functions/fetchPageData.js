@@ -1,3 +1,15 @@
+export function fetchCiviliaData() {
+  return [];
+}
+
+export function fetchUwblueprintData() {
+  return [];
+}
+
+export function fetchHackthenorthData() {
+  return [];
+}
+
 export function fetchSentiviewData() {
   return [
     "/sentiview-main.png",
