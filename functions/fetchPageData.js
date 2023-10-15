@@ -7,7 +7,14 @@ export function fetchUwblueprintData() {
 }
 
 export function fetchHackthenorthData() {
-  return [];
+  return [
+    "/htn-preview-img.png",
+    "**Overview**",
+    "From March to October 2023, I was a **frontend developer** and organizer for Hack the North, Canada's largest hackathon. This was honestly one of the most rewarding and unique experiences I've ever had, and I'm so grateful to have been a part of it. It felt surreal at times to be working with such a talented group of people, all while shipping real, impactful sites that impact thousands of hackers across the world.",
+    "**Projects**",
+    "Over the course of these past 8 months, I've had the opportunity to work on 4 main projects: the Hack the North website, Hacker Applications dashboard, Travel Tool, and Signage Tool.",
+    "The Hack the North website was the first major project that us frontend devs were tasked to work on. This was quite an intimidating project, as I remember always being blown-away by the website's design and functionality in the past. Furthermore, as a solo-dev for most of my life up to this point, this was only my second time working in a software team environment. Nevertheless, I pushed on and ",
+  ];
 }
 
 export function fetchSentiviewData() {

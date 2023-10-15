@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Seo from "@/components/Seo";
 import { fetchHackthenorthData } from "@/functions/fetchPageData";
+import Markdown from "react-markdown";
 
 export async function getStaticProps() {
   // get all the data needed for rendering the page
@@ -25,7 +26,7 @@ export default function sentiview({ data }) {
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">Hack the North</h1>
             </div>
-            <h2>Work in Progress!</h2>
+            <h2>Canada's Biggest Hackathon</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
@@ -41,7 +42,7 @@ export default function sentiview({ data }) {
                   />
                 );
               }
-              return <p key={i}>{paragraph}</p>;
+              return <Markdown key={i}>{paragraph}</Markdown>;
             })}
           </div>
         </div>
