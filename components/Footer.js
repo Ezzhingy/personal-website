@@ -93,6 +93,7 @@ export default function Footer() {
             options={versionOptions}
             onChange={onVersionChange}
             defaultValue={versionOptions[0]}
+            isSearchable={false}
             styles={{
               control: (baseStyles) => ({
                 ...baseStyles,
