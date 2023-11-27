@@ -31,12 +31,14 @@ export default function Navbar() {
       }`}
     >
       <div className="flex justify-between items-center max-w-4xl p-8 mx-auto">
-        <img
+        <Image
           src={currentTheme === "dark" ? "/sun.svg" : "/moon.svg"}
           alt="Theme toggle"
           className="cursor-pointer sm:block hidden transition-transform hover:scale-110"
           onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           priority="true"
+          width={50}
+          height={50}
         />
         <ul className="list-none sm:flex justify-end hidden text-center">
           {navLinks.map((nav, index) => (
