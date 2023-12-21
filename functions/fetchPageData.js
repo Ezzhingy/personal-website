@@ -10,6 +10,10 @@ export function fetchHackthenorthData() {
   return [];
 }
 
+export function fetchFaireData() {
+  return [];
+}
+
 export function fetchSentiviewData() {
   return [
     "/sentiview-main.png",

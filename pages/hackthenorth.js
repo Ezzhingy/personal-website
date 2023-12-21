@@ -10,7 +10,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function sentiview({ data }) {
+export default function hackTheNorth({ data }) {
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
       <Seo
