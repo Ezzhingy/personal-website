@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function LatestCode({ repos }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <div
       id="latest"
