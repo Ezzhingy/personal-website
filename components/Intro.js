@@ -30,7 +30,7 @@ export default function Intro() {
           </div>
           <div className="flex gap-5">
             <Link
-              href="https://www.linkedin.com/in/eugene-zhang-1199b820a/"
+              href="https://www.linkedin.com/in/eugene-ezzhang"
               target="_blank"
               rel="noreferrer"
             >

@@ -141,7 +141,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mx-10">
-        <p>Copyright © Ezzhingy 2023</p>
+        <p>Copyright © Ezzhingy 2024</p>
       </div>
     </div>
   );
