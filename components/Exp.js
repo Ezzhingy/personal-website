@@ -75,7 +75,7 @@ export default function Exp() {
                   </div>
                 </div>
                 <div className="hidden sm:block">
-                  <h4>{exp.duration}</h4>
+                  <h3>{exp.duration}</h3>
                 </div>
               </div>
             </div>

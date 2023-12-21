@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function About() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <div id="about" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
       <div className="flex gap-8 pt-10 px-10 items-center justify-between">

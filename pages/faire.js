@@ -1,29 +1,29 @@
 import Image from "next/image";
 import Seo from "@/components/Seo";
-import { fetchCiviliaData } from "@/functions/fetchPageData";
+import { fetchFaireData } from "@/functions/fetchPageData";
 
 export async function getStaticProps() {
   // get all the data needed for rendering the page
-  const data = fetchCiviliaData();
+  const data = fetchFaireData();
   return {
     props: { data },
   };
 }
 
-export default function civilia({ data }) {
+export default function faire({ data }) {
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
       <Seo
-        title="Civilia | Eugene Zhang"
-        desc="Crafting tools to transform urban mobility."
-        keywords="civilia, civilia project, civilia team, civilia experience"
-        path="/civilia"
+        title="Faire | Eugene Zhang"
+        desc="The future is local."
+        keywords="faire, ecommerce, local, marketplace, wholesale, retail"
+        path="/faire"
       />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Civilia</h1>
+              <h1 className="font-bold text-2xl">Faire</h1>
             </div>
             <h2>Work in Progress!</h2>
           </div>

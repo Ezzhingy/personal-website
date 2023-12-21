@@ -23,6 +23,14 @@ export const navLinks = [
 
 export const expInfo = [
   {
+    logo: "/faire.png",
+    position: "Frontend Engineer",
+    company: "Faire",
+    duration: "Jan. 2024 - Present",
+    bg: "#696969",
+  },
+
+  {
     logo: "/hackthenorth.png",
     position: "Frontend Developer",
     company: "Hack the North",
@@ -33,7 +41,7 @@ export const expInfo = [
     logo: "/bp.png",
     position: "Software Developer",
     company: "UW Blueprint",
-    duration: "Jan. 2023 - Present",
+    duration: "Jan. 2023 - Jan. 2024",
     bg: "#5a83bf",
   },
   {

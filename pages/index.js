@@ -28,12 +28,7 @@ export default function Home({ repos }) {
   );
 }
 
-export async function getServerSideProps({ res }) {
-  res.setHeader(
-    "Cache-Control",
-    "public, s-maxage=10, stale-while-revalidate=59"
-  );
-
+export async function getServerSideProps() {
   let token = process.env.GITHUB_AUTH_TOKEN;
 
   const repos = await fetchRepos(userData, token);
