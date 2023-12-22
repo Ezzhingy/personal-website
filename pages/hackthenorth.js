@@ -2,6 +2,7 @@ import Image from "next/image";
 import Seo from "@/components/Seo";
 import { fetchHackthenorthData } from "@/functions/fetchPageData";
 import Markdown from "react-markdown";
+import { useState, useEffect } from "react";
 
 export async function getStaticProps() {
   // get all the data needed for rendering the page
@@ -12,6 +13,11 @@ export async function getStaticProps() {
 }
 
 export default function hackTheNorth({ data }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
       <Seo
