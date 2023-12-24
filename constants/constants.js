@@ -28,6 +28,7 @@ export const expInfo = [
     company: "Faire",
     duration: "Jan. 2024 - Present",
     bg: "#696969",
+    new: false,
   },
 
   {
@@ -36,6 +37,7 @@ export const expInfo = [
     company: "Hack the North",
     duration: "Mar. 2023 - Present",
     bg: "#7a7ea1",
+    new: true,
   },
   {
     logo: "/bp.png",
@@ -43,6 +45,7 @@ export const expInfo = [
     company: "UW Blueprint",
     duration: "Jan. 2023 - Jan. 2024",
     bg: "#5a83bf",
+    new: false,
   },
   {
     logo: "/civilia.png",
@@ -50,6 +53,7 @@ export const expInfo = [
     company: "Civilia",
     duration: "May 2023 - Aug 2023",
     bg: "#8ba16a",
+    new: false,
   },
 ];
 

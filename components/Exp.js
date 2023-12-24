@@ -1,4 +1,5 @@
 import { expInfo } from "@/constants/constants";
+import Banner from "@/reusable/Banner";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,7 +31,7 @@ export default function Exp() {
           <Link
             key={i}
             href={`/${exp.company.replace(/ /g, "").toLowerCase()}`}
-            className={`w-full p-5 rounded-lg hover:cursor-pointer transition-colors duration-300`}
+            className={`w-full p-5 rounded-lg hover:cursor-pointer transition-colors duration-300 relative`}
             style={{
               backgroundColor:
                 within && toggle[i]
@@ -56,6 +57,7 @@ export default function Exp() {
               });
             }}
           >
+            {exp.new && <Banner />}
             <div>
               <div className="flex flex-row gap-2 items-center justify-between">
                 <div className="flex items-center gap-3 flex-row">
