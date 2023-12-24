@@ -1,5 +1,4 @@
 import { expInfo } from "@/constants/constants";
-import Banner from "@/reusable/Banner";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -57,7 +56,11 @@ export default function Exp() {
               });
             }}
           >
-            {exp.new && <Banner />}
+            {exp.new && (
+              <div className="absolute top-2 -right-2 w-10 bg-amber-300 dark:bg-blue-600 rotate-45 flex items-center justify-center">
+                <p className="text-xs font-bold">NEW</p>
+              </div>
+            )}
             <div>
               <div className="flex flex-row gap-2 items-center justify-between">
                 <div className="flex items-center gap-3 flex-row">
