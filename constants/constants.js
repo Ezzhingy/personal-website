@@ -43,7 +43,7 @@ export const expInfo = [
     logo: "/bp.png",
     position: "Software Developer",
     company: "UW Blueprint",
-    duration: "Jan. 2023 - Jan. 2024",
+    duration: "Jan. 2023 - Dec. 2023",
     bg: "#5a83bf",
     new: false,
   },
