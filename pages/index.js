@@ -15,8 +15,8 @@ export default function Home({ repos }) {
     <>
       <Seo
         title="Eugene Zhang"
-        desc="Eugene Zhang, a Computer Science student at the University of Waterloo: crafting elegant solutions to complex problems with a curious and agile mind."
-        keywords="Eugene Zhang, University of Waterloo, computer science, software development, programming, coding, web development, software engineering, technology, frontend development, fullstack development, Hack the North, Ignition Hacks, SentiView, journal4me, debugging"
+        desc="Eugene Zhang, a Computer Science student at the University of Waterloo: 'build for the sake of building.'"
+        keywords="Eugene Zhang, University of Waterloo, computer science, software development, programming, coding, web development, software engineering, technology, frontend development, fullstack development, Hack the North, Ignition Hacks, SentiView, journal4me, debugging, Faire"
         path="/"
       />
       <Intro />
