@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const hubotSans = localFont({ src: "./Hubot-Sans.woff2" });
 
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </main>
     </ThemeProvider>
   );
