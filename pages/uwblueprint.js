@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Seo from "@/components/Seo";
 import { fetchUwblueprintData } from "@/functions/fetchPageData";
+import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
 export async function getStaticProps() {
@@ -31,7 +32,7 @@ export default function uwBlueprint({ data }) {
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">UW Blueprint</h1>
             </div>
-            <h2>Work in Progress!</h2>
+            <h2>Building tech for social good</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
@@ -47,7 +48,11 @@ export default function uwBlueprint({ data }) {
                   />
                 );
               }
-              return <p key={i}>{paragraph}</p>;
+              return (
+                <Markdown key={i} className="markdown">
+                  {paragraph}
+                </Markdown>
+              );
             })}
           </div>
         </div>

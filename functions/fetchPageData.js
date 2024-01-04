@@ -3,14 +3,44 @@ export function fetchCiviliaData() {
 }
 
 export function fetchUwblueprintData() {
-  return [];
+  return [
+    "/bp-preview.jpeg",
+    "**Preamble**",
+    "I remember stumbling across the engineering building at my university. Aisles of cardboard booths strewn across the hall, students proudly presenting their rehearsed pitch to the crowd of people gathered around. This was our school’s annual design team fair, an event that happens once every term. I made a mental note to check it out sometime.",
+    "In my second term, I found myself in the eng building once again. After learning about a few subteams, I turned my attention to a representative from *UWBlueprint*, a software design team dedicated to building technology for social good. I’ve previously done volunteer work for small non-profit organizations, and combined with my interest in computer science, seemed like a fitting opportunity. Unfortunately, this specific design team is known for having a super arduous application process. I didn’t care much for it though and applied regardless; what’s the worst that could happen? I wouldn’t know, since I successfully navigated through it (😋) and became a *software developer* and member of UWBlueprint.",
+    "**Timeline**",
+    "I worked extensively on the *Children’s Aid Society (CAS)* subteam within Blueprint from January 2023 to December 2023. CAS is an NPO that provides child protection services and we were helping build a platform for their *Supervised Access Program*. I started my first 8 months as a software developer, then moved up as a technical lead for my last 4 months.",
+    "/cas.jpeg",
+    "**First term**",
+    "During my first term on CAS, our team consisted of 11 students: 1 technical lead with 6 developers and 1 product manager with 3 designers. Up to this point, I’ve only ever had experience creating side projects by myself with the occasional group hackathon, but I’d never coded under someone before and I definitely hadn’t worked in a group as large as CAS either. Essentially, this would be my first time operating in a software team environment.",
+    "CAS is built upon a framework consisting of *PostgreSQL*, *Flask (Python)*, and *React (TypeScript)*. I was familiar with Flask and React (JavaScript), but not TypeScript or Postgres. Furthermore, *Docker* was used to run our application and standardize the local working environment for all devs, a platform (and concept) that was super foreign to me. To add icing on the cake, I was unfamiliar with version control in a collaborative setting; creating pull requests, dealing with merge conflicts, and git rebasing were all new material. There was a lot of learning to do.",
+    "Since you can’t learn without getting your hands dirty, I dived right into the code. Once again, I was in far-off territory; the codebase was extremely large, with dozens of folders and even more files within—and this was just the frontend. It didn’t help that TypeScript has its own unique structure, one that resembles JavaScript enough for me to get the gist, but not enough for me to completely understand. It was like walking through a foggy day—a once amicable environment, now shrouded in an unfamiliar mist.",
+    "Most of my tickets were frontend-related this term. This was a purposeful decision, since I wished to work with visual changes, hoping they would be easier to digest, and my tech lead happily obliged. A lot of my first few work sessions were spent badgering my lead with questions: `“How does prop drilling work with this component?”`, `“How do I use conditional rendering here?”`, `“Why does my branch have 100 commits; only two of them are mine??”`, the list goes on.",
+    "However, with time I became more comfortable working in TypeScript and manipulating *Chakra UI* (a React-based design system) components for my own implementations. I learned about the agile methodology and how to pair program with other developers. Things were starting to fall into place.",
+    "/bp-term1.jpeg",
+    "**Second term**",
+    "My goal this term was to familiarize myself with our backend. As such, many of my tickets were backend-focused. Once again, I kept up my onslaught of questions. Since I’ve worked with Flask in the past, I didn’t have to deal with the initial learning curve of syntax as I did with the frontend. I learned how to create class models, write validation in *DTOs*, implement *CRUD services*, and call them through endpoints. Inadvertently, this taught me how to use *Postman*, manage my local database history, and type terminal-based commands in *psql*. It was a really productive 4 months, and I began to understand how our app interacts through the many files found in both the backend and frontend.",
+    "Not to mention, we had super neat socials this term too!",
+    "/bp-term2.jpeg",
+    "**Third term**",
+    "Being a technical lead had been in the back of my mind ever since I joined. Now going into my third Blueprint term, I’ve had 8 months of prior CAS full-stack experience, 5 months being a frontend developer at [Hack the North](https://eugenezhang.me/hackthenorth), and 4 months of software developer experience at [Civilia](https://eugenezhang.me/civilia), my first co-op internship. In addition, my prior tech lead had committed to an exchange program this term, thus taking on a more advisory role. It was time to step up.",
+    "The responsibilities held by a technical lead were quite daunting. As a lead, you must understand the ins and outs of the project, from low-level implementation to high-level ideas. It is your job to break down the app into manageable tickets, assigning them to developers based on their preferences (stated in the 1:1s you conduct). Since you are working with an NPO, scheduling client meetings and implementing client feedback into your app is also a strict requirement. However, your most important responsibility is to be able to lead a team of developers and cultivate a vibey team culture 😁.",
+    "Although I spent the majority of my time helping rather than coding, I incidentally learned a lot of *DevOps*-related operations: integrating updated dependencies, grappling with *Heroku*, working with database administrative tasks, and debugging Docker containers.",
+    "/docker-meme.jpeg",
+    "When I wasn’t helping or coding, I was constantly brainstorming ways to implement features, reviewing pull requests as they came in, updating documentation and schemas, and planning team socials (I’ve learned that I HATE planning social events; too stressful 😵‍💫).",
+    "Overall though, I found being a technical lead super rewarding, and also plenty of fun! It was cool seeing everything come together and it also didn’t hurt to know that we’d be positively impacting dozens of families with our app.",
+    "/bp-term3.jpeg",
+    "**Final Thoughts**",
+    "UWBlueprint was my first exposure to what software development could look like. It surrounded me with a bunch of people who also liked building things and fostered quite a homely community. I really enjoyed my time here.",
+    "Maybe I’ll come back as VPE one day 😋",
+  ];
 }
 
 export function fetchHackthenorthData() {
   return [
     "/htn-preview-img.jpeg",
     "**Preamble**",
-    "I never would have thought I would be the one to over-engineer the main website for Canada’s biggest hackathon. Being a part of Hack the North’s frontend team always felt so out of reach; I remember looking through their static sites every year with mouth agape, mystified by their creativity and design. I recall scrolling through the [*2022 site*](https://2022.hackthenorth.com/), my eyes hungrily darting across the screen, trying to take in all the colours blending beautifully together like an aurora borealis. I didn’t know it was possible to code like that.",
+    "I never would have thought I would be the one to over-engineer the main website for Canada’s biggest hackathon. Being a part of Hack the North’s frontend team always felt so out of reach; I remember looking through their static sites every year with mouth agape, mystified by their creativity and design. I recall scrolling through the [2022 site](https://2022.hackthenorth.com/), my eyes hungrily darting across the screen, trying to take in all the colours blending beautifully together like an aurora borealis. I didn’t know it was possible to code like that.",
     "/alanTuring.jpeg",
     "However, eventually the shock wore off. From March to October 2023, I was a *frontend developer* and organizer at Hack the North, Canada's biggest hackathon.",
     "**Projects**",
@@ -27,7 +57,7 @@ export function fetchHackthenorthData() {
     "This section does a splendid job of combining many aspects of frontend development: layout, alignment, responsiveness, image resolution, and hooks. For example, the arrangement of organizer boxes seemed quite sporadic to me, with no clear pattern. Thus, I decided to take advantage of the `grid-template-areas` property to forcefully organize the chaos into the following:",
     "/css-grid.jpeg",
     "One annoying thing I had to consider was optimization. Although making a gorgeous Hack the North site is our top priority, we also want a fast and functional site, to maximize the user experience (and pass Lighthouse tests 😅). Thus, I had to make sure the assets I used wouldn’t make the site explode (ie. resizing, lazy loading images, and reducing the pixels on smaller organizer pictures).",
-    "Check out the finished product [*here!*](https://2023.hackthenorth.com/)",
+    "Check out the finished product [here!](https://2023.hackthenorth.com/)",
     "*Travel Tool—DRI*",
     "I was one of the frontend DRIs (directly responsible individuals) for the development of our travel tool. Being a DRI makes you the central point of contact, a beacon of sorts. Thus, it was my responsibility to actively communicate with the other subteams when necessary and ensure our development cycle matches our timelines. For travel tool, this meant reaching out to: the *logistics DRI* to confirm bus locations, capacity, and times, the *backend DRIs* to ask about endpoint descriptions and field name changes, and the *design DRI* to hand off the Figma to the frontend team. Lastly, I, along with my other fellow frontend DRI, had to determine what features we had time to implement and how we wanted to delegate the work; walking a fine line between quality and quantity.",
     "/travel-tool.jpeg",

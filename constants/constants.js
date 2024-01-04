@@ -45,7 +45,7 @@ export const expInfo = [
     company: "UW Blueprint",
     duration: "Jan. 2023 - Dec. 2023",
     bg: "#5a83bf",
-    new: false,
+    new: true,
   },
   {
     logo: "/civilia.png",
