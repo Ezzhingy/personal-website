@@ -32,7 +32,7 @@ export default function uwBlueprint({ data }) {
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">UW Blueprint</h1>
             </div>
-            <h2>Building tech for social good</h2>
+            <h2>Building Tech for Social Good</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
