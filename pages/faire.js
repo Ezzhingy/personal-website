@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Seo from "@/components/Seo";
 import { fetchFaireData } from "@/functions/fetchPageData";
+import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
 export async function getStaticProps() {
@@ -47,7 +48,11 @@ export default function faire({ data }) {
                   />
                 );
               }
-              return <p key={i}>{paragraph}</p>;
+              return (
+                <Markdown key={i} className="markdown">
+                  {paragraph}
+                </Markdown>
+              );
             })}
           </div>
         </div>
