@@ -48,3 +48,8 @@ html {
   clip-path: circle(700px at 90% -10%);
   -webkit-clip-path: circle(700px at 90% -10%);
 }
+
+.markdown a {
+  text-decoration: underline;
+  color: #43b2ca;
+}

@@ -48,7 +48,11 @@ export default function hackTheNorth({ data }) {
                   />
                 );
               }
-              return <Markdown key={i}>{paragraph}</Markdown>;
+              return (
+                <Markdown key={i} className="markdown">
+                  {paragraph}
+                </Markdown>
+              );
             })}
           </div>
         </div>
