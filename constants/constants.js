@@ -53,7 +53,7 @@ export const expInfo = [
     company: "Civilia",
     duration: "May 2023 - Aug 2023",
     bg: "#8ba16a",
-    new: false,
+    new: true,
   },
 ];
 
