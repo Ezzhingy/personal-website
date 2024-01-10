@@ -1,5 +1,25 @@
 export function fetchCiviliaData() {
-  return [];
+  return [
+    "/logo-civilia.jpeg",
+    "**Preamble**",
+    "The dreaded first co-op. For most, a hastily put-together resume flung desperately at any second glancing employer. Hundreds of uWaterloo co-op students, waiting anxiously to hear back from the select few companies willing to offer them an interview. Welcome to recruiting season.",
+    "Searching for employment while only undergoing four months of university learning was an interesting experience. Especially given the mass layoffs and uncertain economy in the tech sector, I was definitely rattled.",
+    "It was a combination of my non-existent (relevant) work experience and the above factors that pushed me to apply to ~100 companies. I heard back from three. Luckily for me, I got an offer from one. I coded quite a bit the summer prior and open-sourced all my projects on my [GitHub](https://github.com/Ezzhingy). A recruiter noticed this and reached out for an interview. I went through two interviews with that company before they gave me an offer.",
+    "I was employed.",
+    "**The work**",
+    "I worked my first internship at Civilia as a software developer during the S23 term. Civilia is a transit technology company that provides solutions related to urban mobility. I primarily collaborated with their management and tech teams.",
+    "Civilia works a lot with General Transit Feed Specification (GTFS) files, a collection of transit data that contains everything you could want to know about transportation. However, their main way of retrieving and filtering this data has been through the tech team itself; the management team doesn’t understand the intricacies well enough. Thus, there have been some efficiency issues with managing GTFS files. That’s where I come in!",
+    "I was tasked with building a GTFS management tool, a file storage system that should be intuitive enough for either team to use, and which would effectively organize and display GTFS data on demand. Users should be able to upload a GTFS file to the tool, edit it, view its corresponding map and tables, and export it as a zip file.",
+    "My employer gave me full ownership of this project. I had to scope out how to implement features, how to design the app, and how I wanted to build it.",
+    "**The tool**",
+    "I decided to build the app in *TypeScript*—having a statically typed language could prove super beneficial in the long run. I combined this with *Node.js* and *Express.js* on the backend, and *React*, *TailwindCSS* and *ChakraUI* on the frontend. I chose not to use a database, since I’d only be storing GTFS archive files, which felt slightly redundant. Instead, I’d have all the files sit in a separate folder. Unfortunately, no database meant I couldn’t leverage any ORM/ODM software. However, I still needed a medium to convert the GTFS files into digestible objects. Thus, I created a custom ORM/ODM-like tool to grapple with the GTFS data and allow me to filter it accordingly.",
+    "I spent a lot of my time planning. This project had a lot of parts to it, so it was important for me to organize my thoughts. I also learned to pace myself. Four months for one project is a lot of time, so I had to properly manage my work to maintain good productivity throughout.",
+    "By the end of my internship, I had built a fully functioning app that the Civilia team could use. With a few more changes, the team had voiced making the app accessible for public use as well!",
+    "**Final thoughts**",
+    "I definitely improved a lot as a developer throughout these four months. It felt rewarding taking a project from end-to-end and I’m thankful to have been allowed to be so hands-on with my learning.",
+    "Although the internship is over, I’ll always have my GitHub contribution graph as a souvenir for the work I put in 😅",
+    "/contribution-graph.jpeg",
+  ];
 }
 
 export function fetchUwblueprintData() {

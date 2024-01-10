@@ -32,7 +32,7 @@ export default function civilia({ data }) {
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">Civilia</h1>
             </div>
-            <h2>Work in Progress!</h2>
+            <h2>Crafting Tools to Transform Urban Mobility</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
