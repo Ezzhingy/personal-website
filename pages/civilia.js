@@ -30,9 +30,11 @@ export default function civilia({ data }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Civilia</h1>
+              <h1 className="font-bold text-2xl">
+                First Co-op Nerves & Transforming Urban Mobility
+              </h1>
             </div>
-            <h2>Crafting Tools to Transform Urban Mobility</h2>
+            <h2>May 2023 - Aug. 2023</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {

@@ -16,16 +16,13 @@ export default function Exp() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div
-      id="experience"
-      className="max-w-2xl mx-auto text-darkBg dark:text-lightBg"
-    >
+    <div id="blogs" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
       <div
         className="flex flex-col gap-3 mt-[100px] mx-10 items-start"
         onMouseLeave={() => setWithin(false)}
         onMouseEnter={() => setWithin(true)}
       >
-        <h1 className="font-bold text-2xl">Experience</h1>
+        <h1 className="font-bold text-2xl">Blogs</h1>
         {expInfo.map((exp, i) => (
           <Link
             key={i}
@@ -71,16 +68,10 @@ export default function Exp() {
                     alt={`${exp.company} logo`}
                   />
                   <div>
-                    <h2 className="font-bold text-xl text-start">
-                      {exp.company}
+                    <h2 className="font-bold text-lg sm:text-xl text-start">
+                      {exp.description}
                     </h2>
-                    {/* <h3 className="text-center sm:text-start hidden sm:block">
-                      {exp.position}
-                    </h3> */}
                   </div>
-                </div>
-                <div className="hidden sm:block">
-                  <h3>{exp.duration}</h3>
                 </div>
               </div>
             </div>

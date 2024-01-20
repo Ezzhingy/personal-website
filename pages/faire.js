@@ -30,9 +30,11 @@ export default function faire({ data }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Faire</h1>
+              <h1 className="font-bold text-2xl">
+                Coding the Local Future, Faire & Square
+              </h1>
             </div>
-            <h2>Work in Progress!</h2>
+            <h2>Jan. 2024 - Present</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {

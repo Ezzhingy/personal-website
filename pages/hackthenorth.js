@@ -30,9 +30,11 @@ export default function hackTheNorth({ data }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Hack the North</h1>
+              <h1 className="font-bold text-2xl">
+                Frontend at Canada's Biggest Hackathon
+              </h1>
             </div>
-            <h2>Canada's Biggest Hackathon</h2>
+            <h2>Mar. 2023 - Present</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {

@@ -8,8 +8,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "experience",
-    title: "Experience",
+    id: "blogs",
+    title: "Blogs",
   },
   {
     id: "projects",
@@ -24,34 +24,30 @@ export const navLinks = [
 export const expInfo = [
   {
     logo: "/faire.png",
-    position: "Frontend Engineer",
     company: "Faire",
-    duration: "Jan. 2024 - Present",
+    description: "Coding the Local Future, Faire & Square",
     bg: "#696969",
     new: false,
   },
 
   {
     logo: "/hackthenorth.png",
-    position: "Frontend Developer",
     company: "Hack the North",
-    duration: "Mar. 2023 - Present",
+    description: "Frontend at Canada's Biggest Hackathon",
     bg: "#7a7ea1",
     new: true,
   },
   {
     logo: "/bp.png",
-    position: "Software Developer",
     company: "UW Blueprint",
-    duration: "Jan. 2023 - Dec. 2023",
+    description: "Building Tech for Social Good, Blueprinting a Better World",
     bg: "#5a83bf",
     new: true,
   },
   {
     logo: "/civilia.png",
-    position: "Software Developer",
     company: "Civilia",
-    duration: "May 2023 - Aug 2023",
+    description: "First Co-op Nerves & Transforming Urban Mobility",
     bg: "#8ba16a",
     new: true,
   },

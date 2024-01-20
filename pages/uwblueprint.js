@@ -30,9 +30,11 @@ export default function uwBlueprint({ data }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">UW Blueprint</h1>
+              <h1 className="font-bold text-2xl">
+                Building Tech for Social Good, Blueprinting a Better World
+              </h1>
             </div>
-            <h2>Building Tech for Social Good</h2>
+            <h2>Jan. 2023 - Dec. 2023</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {

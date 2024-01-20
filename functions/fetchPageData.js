@@ -1,3 +1,7 @@
+export function fetchFaireData() {
+  return ["Work in Progress!"];
+}
+
 export function fetchCiviliaData() {
   return [
     "/logo-civilia.jpeg",
@@ -89,10 +93,6 @@ export function fetchHackthenorthData() {
     "/team.jpg",
     "(although I am coming back as a Frontend Co-Lead, so I’ll be staying around one more year 😁)",
   ];
-}
-
-export function fetchFaireData() {
-  return [];
 }
 
 export function fetchSentiviewData() {
