@@ -95,6 +95,16 @@ export function fetchHackthenorthData() {
   ];
 }
 
+export function fetchDontLeafMeData() {
+  return [
+    "/dont-leaf-me-main.jpeg",
+    "In a world of fast media, many youth struggle with short attention spans and find it difficult to stay focused. Whether it's doom scrolling on their favourite social media site or meandering away from their workplace, productivity is at an all-time low. To regrow their love for learning, we created Don’t Leaf Me!",
+    "One way to prevent users from getting distracted is by blocking unproductive sites—Don’t Leaf Me! helps you do just that. Simply enter in “growth-stunting” (unproductive) browsers into the tool and the next time you try to access these sites, the tool will forcefully remind you to get back on track. However, blocking sites is not enough. Don’t Leaf Me! also uses Google’s Cloud Vision API to detect whether or not you are facing the screen; if you decide to leave the room, the tool will start blaring and alert you to come back. Still having trouble focusing? We added a built-in study session timer to help you track your progress and better manage your time.",
+    "We constructed the frontend with React, TypeScript, Chakra UI, styled-components, and webpack. We built the backend with Node.js, Express.js, and the Cloud Vision API from the Google Cloud Platform to detect whether or not a user was in front of the camera.",
+    "As we finish polishing up our app, we hope to publish it to the Chrome Web Store and make it available for public use!",
+  ];
+}
+
 export function fetchSentiviewData() {
   return [
     "/sentiview-main.png",

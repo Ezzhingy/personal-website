@@ -53,7 +53,24 @@ export const expInfo = [
   },
 ];
 
+// To add a new project, update #card_::before
 export const projectInfo = [
+  {
+    image: "/dont-leaf-me.png",
+    name: "Don't Leaf Me!",
+    description:
+      "A computer vision tab manager to trim away distractions and boost your productivity",
+    skills: [
+      "Cloud Vision API",
+      "React",
+      "ChakraUI",
+      "styled-components",
+      "Node.js",
+      "Express.js",
+      ,
+    ],
+    hue: "rgb(161 219 162 / 20%)",
+  },
   {
     image: "/sentiview.png",
     name: "SentiView",
@@ -66,7 +83,7 @@ export const projectInfo = [
     name: "journal4me",
     description: "A mental health voice-to-mood analysis journalling app",
     skills: ["React", "FastAPI", "MongoDB", "Cohere", "AssemblyAI"],
-    hue: "rgb(42 200 149 / 10%)",
+    hue: "rgb(93 209 241 / 15%)",
   },
 ];
 

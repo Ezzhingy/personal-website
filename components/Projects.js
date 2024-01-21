@@ -54,7 +54,7 @@ export default function Projects() {
               key={i}
               id={`card${i}`}
               className="card border-[#9CA3AF] dark:border-[#374151] border-[0.8px] rounded p-5 flex flex-col gap-3 relative hover:shadow-lg transition-shadow duration-300 cursor-pointer"
-              href={`/${project.name.toLowerCase()}`}
+              href={`/${project.name.replace(/[ '!]/g, "").toLowerCase()}`}
             >
               <Image
                 src={project.image}

@@ -38,6 +38,10 @@ html {
   background: var(--background);
 }
 
+#card2::before {
+  background: var(--background);
+}
+
 .mobile-links {
   clip-path: circle(100px at 90% -10%);
   -webkit-clip-path: circle(100px at 90% -10%);
