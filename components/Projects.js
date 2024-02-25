@@ -61,6 +61,7 @@ export default function Projects() {
                 alt={`${project.name} logo`}
                 width={80}
                 height={80}
+                className="rounded"
               />
               <div>
                 <h2 className="font-bold text-xl">{project.name}</h2>

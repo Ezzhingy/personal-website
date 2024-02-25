@@ -56,6 +56,14 @@ export const expInfo = [
 // To add a new project, update #card_::before
 export const projectInfo = [
   {
+    image: "/memlane.jpeg",
+    name: "Memlane",
+    description:
+      "A mobile app to help you discover and relive memories where they were made",
+    skills: ["React Native", "Expo", "Supabase", "Apple Maps API"],
+    hue: "rgb(30 105 131 / 20%)",
+  },
+  {
     image: "/dont-leaf-me.png",
     name: "Don't Leaf Me!",
     description:
