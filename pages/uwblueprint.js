@@ -31,7 +31,7 @@ export default function uwBlueprint({ data }) {
           <div className="pb-5">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">
-                Building Tech for Social Good, Blueprinting a Better World
+                Blueprinting a Better World
               </h1>
             </div>
             <h2>Jan. 2023 - Dec. 2023</h2>

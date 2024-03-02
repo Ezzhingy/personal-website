@@ -40,14 +40,14 @@ export const expInfo = [
   {
     logo: "/bp.png",
     company: "UW Blueprint",
-    description: "Building Tech for Social Good, Blueprinting a Better World",
+    description: "Blueprinting a Better World",
     bg: "#5a83bf",
     new: true,
   },
   {
     logo: "/civilia.png",
     company: "Civilia",
-    description: "First Co-op Nerves & Transforming Urban Mobility",
+    description: "Transforming Urban Mobility",
     bg: "#8ba16a",
     new: true,
   },

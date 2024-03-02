@@ -31,7 +31,7 @@ export default function civilia({ data }) {
           <div className="pb-5">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">
-                First Co-op Nerves & Transforming Urban Mobility
+                Transforming Urban Mobility
               </h1>
             </div>
             <h2>May 2023 - Aug. 2023</h2>
