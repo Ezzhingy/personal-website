@@ -95,6 +95,19 @@ export function fetchHackthenorthData() {
   ];
 }
 
+export function fetchPocketdocData() {
+  return [
+    "/pocketdoctitle.jpeg",
+    "10 million Canadians will be without a family doctor in the next three to four years.​ This crisis disproportionately affects specific communities, including senior citizens, international students, and low-income individuals.​ The healthcare industry is facing a widespread doctor shortage, resulting in burdened healthcare professionals and prolonged wait times. Patient needs must be streamlined — currently, despite the nature of an appointment, doctors still have to go through the diagnostic process, which can be inefficient.​",
+    "Introducing PocketDoc.",
+    "PocketDoc is a healthcare AI app dedicated to providing patients with accurate medical information about themselves. Jump right into it by calling our AI agent who will ask you about your symptoms and pinpoint the problem. If needed, the agent will also direct you to the nearest clinic to get the appropriate treatment. Once the call is over, PocketDoc saves the conversation and displays some helpful recommendations that the patient can follow before or after their appointment.",
+    "We also built an admin dashboard for the doctors themselves, who can toggle optional check-ins with their patients. If a check-in is suggested, our AI agent will call the patient, asking them some follow-up questions to ensure the patient is recovering properly.",
+    "We constructed the front end with React, JavaScript, and TailwindCSS. We built the backend with Python, Flask, and MongoDB. We also leveraged Thoughtly for the AI agent communication, Zapier for integration between the agent and the saved transcript, and Google Cloud to grab the data in our backend and store/retrieve it through our database. Finally, we used OpenAI's API to provide recommendations based on the user transcript. The backend is deployed on Heroku and the frontend is on Netlify.",
+    "/pocketdoc-tech.png",
+    "We are planning on scaling PocketDoc to a national audience. As we wrap up our financial modelling, we hope to pitch our idea at incubators and toward potential investors.",
+  ];
+}
+
 export function fetchMemlaneData() {
   return [
     "/memlane-main.jpg",
