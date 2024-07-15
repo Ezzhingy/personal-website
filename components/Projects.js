@@ -65,9 +65,7 @@ export default function Projects() {
               />
               <div>
                 <h2 className="font-bold text-xl">{project.name}</h2>
-                <h3 className="text-center sm:text-start">
-                  {project.description}
-                </h3>
+                <h3>{project.description}</h3>
               </div>
               {/* <div className="grid grid-cols-3 gap-3">
                 {project.skills.map((skill, j) =>

@@ -23,6 +23,13 @@ export const navLinks = [
 
 export const expInfo = [
   {
+    logo: "/ethglobal.png",
+    company: "ETHGlobal",
+    description: "Travelling the world with ETH",
+    bg: "#be889a",
+    new: false,
+  },
+  {
     logo: "/faire.png",
     company: "Faire",
     description: "Faire & Square",

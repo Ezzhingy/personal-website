@@ -1,3 +1,7 @@
+export function fetchEthglobalData() {
+  return ["Work in Progress!"];
+}
+
 export function fetchFaireData() {
   return ["Work in Progress!"];
 }

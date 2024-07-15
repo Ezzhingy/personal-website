@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Seo from "@/components/Seo";
-import { fetchFaireData } from "@/functions/fetchPageData";
+import { fetchEthglobalData } from "@/functions/fetchPageData";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
 export async function getStaticProps() {
   // get all the data needed for rendering the page
-  const data = fetchFaireData();
+  const data = fetchEthglobalData();
   return {
     props: { data },
   };
 }
 
-export default function faire({ data }) {
+export default function ethglobal({ data }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -21,18 +21,20 @@ export default function faire({ data }) {
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
       <Seo
-        title="Faire | Eugene Zhang"
-        desc="The future is local."
-        keywords="faire, ecommerce, local, marketplace, wholesale, retail"
-        path="/faire"
+        title="ETHGlobal | Eugene Zhang"
+        desc="Building our decentralized future."
+        keywords="ethglobal, hackathon, ethereum, blockchain, web3"
+        path="/ethglobal"
       />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Faire & Square</h1>
+              <h1 className="font-bold text-2xl">
+                Travelling the world with ETH
+              </h1>
             </div>
-            <h2>Jan. 2024 - Apr. 2024</h2>
+            <h2>Sep. 2024 - Dec. 2024</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
