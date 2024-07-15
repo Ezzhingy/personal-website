@@ -90,8 +90,7 @@ export const projectInfo = [
   {
     image: "/dont-leaf-me.png",
     name: "Don't Leaf Me!",
-    description:
-      "A computer vision tab manager to trim away distractions and boost your productivity",
+    description: "A computer vision tab manager to trim away distractions",
     skills: [
       "Cloud Vision API",
       "React",

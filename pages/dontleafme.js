@@ -25,7 +25,7 @@ export default function dontLeafMe({ data }) {
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
       <Seo
         title="Don't Leaf Me! | Eugene Zhang"
-        desc="A computer vision tab manager to trim away distractions and boost your productivity."
+        desc="A computer vision tab manager to trim away distractions."
         keywords="Don't Leaf Me!, tab manager, productivity, computer vision, react, nextjs, tailwindcss, chrome extension, javascript, web development, software development, software engineering, technology, frontend development, fullstack development"
         path="/don'tleafme!"
       />
@@ -52,10 +52,7 @@ export default function dontLeafMe({ data }) {
                 />
               </Link>
             </div>
-            <h2>
-              A computer vision tab manager to trim away distractions and boost
-              your productivity.
-            </h2>
+            <h2>A computer vision tab manager to trim away distractions.</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
