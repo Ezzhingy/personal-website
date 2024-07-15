@@ -25,7 +25,7 @@ export const expInfo = [
   {
     logo: "/faire.png",
     company: "Faire",
-    description: "Coding the Local Future, Faire & Square",
+    description: "Faire & Square",
     bg: "#696969",
     new: false,
   },

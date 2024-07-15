@@ -69,7 +69,7 @@ export default function Projects() {
                   {project.description}
                 </h3>
               </div>
-              <div className="grid grid-cols-3 gap-3">
+              {/* <div className="grid grid-cols-3 gap-3">
                 {project.skills.map((skill, j) =>
                   skill.length > 8 ? (
                     <div
@@ -91,7 +91,7 @@ export default function Projects() {
                     </div>
                   )
                 )}
-              </div>
+              </div> */}
               <Image
                 src={
                   currentTheme === "dark"
