@@ -41,12 +41,12 @@ export default function About() {
                 <span className="font-bold hidden sm:inline-block">
                   eugene@Eugenes-MacBook-Pro ~ %
                 </span>
-                <span className="font-bold sm:hidden">{">"}</span> cat fun.txt
+                <span className="font-bold sm:hidden">{">"}</span> cat more.txt
               </p>
               <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal">
-                My main interest lies in software development, but I also have a
-                budding interest in AI as well! Aside from programming, I’m a
-                big anime enjoyer, gym rookie, and small-time gamer :)
+                Trying to convince myself that writing code will typecast itself
+                into creative writing. The pen may lend itself to artistic
+                expression, but I can type at 120 wpm.
               </p>
             </div>
             <div>
