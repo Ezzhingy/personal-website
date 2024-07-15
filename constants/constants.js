@@ -63,7 +63,7 @@ export const expInfo = [
 // To add a new project, update #card_::before
 export const projectInfo = [
   {
-    image: "/pocketdoc.jpeg",
+    image: "/pocketdoc.png",
     name: "PocketDoc",
     description:
       "An automated AI agent solution to facilitate the appointment process",
@@ -80,7 +80,7 @@ export const projectInfo = [
     hue: "rgb(81 75 144 / 20%)",
   },
   {
-    image: "/memlane.jpeg",
+    image: "/memlane.png",
     name: "Memlane",
     description:
       "A mobile app to help you discover and relive memories where they were made",
