@@ -10,6 +10,8 @@ const Projects = dynamic(() => import("@/components/Projects"));
 const LatestCode = dynamic(() => import("@/components/LatestCode"));
 const Seo = dynamic(() => import("@/components/Seo"));
 
+const isServerReq = (req) => !req.url.startsWith("/_next");
+
 export default function Home({ repos }) {
   return (
     <>
@@ -28,10 +30,9 @@ export default function Home({ repos }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ req }) {
   let token = process.env.GITHUB_AUTH_TOKEN;
-
-  const repos = await fetchRepos(userData, token);
+  const repos = isServerReq(req) ? await fetchRepos(userData, token) : null;
 
   return {
     props: {
