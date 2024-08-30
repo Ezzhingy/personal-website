@@ -1,8 +1,20 @@
+import { userData } from "@/constants/constants";
+import fetchRepos from "@/functions/fetchRepos";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function LatestCode({ repos }) {
+export default function LatestCode() {
   const [mounted, setMounted] = useState(false);
+  const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    const initializeRepos = async () => {
+      let token = process.env.GITHUB_AUTH_TOKEN;
+      const repos = await fetchRepos(userData, token);
+      setRepos(repos);
+    };
+    initializeRepos();
+  }, []);
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;

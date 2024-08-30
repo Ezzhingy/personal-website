@@ -1,5 +1,3 @@
-import fetchRepos from "@/functions/fetchRepos";
-import { userData } from "@/constants/constants";
 import dynamic from "next/dynamic";
 
 // may or may not increase performance
@@ -10,9 +8,7 @@ const Projects = dynamic(() => import("@/components/Projects"));
 const LatestCode = dynamic(() => import("@/components/LatestCode"));
 const Seo = dynamic(() => import("@/components/Seo"));
 
-const isServerReq = (req) => !req.url.startsWith("/_next");
-
-export default function Home({ repos }) {
+export default function Home() {
   return (
     <>
       <Seo
@@ -25,18 +21,7 @@ export default function Home({ repos }) {
       <About />
       <Exp />
       <Projects />
-      <LatestCode repos={repos} />
+      <LatestCode />
     </>
   );
-}
-
-export async function getServerSideProps({ req }) {
-  let token = process.env.GITHUB_AUTH_TOKEN;
-  const repos = isServerReq(req) ? await fetchRepos(userData, token) : null;
-
-  return {
-    props: {
-      repos,
-    },
-  };
 }
