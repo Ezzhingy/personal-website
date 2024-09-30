@@ -32,7 +32,7 @@ export default function About() {
                 <span className="font-bold sm:hidden">{">"}</span> cat intro.txt
               </p>
               <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal">
-                Heyo, Eugene here! I’m currently enrolled as a sophomore in the
+                Heyo, Eugene here! I’m currently enrolled as a junior in the
                 Computer Science Program at the University of Waterloo.
               </p>
             </div>
