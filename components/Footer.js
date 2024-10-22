@@ -71,7 +71,7 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="mailto:zhang.eug@gmail.com "
+              href="mailto:e4zhang@uwaterloo.ca"
               target="_blank"
               rel="noreferrer"
             >
