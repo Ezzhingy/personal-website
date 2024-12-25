@@ -27,7 +27,7 @@ export const expInfo = [
     company: "ETHGlobal",
     description: "Travelling the world with ETH",
     bg: "#be889a",
-    new: false,
+    new: true,
   },
   {
     logo: "/faire.png",
@@ -42,21 +42,21 @@ export const expInfo = [
     company: "Hack the North",
     description: "Frontend at Canada's Biggest Hackathon",
     bg: "#7a7ea1",
-    new: true,
+    new: false,
   },
   {
     logo: "/bp.png",
     company: "UW Blueprint",
     description: "Blueprinting a Better World",
     bg: "#5a83bf",
-    new: true,
+    new: false,
   },
   {
     logo: "/civilia.png",
     company: "Civilia",
     description: "Transforming Urban Mobility",
     bg: "#8ba16a",
-    new: true,
+    new: false,
   },
 ];
 

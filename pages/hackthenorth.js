@@ -34,7 +34,7 @@ export default function hackTheNorth({ data }) {
                 Frontend at Canada's Biggest Hackathon
               </h1>
             </div>
-            <h2>Mar. 2023 - Present</h2>
+            <h2>Mar. 2023 - Oct. 2023</h2>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
