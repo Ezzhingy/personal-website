@@ -28,15 +28,18 @@ export default function uwBlueprint({ data }) {
       />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
-          <div className="pb-5">
+          <div className="pb-1">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">
                 Blueprinting a Better World
               </h1>
             </div>
-            <h2>Jan. 2023 - Dec. 2023</h2>
+            <div>
+              <h2>Volunteering: Jan. 2023 - Dec. 2023</h2>
+              <h2 className="italic text-sm">Written: Jan. 4, 2024</h2>
+            </div>
           </div>
-          <div className="flex flex-col gap-3 pt-5">
+          <div className="flex flex-col gap-3">
             {data.map((paragraph, i) => {
               if (paragraph[0] === "/") {
                 return (

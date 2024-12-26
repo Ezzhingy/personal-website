@@ -32,7 +32,9 @@ export default function faire({ data }) {
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">Faire & Square</h1>
             </div>
-            <h2>Jan. 2024 - Apr. 2024</h2>
+            <div>
+              <h2>Internship: Jan. 2024 - Apr. 2024</h2>
+            </div>
           </div>
           <div className="flex flex-col gap-3 pt-5">
             {data.map((paragraph, i) => {
