@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth !important;
 }
 
+ol {
+  list-style: decimal;
+  padding-left: 2rem;
+}
+
 #show-nav-mobile {
   display: block !important;
 }
