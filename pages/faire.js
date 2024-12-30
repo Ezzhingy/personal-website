@@ -28,15 +28,16 @@ export default function faire({ data }) {
       />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
-          <div className="pb-5">
+          <div className="pb-1">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">Faire & Square</h1>
             </div>
             <div>
               <h2>Internship: Jan. 2024 - Apr. 2024</h2>
+              <h2 className="italic text-sm">Written: Dec. 30, 2024</h2>
             </div>
           </div>
-          <div className="flex flex-col gap-3 pt-5">
+          <div className="flex flex-col gap-3">
             {data.map((paragraph, i) => {
               if (paragraph[0] === "/") {
                 return (

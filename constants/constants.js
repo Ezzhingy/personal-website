@@ -34,7 +34,7 @@ export const expInfo = [
     company: "Faire",
     description: "Faire & Square",
     bg: "#696969",
-    new: false,
+    new: true,
   },
 
   {
