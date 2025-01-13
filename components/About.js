@@ -8,7 +8,10 @@ export default function About() {
   if (!mounted) return null;
 
   return (
-    <div id="about" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
+    <div
+      id="about"
+      className="max-w-2xl mx-auto text-darkBg dark:text-lightBg pt-24 sm:pt-20"
+    >
       <div className="flex gap-8 pt-10 px-10 items-center justify-between">
         <div className="flex flex-col">
           <div className="h-6 bg-darkBg dark:bg-lightBg flex items-center justify-center rounded-tl-lg rounded-tr-lg relative">

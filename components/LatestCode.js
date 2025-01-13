@@ -22,7 +22,7 @@ export default function LatestCode() {
   return (
     <div
       id="latest"
-      className="max-w-2xl mx-auto pt-[100px] text-darkBg dark:text-lightBg"
+      className="max-w-2xl mx-auto pt-32 sm:pt-24 text-darkBg dark:text-lightBg"
     >
       <div className="flex flex-col gap-3 mx-10 items-start">
         <h1 className="font-bold text-2xl">Latest Code</h1>

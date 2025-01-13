@@ -16,7 +16,10 @@ export default function Exp() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div id="blogs" className="max-w-2xl mx-auto text-darkBg dark:text-lightBg">
+    <div
+      id="blogs"
+      className="max-w-2xl mx-auto text-darkBg dark:text-lightBg pt-6 sm:pt-2"
+    >
       <div
         className="flex flex-col gap-3 mt-[100px] mx-10 items-start"
         onMouseLeave={() => setWithin(false)}

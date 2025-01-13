@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="max-w-2xl mx-auto pt-[100px] text-darkBg dark:text-lightBg"
+      className="max-w-2xl mx-auto pt-32 sm:pt-28 text-darkBg dark:text-lightBg"
       onMouseOver={changeGlow}
     >
       <div className="flex flex-col gap-3 mx-10 items-start">

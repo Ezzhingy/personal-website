@@ -16,7 +16,7 @@ export default function Intro() {
   return (
     <div
       id="home"
-      className="box-border max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg"
+      className="box-border max-w-2xl mx-auto pt-24 sm:pt-20 text-darkBg dark:text-lightBg"
     >
       <div className="flex flex-col-reverse gap-8 m-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex flex-col gap-8">
