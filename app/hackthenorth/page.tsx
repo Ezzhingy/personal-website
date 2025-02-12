@@ -1,13 +1,14 @@
 import { fetchHackthenorthData } from "@/functions/fetchPageData";
 import HackTheNorth from "@/app/hackthenorth/hackthenorth";
+import { Metadata } from "next";
 
-async function getHackthenorthData() {
-  const data = fetchHackthenorthData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "Hack the North",
+  description: "Canada's biggest hackathon.",
+};
 
-export default async function Page() {
-  const exp = await getHackthenorthData();
+export default function Page() {
+  const exp = fetchHackthenorthData();
 
   return <HackTheNorth data={exp} />;
 }

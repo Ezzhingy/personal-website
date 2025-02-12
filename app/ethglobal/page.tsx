@@ -1,13 +1,14 @@
 import { fetchEthglobalData } from "@/functions/fetchPageData";
 import Ethglobal from "@/app/ethglobal/ethglobal";
+import { Metadata } from "next";
 
-async function getEthglobalData() {
-  const data = fetchEthglobalData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "ETHGlobal",
+  description: "Building our decentralized future.",
+};
 
-export default async function Page() {
-  const exp = await getEthglobalData();
+export default function Page() {
+  const exp = fetchEthglobalData();
 
   return <Ethglobal data={exp} />;
 }

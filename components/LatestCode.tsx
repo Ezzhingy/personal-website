@@ -1,19 +1,19 @@
 "use client";
 
 import { userData } from "@/constants/constants";
-import fetchRepos from "@/functions/fetchRepos";
+import fetchRepos, { RepoType } from "@/functions/fetchRepos";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function LatestCode() {
   const [mounted, setMounted] = useState(false);
-  const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState<RepoType[]>([]);
 
   useEffect(() => {
     const initializeRepos = async () => {
       let token = process.env.GITHUB_AUTH_TOKEN;
-      const repos = await fetchRepos(userData, token);
-      setRepos(repos);
+      const repos: RepoType[] | undefined = await fetchRepos(userData, token);
+      if (repos) setRepos(repos);
     };
     initializeRepos();
   }, []);
@@ -37,7 +37,7 @@ export default function LatestCode() {
   );
 }
 
-const GithubRepoCard = ({ repo }) => {
+const GithubRepoCard = ({ repo }: { repo: RepoType }) => {
   return (
     <div className="grid grid-cols-1">
       <h1 className="font-semibold text-xl">{repo.name}</h1>

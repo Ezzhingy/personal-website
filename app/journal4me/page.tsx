@@ -1,13 +1,14 @@
 import { fetchJournal4meData } from "@/functions/fetchPageData";
 import Journal4me from "@/app/journal4me/journal4me";
+import { Metadata } from "next";
 
-async function getJournal4meData() {
-  const data = fetchJournal4meData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "journal4me",
+  description: "A mental health voice-to-mood analysis journaling app.",
+};
 
-export default async function Page() {
-  const project = await getJournal4meData();
+export default function Page() {
+  const project = fetchJournal4meData();
 
   return <Journal4me data={project} />;
 }

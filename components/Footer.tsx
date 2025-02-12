@@ -6,6 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Select from "react-select";
 
+interface OptionType {
+  value: string;
+  label: string;
+}
+
 export default function Footer() {
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -22,7 +27,7 @@ export default function Footer() {
     },
   ];
 
-  const onVersionChange = (option) => {
+  const onVersionChange = (option: OptionType) => {
     switch (option.value) {
       case "new":
         window.location.href = "https://eugenezhang.me/";

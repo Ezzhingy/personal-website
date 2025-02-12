@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { projectInfo } from "@/constants/constants";
 import Image from "next/image";
@@ -9,8 +9,8 @@ export default function Projects() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const handleOnMouseMove = (e) => {
-      const { currentTarget: target } = e;
+    const handleOnMouseMove = (e: MouseEvent) => {
+      const target = e.currentTarget as HTMLElement;
 
       const rect = target.getBoundingClientRect(),
         x = e.clientX - rect.left,
@@ -22,7 +22,7 @@ export default function Projects() {
 
     const cards: NodeListOf<HTMLElement> = document.querySelectorAll(".card");
     for (const card of cards) {
-      card.onmousemove = (e) => handleOnMouseMove(e);
+      card.onmousemove = (e: MouseEvent) => handleOnMouseMove(e);
     }
   });
 

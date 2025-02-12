@@ -7,7 +7,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Exp() {
-  const [toggle, setToggle] = useState(Array(expInfo.length).fill(false));
+  const [toggle, setToggle] = useState<boolean[]>(
+    Array(expInfo.length).fill(false)
+  );
   const [within, setWithin] = useState(false);
 
   const { systemTheme, theme } = useTheme();

@@ -1,13 +1,14 @@
 import { fetchDontLeafMeData } from "@/functions/fetchPageData";
 import DontLeafMe from "@/app/dontleafme/dontleafme";
+import { Metadata } from "next";
 
-async function getDontleafmeData() {
-  const data = fetchDontLeafMeData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "Don't Leaf Me",
+  description: "A computer vision tab manager to trim away distractions.",
+};
 
-export default async function Page() {
-  const project = await getDontleafmeData();
+export default function Page() {
+  const project = fetchDontLeafMeData();
 
   return <DontLeafMe data={project} />;
 }

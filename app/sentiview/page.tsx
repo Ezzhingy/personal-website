@@ -1,13 +1,14 @@
 import { fetchSentiviewData } from "@/functions/fetchPageData";
 import Sentiview from "@/app/sentiview/sentiview";
+import { Metadata } from "next";
 
-async function getSentiviewData() {
-  const data = fetchSentiviewData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "Sentiview",
+  description: "A customer insight filtering system for businesses.",
+};
 
-export default async function Page() {
-  const project = await getSentiviewData();
+export default function Page() {
+  const project = fetchSentiviewData();
 
   return <Sentiview data={project} />;
 }

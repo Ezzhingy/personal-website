@@ -1,13 +1,15 @@
 import { fetchMemlaneData } from "@/functions/fetchPageData";
 import Memlane from "@/app/memlane/memlane";
+import { Metadata } from "next";
 
-async function getMemlaneData() {
-  const data = fetchMemlaneData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "Memlane",
+  description:
+    "A mobile app to help you discover and relive memories where they were made.",
+};
 
-export default async function Page() {
-  const project = await getMemlaneData();
+export default function Page() {
+  const project = fetchMemlaneData();
 
   return <Memlane data={project} />;
 }

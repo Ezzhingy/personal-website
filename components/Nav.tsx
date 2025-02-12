@@ -119,17 +119,6 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              {/* <li className="hover:text-[#43B2CA] transition-colors duration-150 py-2.5 pl-2.5 font-bold test-sm tracking-wide">
-                <a
-                  href="https://drive.google.com/file/d/11BkVvQi5BNv36cd5LXyh8N4p-ztAbSQh/view?usp=sharing"
-                  target="_blank"
-                  id="top-resume-btn"
-                  rel="noreferrer"
-                  className="flex flex-1"
-                >
-                  Resume
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

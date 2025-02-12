@@ -1,13 +1,15 @@
 import { fetchPocketdocData } from "@/functions/fetchPageData";
 import Pocketdoc from "@/app/pocketdoc/pocketdoc";
+import { Metadata } from "next";
 
-async function getPocketdocData() {
-  const data = fetchPocketdocData();
-  return data;
-}
+export const metadata: Metadata = {
+  title: "Pocketdoc",
+  description:
+    "An automated AI agent solution to facilitate the appointment process.",
+};
 
-export default async function Page() {
-  const project = await getPocketdocData();
+export default function Page() {
+  const project = fetchPocketdocData();
 
   return <Pocketdoc data={project} />;
 }
