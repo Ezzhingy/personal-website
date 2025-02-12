@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Seo from "@/components/Seo";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
@@ -13,12 +12,6 @@ export default function HackTheNorth({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="Hack the North | Eugene Zhang"
-        desc="Canada's biggest hackathon."
-        keywords="hack the north, hackathon, hackathon project, hackathon projects, hackathon team, hackathon experience"
-        path="/hackthenorth"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">

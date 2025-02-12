@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import Seo from "@/components/Seo";
 
 export default function Journal4me({ data }: { data: string[] }) {
   const { systemTheme, theme } = useTheme();
@@ -16,12 +15,6 @@ export default function Journal4me({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="journal4me | Eugene Zhang"
-        desc="A mental health voice-to-mood analysis journaling app."
-        keywords="journal4me, journal, journaling, mental health, voice-to-mood analysis, sentiment analysis, react, nextjs, fastapi, mongodb, assemblyai, cohere, mental illness, mental health issues"
-        path="/journal4me"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">

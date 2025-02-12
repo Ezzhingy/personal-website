@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import Seo from "@/components/Seo";
 
 export default function Sentiview({ data }: { data: string[] }) {
   const { systemTheme, theme } = useTheme();
@@ -16,12 +15,6 @@ export default function Sentiview({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="SentiView | Eugene Zhang"
-        desc="A customer insight filtering system for businesses."
-        keywords="sentiview, sentiment analysis, tokenization, react, nextjs, flask, cohere, businesses, reviews, customer feedback"
-        path="/sentiview"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">

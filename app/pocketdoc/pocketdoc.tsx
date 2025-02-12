@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import Seo from "@/components/Seo";
 
 export default function Pocketdoc({ data }: { data: string[] }) {
   const { systemTheme, theme } = useTheme();
@@ -16,12 +15,6 @@ export default function Pocketdoc({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="PocketDoc | Eugene Zhang"
-        desc="An automated AI agent solution to facilitate the appointment process."
-        keywords="PocketDoc, AI agent, appointment process, mobile app, Flask, MongoDB, React, Tailwind, Thoughtly, Google Cloud, Zapier, OpenAI API"
-        path="/pocketdoc"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">

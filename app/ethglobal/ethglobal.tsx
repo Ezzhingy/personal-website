@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Seo from "@/components/Seo";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
@@ -13,12 +12,6 @@ export default function Ethglobal({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="ETHGlobal | Eugene Zhang"
-        desc="Building our decentralized future."
-        keywords="ethglobal, hackathon, ethereum, blockchain, web3"
-        path="/ethglobal"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">

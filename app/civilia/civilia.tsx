@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Seo from "@/components/Seo";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
@@ -13,12 +12,6 @@ export default function Civilia({ data }: { data: string[] }) {
 
   return (
     <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
-      <Seo
-        title="Civilia | Eugene Zhang"
-        desc="Crafting tools to transform urban mobility."
-        keywords="civilia, civilia project, civilia team, civilia experience"
-        path="/civilia"
-      />
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">
