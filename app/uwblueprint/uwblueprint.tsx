@@ -7,6 +7,23 @@ import { useState, useEffect } from "react";
 export default function UwBlueprint({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
 
+  const [uwblueprintViews, setUwblueprintViews] = useState(0);
+
+  useEffect(() => {
+    const fetchUwBlueprintViews = async () => {
+      const res = await fetch("/api/uwblueprint");
+      const data = await res.json();
+      setUwblueprintViews(data.count);
+    };
+    const updateUwblueprintViews = async () => {
+      await fetch("/api/uwblueprint", {
+        method: "POST",
+      });
+    };
+    fetchUwBlueprintViews();
+    updateUwblueprintViews();
+  }, []);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
@@ -22,7 +39,9 @@ export default function UwBlueprint({ data }: { data: string[] }) {
             </div>
             <div>
               <h2>Volunteering: Jan. 2023 - Dec. 2023</h2>
-              <h2 className="italic text-sm">Written: Jan. 4, 2024</h2>
+              <h2 className="italic text-sm">
+                Jan. 4, 2024 • {uwblueprintViews} views
+              </h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -31,8 +50,8 @@ export default function UwBlueprint({ data }: { data: string[] }) {
                 return (
                   <Image
                     key={i}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     src={paragraph}
                     alt={paragraph}
                     className="py-10"

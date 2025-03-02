@@ -7,6 +7,23 @@ import { useState, useEffect } from "react";
 export default function HackTheNorth({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
 
+  const [hackthenorthViews, setHackthenorthViews] = useState(0);
+
+  useEffect(() => {
+    const fetchHackthenorthViews = async () => {
+      const res = await fetch("/api/hackthenorth");
+      const data = await res.json();
+      setHackthenorthViews(data.count);
+    };
+    const updateHackthenorthViews = async () => {
+      await fetch("/api/hackthenorth", {
+        method: "POST",
+      });
+    };
+    fetchHackthenorthViews();
+    updateHackthenorthViews();
+  }, []);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
@@ -22,7 +39,9 @@ export default function HackTheNorth({ data }: { data: string[] }) {
             </div>
             <div>
               <h2>Volunteering: Mar. 2023 - Oct. 2023</h2>
-              <h2 className="italic text-sm">Written: Jan. 4, 2024</h2>
+              <h2 className="italic text-sm">
+                Jan. 4, 2024 • {hackthenorthViews} views
+              </h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -31,8 +50,8 @@ export default function HackTheNorth({ data }: { data: string[] }) {
                 return (
                   <Image
                     key={i}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     src={paragraph}
                     alt={paragraph}
                     className="py-10"
