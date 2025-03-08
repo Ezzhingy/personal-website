@@ -7,6 +7,23 @@ import { useState, useEffect } from "react";
 export default function Ethglobal({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
 
+  const [ethglobalViews, setEthglobalViews] = useState(0);
+
+  useEffect(() => {
+    const fetchEthglobalViews = async () => {
+      const res = await fetch("/api/ethglobal");
+      const data = await res.json();
+      setEthglobalViews(data.count);
+    };
+    const updateEthglobalViews = async () => {
+      await fetch("/api/ethglobal", {
+        method: "POST",
+      });
+    };
+    fetchEthglobalViews();
+    updateEthglobalViews();
+  }, []);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
@@ -22,7 +39,9 @@ export default function Ethglobal({ data }: { data: string[] }) {
             </div>
             <div>
               <h2>Internship: Sep. 2024 - Dec. 2024</h2>
-              <h2 className="italic text-sm">Written: Dec. 24, 2024</h2>
+              <h2 className="italic text-sm">
+                Dec. 24, 2024 • {ethglobalViews} views
+              </h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -31,8 +50,8 @@ export default function Ethglobal({ data }: { data: string[] }) {
                 return (
                   <Image
                     key={i}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     src={paragraph}
                     alt={paragraph}
                     className="py-10"

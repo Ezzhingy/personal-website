@@ -15,6 +15,46 @@ export default function Exp() {
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  const [civiliaViews, setCiviliaViews] = useState(0);
+  const [uwblueprintViews, setUwblueprintViews] = useState(0);
+  const [hackthenorthViews, setHackthenorthViews] = useState(0);
+  const [faireViews, setFaireViews] = useState(0);
+  const [ethglobalViews, setEthglobalViews] = useState(0);
+
+  const fetchCiviliaViews = async () => {
+    const res = await fetch("/api/civilia");
+    const data = await res.json();
+    setCiviliaViews(data.count);
+  };
+  const fetchUwblueprintViews = async () => {
+    const res = await fetch("/api/uwblueprint");
+    const data = await res.json();
+    setUwblueprintViews(data.count);
+  };
+  const fetchHackthenorthViews = async () => {
+    const res = await fetch("/api/hackthenorth");
+    const data = await res.json();
+    setHackthenorthViews(data.count);
+  };
+  const fetchFaireViews = async () => {
+    const res = await fetch("/api/faire");
+    const data = await res.json();
+    setFaireViews(data.count);
+  };
+  const fetchEthglobalViews = async () => {
+    const res = await fetch("/api/ethglobal");
+    const data = await res.json();
+    setEthglobalViews(data.count);
+  };
+
+  useEffect(() => {
+    fetchCiviliaViews();
+    fetchUwblueprintViews();
+    fetchHackthenorthViews();
+    fetchFaireViews();
+    fetchEthglobalViews();
+  }, []);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
   const currentTheme = theme === "system" ? systemTheme : theme;
@@ -65,7 +105,7 @@ export default function Exp() {
                 <p className="text-xs font-bold">NEW</p>
               </div>
             )}
-            <div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-row gap-2 items-center justify-between">
                 <div className="flex items-center gap-3 flex-row">
                   <Image
@@ -81,6 +121,29 @@ export default function Exp() {
                   </div>
                 </div>
               </div>
+              {exp.company === "Civilia" && (
+                <div className="hidden sm:block italic">
+                  {civiliaViews} views
+                </div>
+              )}
+              {exp.company === "UW Blueprint" && (
+                <div className="hidden sm:block italic">
+                  {uwblueprintViews} views
+                </div>
+              )}
+              {exp.company === "Hack the North" && (
+                <div className="hidden sm:block italic">
+                  {hackthenorthViews} views
+                </div>
+              )}
+              {exp.company === "Faire" && (
+                <div className="hidden sm:block italic">{faireViews} views</div>
+              )}
+              {exp.company === "ETHGlobal" && (
+                <div className="hidden sm:block italic">
+                  {ethglobalViews} views
+                </div>
+              )}
             </div>
           </Link>
         ))}

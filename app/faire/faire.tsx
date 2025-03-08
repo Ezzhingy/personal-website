@@ -7,6 +7,23 @@ import { useState, useEffect } from "react";
 export default function Faire({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
 
+  const [faireViews, setFaireViews] = useState(0);
+
+  useEffect(() => {
+    const fetchFaireViews = async () => {
+      const res = await fetch("/api/faire");
+      const data = await res.json();
+      setFaireViews(data.count);
+    };
+    const updateFaireViews = async () => {
+      await fetch("/api/faire", {
+        method: "POST",
+      });
+    };
+    fetchFaireViews();
+    updateFaireViews();
+  }, []);
+
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
 
@@ -20,7 +37,9 @@ export default function Faire({ data }: { data: string[] }) {
             </div>
             <div>
               <h2>Internship: Jan. 2024 - Apr. 2024</h2>
-              <h2 className="italic text-sm">Written: Dec. 30, 2024</h2>
+              <h2 className="italic text-sm">
+                Dec. 30, 2024 • {faireViews} views
+              </h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">
@@ -29,8 +48,8 @@ export default function Faire({ data }: { data: string[] }) {
                 return (
                   <Image
                     key={i}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                     src={paragraph}
                     alt={paragraph}
                     className="py-10"
