@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Hack the North",
-  description: "Canada's biggest hackathon.",
+  description: "Frontend at Canada's biggest hackathon.",
 };
 
 export default function Page() {

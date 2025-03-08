@@ -4,24 +4,24 @@ import Image from "next/image";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
 
-export default function Civilia({ data }: { data: string[] }) {
+export default function Palantir({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
 
-  const [civiliaViews, setCiviliaViews] = useState(0);
+  const [palantirViews, setPalantirViews] = useState(0);
 
   useEffect(() => {
-    const fetchCiviliaViews = async () => {
-      const res = await fetch("/api/civilia");
+    const fetchpalantirViews = async () => {
+      const res = await fetch("/api/palantir");
       const data = await res.json();
-      setCiviliaViews(data.count);
+      setPalantirViews(data.count);
     };
-    const updateCiviliaViews = async () => {
-      await fetch("/api/civilia", {
+    const updatepalantirViews = async () => {
+      await fetch("/api/palantir", {
         method: "POST",
       });
     };
-    fetchCiviliaViews();
-    updateCiviliaViews();
+    fetchpalantirViews();
+    updatepalantirViews();
   }, []);
 
   useEffect(() => setMounted(true), []);
@@ -33,13 +33,11 @@ export default function Civilia({ data }: { data: string[] }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">First co-op jitters</h1>
+              <h1 className="font-bold text-2xl">Forward deployed in London</h1>
             </div>
             <div>
-              <h2>Internship: May 2023 - Aug. 2023</h2>
-              <h2 className="italic text-sm">
-                Jan. 10, 2024 • {civiliaViews} views
-              </h2>
+              <h2>Internship: ??? - ???</h2>
+              <h2 className="italic text-sm">??? • {palantirViews} views</h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">

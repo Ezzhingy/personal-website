@@ -20,6 +20,7 @@ export default function Exp() {
   const [hackthenorthViews, setHackthenorthViews] = useState(0);
   const [faireViews, setFaireViews] = useState(0);
   const [ethglobalViews, setEthglobalViews] = useState(0);
+  const [palantirViews, setPalantirViews] = useState(0);
 
   const fetchCiviliaViews = async () => {
     const res = await fetch("/api/civilia");
@@ -46,6 +47,11 @@ export default function Exp() {
     const data = await res.json();
     setEthglobalViews(data.count);
   };
+  const fetchPalantirViews = async () => {
+    const res = await fetch("/api/palantir");
+    const data = await res.json();
+    setPalantirViews(data.count);
+  };
 
   useEffect(() => {
     fetchCiviliaViews();
@@ -53,6 +59,7 @@ export default function Exp() {
     fetchHackthenorthViews();
     fetchFaireViews();
     fetchEthglobalViews();
+    fetchPalantirViews();
   }, []);
 
   useEffect(() => setMounted(true), []);
@@ -109,6 +116,7 @@ export default function Exp() {
               <div className="flex flex-row gap-2 items-center justify-between">
                 <div className="flex items-center gap-3 flex-row">
                   <Image
+                    className="rounded-full"
                     src={exp.logo}
                     width={40}
                     height={40}
@@ -142,6 +150,11 @@ export default function Exp() {
               {exp.company === "ETHGlobal" && (
                 <div className="hidden sm:block italic">
                   {ethglobalViews} views
+                </div>
+              )}
+              {exp.company === "Palantir" && (
+                <div className="hidden sm:block italic">
+                  {palantirViews} views
                 </div>
               )}
             </div>

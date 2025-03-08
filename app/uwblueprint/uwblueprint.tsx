@@ -34,7 +34,7 @@ export default function UwBlueprint({ data }: { data: string[] }) {
           <div className="pb-1">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">
-                Blueprinting a Better World
+                Helping out the Children's Aid Society
               </h1>
             </div>
             <div>

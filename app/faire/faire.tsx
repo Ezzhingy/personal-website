@@ -33,7 +33,7 @@ export default function Faire({ data }: { data: string[] }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Faire & Square</h1>
+              <h1 className="font-bold text-2xl">A day in the life at Faire</h1>
             </div>
             <div>
               <h2>Internship: Jan. 2024 - Apr. 2024</h2>

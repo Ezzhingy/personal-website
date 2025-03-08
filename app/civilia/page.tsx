@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Civilia",
-  description: "Crafting tools to transform urban mobility.",
+  description: "First co-op jitters.",
 };
 
 export default function Page() {

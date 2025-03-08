@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ETHGlobal",
-  description: "Building our decentralized future.",
+  description: "Travelling the world with ETH.",
 };
 
 export default function Page() {

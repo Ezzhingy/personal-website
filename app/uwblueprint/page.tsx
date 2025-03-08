@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "UW Blueprint",
-  description: "Building tech for social good.",
+  description: "Helping out the Children's Aid Society.",
 };
 
 export default function Page() {

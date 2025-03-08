@@ -1,3 +1,7 @@
+export function fetchPalantirData() {
+  return ["Coming soon!"];
+}
+
 export function fetchEthglobalData() {
   return [
     "/ethglobal/ethglobal-main.jpeg",

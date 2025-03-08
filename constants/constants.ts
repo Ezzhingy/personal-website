@@ -23,6 +23,13 @@ export const navLinks = [
 
 export const expInfo = [
   {
+    logo: "/palantir/palantir.jpg",
+    company: "Palantir",
+    description: "Forward deployed in London",
+    bg: "#a0a0a0",
+    new: false,
+  },
+  {
     logo: "/ethglobal/ethglobal.png",
     company: "ETHGlobal",
     description: "Travelling the world with ETH",
@@ -32,7 +39,7 @@ export const expInfo = [
   {
     logo: "/faire/faire.png",
     company: "Faire",
-    description: "Faire & Square",
+    description: "A day in the life at Faire",
     bg: "#696969",
     new: true,
   },
@@ -40,21 +47,21 @@ export const expInfo = [
   {
     logo: "/hackthenorth/hackthenorth.png",
     company: "Hack the North",
-    description: "Frontend at Canada's Biggest Hackathon",
+    description: "Frontend at Canada's biggest hackathon",
     bg: "#7a7ea1",
     new: false,
   },
   {
     logo: "/uwblueprint/bp.png",
     company: "UW Blueprint",
-    description: "Blueprinting a Better World",
+    description: "Helping out the Children's Aid Society",
     bg: "#5a83bf",
     new: false,
   },
   {
-    logo: "/civilia/civilia.png",
+    logo: "/civilia/civilia.jpeg",
     company: "Civilia",
-    description: "Transforming Urban Mobility",
+    description: "First co-op jitters",
     bg: "#8ba16a",
     new: false,
   },

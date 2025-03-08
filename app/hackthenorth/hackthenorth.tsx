@@ -34,7 +34,7 @@ export default function HackTheNorth({ data }: { data: string[] }) {
           <div className="pb-1">
             <div className="flex items-center gap-3">
               <h1 className="font-bold text-2xl">
-                Frontend at Canada's Biggest Hackathon
+                Frontend at Canada's biggest hackathon
               </h1>
             </div>
             <div>

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Faire",
-  description: "The future is local.",
+  description: "A day in the life at Faire.",
 };
 
 export default function Page() {
