@@ -28,7 +28,7 @@ export default function About() {
               eugene — -zsh —
             </p>
           </div>
-          <div className="bg-lightFill dark:bg-darkFill p-10 rounded-bl-lg rounded-br-lg font-mono flex flex-col gap-5">
+          <div className="bg-lightFill dark:bg-darkFill border border-darkBg dark:border-lightBg p-10 rounded-bl-lg rounded-br-lg font-mono flex flex-col gap-5">
             <div>
               <p className="text-sm sm:text-lg">
                 <span className="font-bold hidden sm:inline-block">
@@ -36,22 +36,17 @@ export default function About() {
                 </span>
                 <span className="font-bold sm:hidden">{">"}</span> cat intro.txt
               </p>
-              <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal">
-                Heyo, Eugene here! I’m currently enrolled as a junior in the
-                Computer Science Program at the University of Waterloo.
+              <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal mt-10">
+                A computer science student at the{" "}
+                <span className="underline">University of Waterloo</span>,
+                I&apos;ve had the chance to write code across the world. Next
+                stop is London, England, where I&apos;ll be interning as a
+                forward deployed software engineer at{" "}
+                <span className="underline">Palantir Technologies</span>.
               </p>
-            </div>
-            <div>
-              <p className="text-sm sm:text-lg">
-                <span className="font-bold hidden sm:inline-block">
-                  eugene@Eugenes-MacBook-Pro ~ %
-                </span>
-                <span className="font-bold sm:hidden">{">"}</span> cat more.txt
-              </p>
-              <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal">
-                Trying to convince myself that writing code will typecast itself
-                into creative writing. The pen may lend itself to artistic
-                expression, but I can type at 120 wpm.
+              <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal mt-10">
+                Below is a collection of stories and perspectives that bring you
+                closer to my memory palace.
               </p>
             </div>
             <div>
