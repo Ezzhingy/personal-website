@@ -16,7 +16,7 @@ export default function Providers({ children }: { children: ReactNode }) {
   }, []);
 
   if (!mounted) {
-    return <>{children}</>;
+    return null;
   }
 
   return (
