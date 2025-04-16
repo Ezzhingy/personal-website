@@ -26,8 +26,8 @@ export default function LatestCode() {
       id="latest"
       className="max-w-2xl mx-auto pt-32 sm:pt-24 text-darkBg dark:text-lightBg"
     >
-      <div className="flex flex-col gap-3 mx-10 items-start">
-        <h1 className="font-bold text-2xl">Latest Code</h1>
+      <div className="flex flex-col gap-3 mt-[50px] mx-10 items-start">
+        <h1 className="font-bold text-4xl">Latest Code</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
           {repos &&
             repos.map((repo, i) => <GithubRepoCard repo={repo} key={i} />)}

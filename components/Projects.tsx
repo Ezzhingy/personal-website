@@ -48,7 +48,7 @@ export default function Projects() {
       onMouseOver={changeGlow}
     >
       <div className="flex flex-col gap-3 mx-10 items-start">
-        <h1 className="font-bold text-2xl">Projects</h1>
+        <h1 className="font-bold text-4xl">Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 auto-rows-fr w-full gap-3">
           {projectInfo.map((project, i) => (
             <Link
