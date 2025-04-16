@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-darkBg: #111827;
-  --color-darkFill: #1f2937;
-  --color-lightBg: #d1d5db;
-  --color-lightFill: #bac3d2;
+  --color-darkBg: #1e1e2e;
+  --color-darkFill: #313244;
+  --color-lightBg: #eff1f5;
+  --color-lightFill: #dce0e8;
 
   --animate-blink: blink-caret 1s step-end infinite;
 

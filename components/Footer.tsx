@@ -105,43 +105,51 @@ export default function Footer() {
               control: (baseStyles) => ({
                 ...baseStyles,
                 backgroundColor:
-                  currentTheme === "dark" ? "#1F2937" : "#BAC3D2",
-                borderColor: currentTheme === "dark" ? "#D1D5DB" : "#111827",
+                  currentTheme === "dark" ? "#313244" : "#dce0e8",
+                borderColor: currentTheme === "dark" ? "#dce0e8" : "#313244",
+                ":hover": {
+                  borderColor: currentTheme === "dark" ? "#dce0e8" : "#313244",
+                  cursor: "pointer",
+                },
               }),
               dropdownIndicator: (baseStyles) => ({
                 ...baseStyles,
-                color: currentTheme === "dark" ? "#D1D5DB" : "#111827",
+                color: currentTheme === "dark" ? "#dce0e8" : "#313244",
+                ":hover": {
+                  color: currentTheme === "dark" ? "#dce0e8" : "#313244",
+                },
               }),
               indicatorSeparator: (baseStyles) => ({
                 ...baseStyles,
                 backgroundColor:
-                  currentTheme === "dark" ? "#D1D5DB" : "#111827",
+                  currentTheme === "dark" ? "#dce0e8" : "#313244",
               }),
               singleValue: (baseStyles) => ({
                 ...baseStyles,
-                color: currentTheme === "dark" ? "#D1D5DB" : "#111827",
+                color: currentTheme === "dark" ? "#dce0e8" : "#313244",
               }),
               menu: (baseStyles) => ({
                 ...baseStyles,
                 backgroundColor:
-                  currentTheme === "dark" ? "#1F2937" : "#BAC3D2",
+                  currentTheme === "dark" ? "#313244" : "#dce0e8",
               }),
               option: (baseStyles, { isFocused }) => ({
                 ...baseStyles,
                 backgroundColor: isFocused
                   ? currentTheme === "dark"
-                    ? "#D1D5DB"
-                    : "#111827"
+                    ? "#dce0e8"
+                    : "#313244"
                   : currentTheme === "dark"
-                  ? "#1F2937"
-                  : "#BAC3D2",
+                  ? "#313244"
+                  : "#dce0e8",
                 color: isFocused
                   ? currentTheme === "dark"
-                    ? "#1F2937"
-                    : "#BAC3D2"
+                    ? "#313244"
+                    : "#dce0e8"
                   : currentTheme === "dark"
-                  ? "#D1D5DB"
-                  : "#111827",
+                  ? "#dce0e8"
+                  : "#313244",
+                cursor: "pointer",
               }),
             }}
           />
