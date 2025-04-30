@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { navLinks } from "../constants/constants";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -11,17 +10,6 @@ export default function Navbar() {
   const [mounted, setMounted] = useState(false);
 
   const circleClipRef = useRef<HTMLUListElement>(null);
-
-  // temp solution to next/link hash bug (doesn't work in production)
-  const pathname = usePathname();
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (location.hash) {
-        location = location;
-      }
-    }, 10);
-  }, [pathname]);
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
