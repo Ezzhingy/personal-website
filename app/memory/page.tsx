@@ -1,9 +1,9 @@
 import { fetchMemlaneData } from "@/functions/fetchPageData";
-import Memlane from "@/app/memlane/memlane";
+import Memlane from "@/app/memory/memory";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Memlane",
+  title: "Memory",
   description:
     "A mobile app to help you discover and relive memories where they were made.",
 };

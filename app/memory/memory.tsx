@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
-export default function Memlane({ data }: { data: string[] }) {
+export default function Memory({ data }: { data: string[] }) {
   const { systemTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -19,7 +19,7 @@ export default function Memlane({ data }: { data: string[] }) {
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-5">
             <div className="flex items-center gap-3">
-              <h1 className="font-bold text-2xl">Memlane</h1>
+              <h1 className="font-bold text-2xl">Memory</h1>
               <Link
                 href="https://github.com/Ezzhingy/memlane"
                 target="_blank"

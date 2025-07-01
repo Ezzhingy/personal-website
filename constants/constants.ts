@@ -81,7 +81,7 @@ export const projectInfo = [
   },
   {
     image: "/memlane/memlane.png",
-    name: "Memlane",
+    name: "Memory",
     description:
       "A mobile app to help you discover and relive memories where they were made",
     skills: ["React Native", "Expo", "Supabase", "Apple Maps API"],
