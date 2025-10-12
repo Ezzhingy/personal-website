@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Markdown from "react-markdown";
 import { useState, useEffect } from "react";
+import { monoSans } from "@/functions/fonts";
 
 export default function Faire({ data }: { data: string[] }) {
   const [mounted, setMounted] = useState(false);
@@ -28,7 +29,9 @@ export default function Faire({ data }: { data: string[] }) {
   if (!mounted) return null;
 
   return (
-    <div className="max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg">
+    <div
+      className={`${monoSans.className} max-w-2xl mx-auto pt-10 text-darkBg dark:text-lightBg`}
+    >
       <div className="flex flex-col gap-3 mx-10 items-start">
         <div className="divide-y-2 divide-darkBg dark:divide-lightBg">
           <div className="pb-1">

@@ -37,7 +37,7 @@ export function fetchEthglobalData() {
     "/ethglobal/bangkok.jpeg",
     "**Final Thoughts**",
     "Man, what a journey it’s been. Through all the ups and downs, I can definitely say this internship was one of a kind. Life-changing, even. Professionally, I enjoyed working with the ETHGlobal team. It’s so cool seeing people in their element, working under the same vision with their own unique strengths. Socially, it was so fun hanging out with the other interns. I had a blast exploring these three cities with all of them and I hope to explore many more with them in the future, whether it be with ETHGlobal or not.",
-    "As for the next adventure... Iceland sounds like a great idea.",
+    "As for the next adventure... London sounds like a great idea.",
     "/ethglobal/interns.jpeg",
   ];
 }
