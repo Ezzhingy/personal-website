@@ -19,15 +19,6 @@ export const metadata: Metadata = {
     "software engineering",
   ],
   metadataBase: new URL("https://eugenezhang.me"),
-  openGraph: {
-    images: [
-      {
-        url: "/opengraph-image.jpg",
-        width: 1000,
-        height: 259,
-      },
-    ],
-  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
