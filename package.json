@@ -27,7 +27,7 @@
     "react-select": "^5.10.0",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.6",
-    "update": "^0.7.4"
+    "update": "^0.4.2"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^15.1.6"
