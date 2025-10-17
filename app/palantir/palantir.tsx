@@ -39,8 +39,10 @@ export default function Palantir({ data }: { data: string[] }) {
               <h1 className="font-bold text-2xl">Forward deployed in London</h1>
             </div>
             <div>
-              <h2>Internship: ??? - ???</h2>
-              <h2 className="italic text-sm">??? • {palantirViews} views</h2>
+              <h2>Internship: May. 2025 - Aug. 2025</h2>
+              <h2 className="italic text-sm">
+                Oct. 17, 2025 • {palantirViews} views
+              </h2>
             </div>
           </div>
           <div className="flex flex-col gap-3">
