@@ -40,9 +40,8 @@ export default function About() {
                 A computer science student at the{" "}
                 <span className="underline">University of Waterloo</span>,
                 I&apos;ve had the chance to write code across the world. Next
-                stop is Bellevue, Washington, where I&apos;ll be interning as a
-                software engineer at{" "}
-                <span className="underline">Databricks</span>.
+                stop is San Jose, California, where I&apos;ll be interning as a
+                software engineer at <span className="underline">Google</span>.
               </p>
               <p className="text-sm tracking-tighter sm:text-lg sm:-tracking-normal mt-10">
                 Below is a collection of stories and perspectives that bring you
