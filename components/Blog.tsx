@@ -13,6 +13,7 @@ export default function Blog() {
   const [faireViews, setFaireViews] = useState(0);
   const [ethglobalViews, setEthglobalViews] = useState(0);
   const [palantirViews, setPalantirViews] = useState(0);
+  const [databricksViews, setDatabricksViews] = useState(0);
 
   const fetchCiviliaViews = async () => {
     const res = await fetch("/api/civilia");
@@ -44,6 +45,11 @@ export default function Blog() {
     const data = await res.json();
     setPalantirViews(data.count);
   };
+  const fetchDatabricksViews = async () => {
+    const res = await fetch("/api/databricks");
+    const data = await res.json();
+    setDatabricksViews(data.count);
+  };
 
   useEffect(() => {
     fetchCiviliaViews();
@@ -52,6 +58,7 @@ export default function Blog() {
     fetchFaireViews();
     fetchEthglobalViews();
     fetchPalantirViews();
+    fetchDatabricksViews();
   }, []);
 
   useEffect(() => setMounted(true), []);
@@ -88,6 +95,9 @@ export default function Blog() {
                   )}
                   {exp.company === "Palantir" && (
                     <div>{palantirViews} views</div>
+                  )}
+                  {exp.company === "Databricks" && (
+                    <div>{databricksViews} views</div>
                   )}
                 </div>
               </div>

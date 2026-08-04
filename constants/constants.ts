@@ -23,6 +23,12 @@ export const navLinks = [
 
 export const expInfo = [
   {
+    logo: "/databricks/databricks.jpeg",
+    company: "Databricks",
+    description: "Cache hits (and misses) at Databricks",
+    type: "Internship",
+  },
+  {
     logo: "/palantir/palantir.jpg",
     company: "Palantir",
     description: "Forward deployed in London",
